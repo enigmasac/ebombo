@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Roboto, Roboto_Slab } from "next/font/google";
+import { Poppins, Roboto } from "next/font/google";
 import { getDictionary, isValidLang } from "@/lib/i18n";
 import type { Lang } from "@/lib/i18n";
 
@@ -7,22 +7,15 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://ebombo.enigmasac.c
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-poppins",
   display: "swap",
 });
 
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
+  weight: ["400", "500", "700"],
   variable: "--font-roboto",
-  display: "swap",
-});
-
-const robotoSlab = Roboto_Slab({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-roboto-slab",
   display: "swap",
 });
 
@@ -90,7 +83,7 @@ export default async function LangLayout({
   return (
     <html
       lang={lang}
-      className={`${poppins.variable} ${roboto.variable} ${robotoSlab.variable}`}
+      className={`${poppins.variable} ${roboto.variable}`}
     >
       <head>
         <link rel="alternate" hrefLang="es" href={SITE_URL} />

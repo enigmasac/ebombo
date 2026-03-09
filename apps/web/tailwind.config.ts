@@ -23,7 +23,6 @@ const config: Config = {
       fontFamily: {
         poppins: ["var(--font-poppins)", "sans-serif"],
         roboto: ["var(--font-roboto)", "sans-serif"],
-        "roboto-slab": ["var(--font-roboto-slab)", "serif"],
       },
       maxWidth: {
         container: "1140px",
