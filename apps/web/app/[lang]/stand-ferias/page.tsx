@@ -245,7 +245,7 @@ export default async function StandFerias({
         />
       </main>
       <Footer lang={lang} />
-      <WhatsAppButton />
+      <WhatsAppButton lang={lang} />
     </>
   );
 }

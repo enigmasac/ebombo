@@ -164,7 +164,7 @@ export default async function Merchandising({
         />
       </main>
       <Footer lang={lang} />
-      <WhatsAppButton />
+      <WhatsAppButton lang={lang} />
     </>
   );
 }

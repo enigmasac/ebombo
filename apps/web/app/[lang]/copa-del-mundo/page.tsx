@@ -322,7 +322,7 @@ export default async function CopaDelMundo({
         />
       </main>
       <Footer lang={lang} />
-      <WhatsAppButton />
+      <WhatsAppButton lang={lang} />
     </>
   );
 }

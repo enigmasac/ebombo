@@ -199,7 +199,7 @@ export default async function BlogPost({ params }: Props) {
         <ContactForm lang={lang} />
       </main>
       <Footer lang={lang} />
-      <WhatsAppButton />
+      <WhatsAppButton lang={lang} />
     </>
   );
 }

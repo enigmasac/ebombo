@@ -217,7 +217,7 @@ export default function BlogListingClient({ lang }: { lang: Lang }) {
         <ContactForm lang={lang} />
       </main>
       <Footer lang={lang} />
-      <WhatsAppButton />
+      <WhatsAppButton lang={lang} />
     </>
   );
 }
