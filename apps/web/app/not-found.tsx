@@ -10,31 +10,74 @@ export default function NotFound() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          fontFamily: "system-ui, sans-serif",
-          backgroundColor: "#FAFAFA",
-          color: "#1A1A2E",
+          fontFamily: "'Poppins', system-ui, sans-serif",
+          background: "linear-gradient(135deg, #FBFAFF 0%, #EEE8FF 50%, #FBFAFF 100%)",
+          color: "#2A2A2A",
+          overflow: "hidden",
         }}
       >
-        <div style={{ textAlign: "center" }}>
-          <h1 style={{ fontSize: "6rem", margin: 0, fontWeight: 700, color: "#7B2FBE" }}>
+        <div style={{ textAlign: "center", padding: "2rem", maxWidth: "500px" }}>
+          <img
+            src="https://ebombo.com/wp-content/uploads/2025/11/logoEbomboAColor.webp"
+            alt="eBombo"
+            width={180}
+            height={48}
+            style={{ margin: "0 auto 2rem" }}
+          />
+
+          <div
+            style={{
+              fontSize: "8rem",
+              fontWeight: 800,
+              lineHeight: 1,
+              background: "linear-gradient(135deg, #8056EB, #F78A0A)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              marginBottom: "0.5rem",
+            }}
+          >
             404
-          </h1>
-          <p style={{ fontSize: "1.25rem", margin: "1rem 0 2rem", color: "#666" }}>
-            Página no encontrada
+          </div>
+
+          <p
+            style={{
+              fontSize: "1.5rem",
+              fontWeight: 600,
+              color: "#8056EB",
+              margin: "0 0 0.5rem",
+            }}
+          >
+            Ups! Este evento no existe
           </p>
+          <p
+            style={{
+              fontSize: "1rem",
+              color: "#444",
+              margin: "0 0 2rem",
+              lineHeight: 1.6,
+            }}
+          >
+            Parece que esta pagina se fue de fiesta y no volvio.
+            <br />
+            Pero no te preocupes, tenemos muchos eventos esperandote.
+          </p>
+
           <Link
             href="/"
             style={{
               display: "inline-block",
-              padding: "0.75rem 2rem",
-              backgroundColor: "#7B2FBE",
+              padding: "14px 32px",
+              background: "linear-gradient(135deg, #8056EB, #220E58)",
               color: "#fff",
-              borderRadius: "8px",
+              borderRadius: "50px",
               textDecoration: "none",
-              fontWeight: 500,
+              fontWeight: 600,
+              fontSize: "1rem",
+              boxShadow: "0 4px 20px rgba(128, 86, 235, 0.35)",
+              transition: "transform 0.3s",
             }}
           >
-            Volver al inicio
+            Volver a la fiesta
           </Link>
         </div>
       </body>
