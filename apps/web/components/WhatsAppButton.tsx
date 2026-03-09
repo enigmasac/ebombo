@@ -24,13 +24,14 @@ export default function WhatsAppButton({ lang = "es" }: { lang?: Lang }) {
   const phones = phonesByLang[lang] || phonesByLang.es;
 
   useEffect(() => {
-    function handleClickOutside(e: MouseEvent) {
+    if (!open) return;
+    function handleClose(e: MouseEvent) {
       if (ref.current && !ref.current.contains(e.target as Node)) {
         setOpen(false);
       }
     }
-    if (open) document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    document.addEventListener("click", handleClose);
+    return () => document.removeEventListener("click", handleClose);
   }, [open]);
 
   if (phones.length === 1) {
