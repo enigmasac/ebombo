@@ -30,7 +30,7 @@ async function getNotificationEmails(): Promise<string[]> {
   return Array.isArray(val) ? val : [];
 }
 
-async function notifyLead(lead: { name: string; phone: string; email: string; message: string; source: string; page_url: string }): Promise<boolean> {
+async function notifyLead(lead: { name: string; phone: string; email: string; message: string; interest: string; source: string; page_url: string }): Promise<boolean> {
   const smtp = await getSmtpConfig();
   if (!smtp) return false;
 
@@ -53,6 +53,7 @@ async function notifyLead(lead: { name: string; phone: string; email: string; me
       <p><strong>Nombre:</strong> ${lead.name}</p>
       <p><strong>Teléfono:</strong> ${lead.phone}</p>
       <p><strong>Email:</strong> ${lead.email}</p>
+      <p><strong>Interés:</strong> ${lead.interest || "(no especificado)"}</p>
       <p><strong>Mensaje:</strong> ${lead.message || "(sin mensaje)"}</p>
       <p><strong>Página:</strong> ${lead.page_url}</p>
     `,
@@ -62,7 +63,7 @@ async function notifyLead(lead: { name: string; phone: string; email: string; me
 }
 
 router.post("/", async (req: Request, res: Response) => {
-  const { name, phone, email, message, source, page_url, lang } = req.body;
+  const { name, phone, email, message, interest, source, page_url, lang } = req.body;
   if (!name) {
     res.status(400).json({ error: "Name is required" });
     return;
@@ -71,12 +72,12 @@ router.post("/", async (req: Request, res: Response) => {
   const validLang = lang === "en" ? "en" : "es";
 
   const [result] = await pool.execute<ResultSetHeader>(
-    `INSERT INTO leads (name, phone, email, message, source, page_url, lang)
-     VALUES (?, ?, ?, ?, ?, ?, ?)`,
-    [name, phone || "", email || "", message || "", source || "", page_url || "", validLang]
+    `INSERT INTO leads (name, phone, email, message, interest, source, page_url, lang)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+    [name, phone || "", email || "", message || "", interest || "", source || "", page_url || "", validLang]
   );
 
-  notifyLead({ name, phone: phone || "", email: email || "", message: message || "", source: source || "", page_url: page_url || "" })
+  notifyLead({ name, phone: phone || "", email: email || "", message: message || "", interest: interest || "", source: source || "", page_url: page_url || "" })
     .then(async (sent) => {
       if (sent) await pool.execute("UPDATE leads SET notified = 1 WHERE id = ?", [result.insertId]);
     })

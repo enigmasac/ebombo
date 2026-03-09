@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo, useEffect } from "react";
 import type { Lang } from "@/lib/i18n";
 import { getDictionary } from "@/lib/i18n";
+import { getCountriesByLang, getDefaultPrefix, detectPrefixByIP } from "@/lib/countries";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "";
 
@@ -10,8 +11,16 @@ type FormStatus = "idle" | "sending" | "sent" | "error";
 
 export default function SidebarForm({ lang }: { lang: Lang }) {
   const t = getDictionary(lang);
-  const [formData, setFormData] = useState({ name: "", phone: "", email: "", message: "" });
+  const countries = useMemo(() => getCountriesByLang(lang), [lang]);
+  const defaultPrefix = getDefaultPrefix(lang);
+  const [formData, setFormData] = useState({ name: "", phone: "", email: "", message: "", interest: "", prefix: defaultPrefix });
   const [status, setStatus] = useState<FormStatus>("idle");
+
+  useEffect(() => {
+    detectPrefixByIP().then((detected) => {
+      if (detected) setFormData((prev) => ({ ...prev, prefix: detected }));
+    });
+  }, []);
 
   const inputStyles =
     "w-full rounded-[12px] border border-[#E0E0E0] bg-white px-4 py-3 font-roboto text-base text-[#1E1E1E] outline-none placeholder:text-ebombo-text/60 focus:border-ebombo-primary";
@@ -24,7 +33,11 @@ export default function SidebarForm({ lang }: { lang: Lang }) {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          ...formData,
+          name: formData.name,
+          phone: `${formData.prefix}${formData.phone}`,
+          email: formData.email,
+          message: formData.message,
+          interest: formData.interest,
           source: "sidebar_form",
           page_url: window.location.href,
           lang,
@@ -32,7 +45,7 @@ export default function SidebarForm({ lang }: { lang: Lang }) {
       });
       if (!res.ok) throw new Error("Error");
       setStatus("sent");
-      setFormData({ name: "", phone: "", email: "", message: "" });
+      setFormData({ name: "", phone: "", email: "", message: "", interest: "", prefix: defaultPrefix });
     } catch {
       setStatus("error");
     }
@@ -78,20 +91,47 @@ export default function SidebarForm({ lang }: { lang: Lang }) {
           className={inputStyles}
         />
       </div>
+      <div>
+        <label htmlFor="sidebar-interest" className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
+          {t.contactForm.interes}
+        </label>
+        <select
+          id="sidebar-interest"
+          value={formData.interest}
+          onChange={(e) => setFormData({ ...formData, interest: e.target.value })}
+          className={`${inputStyles} appearance-none bg-[url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M6%208L1%203h10z%22%2F%3E%3C%2Fsvg%3E')] bg-[length:12px] bg-[right_16px_center] bg-no-repeat pr-10`}
+        >
+          <option value="">{t.contactForm.interesPlaceholder}</option>
+          {t.contactForm.interesOpciones.map((opt) => (
+            <option key={opt} value={opt}>{opt}</option>
+          ))}
+        </select>
+      </div>
       <div className="flex flex-col gap-4 md:flex-row">
         <div className="md:w-1/2">
           <label htmlFor="sidebar-phone" className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
             {t.contactForm.telefono} <span className="text-red-500">*</span>
           </label>
-          <input
-            id="sidebar-phone"
-            type="tel"
-            placeholder={t.contactForm.telefonoPlaceholder}
-            required
-            value={formData.phone}
-            onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-            className={inputStyles}
-          />
+          <div className="flex gap-2">
+            <select
+              value={formData.prefix}
+              onChange={(e) => setFormData({ ...formData, prefix: e.target.value })}
+              className={`${inputStyles} w-[90px] shrink-0 appearance-none !px-2 bg-[url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M6%208L1%203h10z%22%2F%3E%3C%2Fsvg%3E')] bg-[length:12px] bg-[right_6px_center] bg-no-repeat pr-5`}
+            >
+              {countries.map((c) => (
+                <option key={c.code} value={c.dial}>{c.flag} {c.dial}</option>
+              ))}
+            </select>
+            <input
+              id="sidebar-phone"
+              type="tel"
+              placeholder={t.contactForm.telefonoPlaceholder}
+              required
+              value={formData.phone}
+              onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+              className={`${inputStyles} flex-1`}
+            />
+          </div>
         </div>
         <div className="md:w-1/2">
           <label htmlFor="sidebar-email" className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
