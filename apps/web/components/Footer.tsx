@@ -9,35 +9,51 @@ const partnerLinks = [
   { label: "bilit", href: "https://bilitnow.com" },
 ];
 
-const offices = [
-  {
-    titleKey: "oficinaPeru" as const,
-    address: "Av. General Cordova 1145, 15074 Miraflores, Lima",
-    mapUrl: "https://maps.app.goo.gl/cKYynetLNCShENjA6",
-  },
-  {
-    titleKey: "oficinaEspana" as const,
-    address: "CL Manuel Caldeiro 18, Madrid ZIP. 28046",
-    mapUrl: "https://maps.app.goo.gl/6MhuGrfCfdjeeAMi8",
-  },
-  {
-    titleKey: "oficinaMexico" as const,
-    address: "Cordoba 95 Roma Norte. Cuauhtemoc, 06700 CDMX, Mexico",
-    mapUrl: "https://maps.app.goo.gl/HAGZ15pmRJ5SAtqW7",
-  },
-];
+const officesByLang = {
+  es: [
+    {
+      titleKey: "oficinaPeru" as const,
+      address: "Av. General Cordova 1145, 15074 Miraflores, Lima",
+      mapUrl: "https://maps.app.goo.gl/cKYynetLNCShENjA6",
+    },
+    {
+      titleKey: "oficinaEspana" as const,
+      address: "CL Manuel Caldeiro 18, Madrid ZIP. 28046",
+      mapUrl: "https://maps.app.goo.gl/6MhuGrfCfdjeeAMi8",
+    },
+    {
+      titleKey: "oficinaMexico" as const,
+      address: "Cordoba 95 Roma Norte. Cuauhtemoc, 06700 CDMX, Mexico",
+      mapUrl: "https://maps.app.goo.gl/HAGZ15pmRJ5SAtqW7",
+    },
+  ],
+  en: [
+    {
+      titleKey: "oficinaUSA" as const,
+      address: "8 The Green, Ste A Dover, DE 19901",
+      mapUrl: "https://maps.app.goo.gl/Dover8TheGreen",
+    },
+  ],
+};
 
-const phones = [
-  { country: "Peru", number: "+51 948 879 888", tel: "+51948879888" },
-  { country: "Spain", number: "+34 629 484 598", tel: "+34629484598" },
-  { country: "Mexico", number: "+52 55 6444 9591", tel: "+525564449591" },
-];
+const phonesByLang = {
+  es: [
+    { country: "Peru", number: "+51 948 879 888", tel: "+51948879888" },
+    { country: "Spain", number: "+34 629 484 598", tel: "+34629484598" },
+    { country: "Mexico", number: "+52 55 6444 9591", tel: "+525564449591" },
+  ],
+  en: [
+    { country: "", number: "+52 55 6444 9591", tel: "+525564449591" },
+  ],
+};
 
 const cardStyles =
   "rounded-[18px] bg-white p-[6%] shadow-[0_0_10px_rgba(0,0,0,0.05)] md:p-[2%]";
 
 export default function Footer({ lang = "es" as Lang }: { lang?: Lang }) {
   const t = getDictionary(lang);
+  const offices = officesByLang[lang] || officesByLang.es;
+  const phones = phonesByLang[lang] || phonesByLang.es;
 
   const navLinks = [
     { label: t.nav.tiposDeEvento, href: localePath(lang, "/tipos-de-evento") },
@@ -141,7 +157,7 @@ export default function Footer({ lang = "es" as Lang }: { lang?: Lang }) {
                 </svg>
                 <div>
                   <h6 className="font-poppins text-base font-semibold tracking-[-0.2px] text-ebombo-dark">
-                    {t.footer.telefonosWhatsApp} {phone.country}
+                    {t.footer.telefonosWhatsApp}{phone.country ? ` ${phone.country}` : ""}
                   </h6>
                   <a
                     href={`tel:${phone.tel}`}

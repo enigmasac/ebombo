@@ -37,6 +37,7 @@ const es = {
     oficinaPeru: "Oficinas Peru",
     oficinaEspana: "Oficinas Espana",
     oficinaMexico: "Oficinas Mexico",
+    oficinaUSA: "Oficinas USA",
   },
   contactForm: {
     defaultTitle: "Listo para transformar tu proximo evento?",
@@ -353,6 +354,7 @@ const en: Dictionary = {
     oficinaPeru: "Peru Office",
     oficinaEspana: "Spain Office",
     oficinaMexico: "Mexico Office",
+    oficinaUSA: "USA Offices",
   },
   contactForm: {
     defaultTitle: "Ready to transform your next event?",
