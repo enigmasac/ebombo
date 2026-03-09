@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Lang } from "@/lib/i18n";
 import { getDictionary, localePath } from "@/lib/i18n";
+import EmailLink from "./EmailLink";
 
 const partnerLinks = [
   { label: "Enigma Developers", href: "https://enigmasac.com" },
@@ -182,12 +183,11 @@ export default function Footer({ lang = "es" as Lang }: { lang?: Lang }) {
               <h4 className="font-poppins text-base font-semibold tracking-[-0.2px] text-ebombo-dark">
                 {t.footer.correo}
               </h4>
-              <a
-                href="mailto:mateo@ebombo.com"
+              <EmailLink
+                user="mateo"
+                domain="ebombo.com"
                 className="font-roboto text-sm text-ebombo-dark hover:text-ebombo-primary"
-              >
-                mateo@ebombo.com
-              </a>
+              />
             </div>
           </div>
         </div>
