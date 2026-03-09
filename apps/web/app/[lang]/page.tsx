@@ -1,5 +1,3 @@
-import { Suspense } from "react";
-import dynamic from "next/dynamic";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import ClientLogos from "@/components/ClientLogos";
@@ -8,16 +6,11 @@ import Solutions from "@/components/Solutions";
 import WhyEbombo from "@/components/WhyEbombo";
 import Testimonials from "@/components/Testimonials";
 import SuccessStories from "@/components/SuccessStories";
+import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { isValidLang } from "@/lib/i18n";
 import type { Lang } from "@/lib/i18n";
-
-const ContactForm = dynamic(() => import("@/components/ContactForm"), {
-  ssr: false,
-});
-const WhatsAppButton = dynamic(() => import("@/components/WhatsAppButton"), {
-  ssr: false,
-});
 
 export default async function Home({
   params,
@@ -36,17 +29,11 @@ export default async function Home({
         <HowItWorks lang={lang} />
         <Solutions lang={lang} />
         <WhyEbombo lang={lang} />
-        <Suspense>
-          <Testimonials lang={lang} />
-        </Suspense>
-        <Suspense>
-          <SuccessStories lang={lang} />
-        </Suspense>
+        <Testimonials lang={lang} />
+        <SuccessStories lang={lang} />
         <ContactForm lang={lang} />
       </main>
-      <Suspense>
-        <Footer lang={lang} />
-      </Suspense>
+      <Footer lang={lang} />
       <WhatsAppButton lang={lang} />
     </>
   );

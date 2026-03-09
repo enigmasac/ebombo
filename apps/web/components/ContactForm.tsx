@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useRef, useCallback } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Image from "next/image";
 import type { Lang } from "@/lib/i18n";
 import { getDictionary } from "@/lib/i18n";
@@ -36,11 +36,8 @@ export default function ContactForm({
     prefix: defaultPrefix,
   });
   const [status, setStatus] = useState<FormStatus>("idle");
-  const prefixDetected = useRef(false);
 
-  const handleFirstFocus = useCallback(() => {
-    if (prefixDetected.current) return;
-    prefixDetected.current = true;
+  useEffect(() => {
     detectPrefixByIP().then((detected) => {
       if (detected) setFormData((prev) => ({ ...prev, prefix: detected }));
     });
@@ -133,7 +130,6 @@ export default function ContactForm({
                   placeholder={t.contactForm.nombrePlaceholder}
                   required
                   value={formData.name}
-                  onFocus={handleFirstFocus}
                   onChange={(e) =>
                     setFormData({ ...formData, name: e.target.value })
                   }
@@ -147,7 +143,6 @@ export default function ContactForm({
                 <select
                   id="contact-interest"
                   value={formData.interest}
-                  onFocus={handleFirstFocus}
                   onChange={(e) =>
                     setFormData({ ...formData, interest: e.target.value })
                   }
@@ -182,7 +177,6 @@ export default function ContactForm({
                       placeholder={t.contactForm.telefonoPlaceholder}
                       required
                       value={formData.phone}
-                      onFocus={handleFirstFocus}
                       onChange={(e) =>
                         setFormData({ ...formData, phone: e.target.value })
                       }
@@ -199,7 +193,6 @@ export default function ContactForm({
                     type="email"
                     placeholder={t.contactForm.emailPlaceholder}
                     value={formData.email}
-                    onFocus={handleFirstFocus}
                     onChange={(e) =>
                       setFormData({ ...formData, email: e.target.value })
                     }
@@ -215,7 +208,6 @@ export default function ContactForm({
                   id="contact-message"
                   rows={4}
                   value={formData.message}
-                  onFocus={handleFirstFocus}
                   onChange={(e) =>
                     setFormData({ ...formData, message: e.target.value })
                   }
