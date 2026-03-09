@@ -1,3 +1,5 @@
+import { unstable_cache } from "next/cache";
+
 const API_URL = process.env.API_URL || "http://localhost:4000";
 
 export interface Experience {
@@ -56,17 +58,19 @@ export interface ActiveSnippets {
   body_end: string[];
 }
 
-export async function fetchActiveSnippets(): Promise<ActiveSnippets> {
-  try {
-    const res = await fetch(`${API_URL}/api/snippets/active`, {
-      next: { revalidate: 60 },
-    });
-    if (!res.ok) return { head_start: [], head_end: [], body_start: [], body_end: [] };
-    return res.json();
-  } catch {
-    return { head_start: [], head_end: [], body_start: [], body_end: [] };
-  }
-}
+export const fetchActiveSnippets = unstable_cache(
+  async (): Promise<ActiveSnippets> => {
+    try {
+      const res = await fetch(`${API_URL}/api/snippets/active`);
+      if (!res.ok) return { head_start: [], head_end: [], body_start: [], body_end: [] };
+      return res.json();
+    } catch {
+      return { head_start: [], head_end: [], body_start: [], body_end: [] };
+    }
+  },
+  ["active-snippets"],
+  { revalidate: 300 }
+);
 
 export async function fetchBadges(lang: string): Promise<string[]> {
   try {
