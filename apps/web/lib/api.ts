@@ -43,7 +43,6 @@ export async function fetchExperience(slug: string, lang?: string): Promise<Expe
     const res = await fetch(`${API_URL}/api/experiences/${slug}${qs}`, {
       next: { revalidate: 60 },
     });
-    if (!res.ok) return null;
     return res.json();
   } catch {
     return null;
