@@ -3,6 +3,8 @@ import { Poppins, Roboto, Roboto_Slab } from "next/font/google";
 import { getDictionary, isValidLang } from "@/lib/i18n";
 import type { Lang } from "@/lib/i18n";
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://ebombo.enigmasac.com";
+
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -52,20 +54,20 @@ export async function generateMetadata({
     },
     alternates: {
       languages: {
-        es: "https://ebombo.com",
-        en: "https://ebombo.com/en",
+        es: SITE_URL,
+        en: `${SITE_URL}/en`,
       },
     },
     openGraph: {
       title: t.metadata.siteTitle,
       description: t.metadata.siteDescription,
-      url: lang === "en" ? "https://ebombo.com/en" : "https://ebombo.com",
+      url: lang === "en" ? `${SITE_URL}/en` : SITE_URL,
       siteName: "eBombo Internacional",
       locale: lang === "en" ? "en_US" : "es_ES",
       type: "website",
       images: [
         {
-          url: "https://ebombo.com/og-image.png",
+          url: `${SITE_URL}/og-image.png`,
           width: 1200,
           height: 630,
           alt: "eBombo Internacional",
@@ -91,12 +93,12 @@ export default async function LangLayout({
       className={`${poppins.variable} ${roboto.variable} ${robotoSlab.variable}`}
     >
       <head>
-        <link rel="alternate" hrefLang="es" href="https://ebombo.com" />
-        <link rel="alternate" hrefLang="en" href="https://ebombo.com/en" />
+        <link rel="alternate" hrefLang="es" href={SITE_URL} />
+        <link rel="alternate" hrefLang="en" href={`${SITE_URL}/en`} />
         <link
           rel="alternate"
           hrefLang="x-default"
-          href="https://ebombo.com"
+          href={SITE_URL}
         />
       </head>
       <body className="font-roboto text-ebombo-text">{children}</body>
