@@ -282,6 +282,7 @@ export interface Lead {
   phone: string;
   email: string;
   message: string;
+  interest: string;
   source: string;
   page_url: string;
   lang: string;
@@ -307,6 +308,23 @@ export function getLeads(params: { page?: number; limit?: number; source?: strin
 
 export function deleteLead(id: number) {
   return request<{ ok: boolean }>("/api/leads", `/${id}`, { method: "DELETE" });
+}
+
+export async function exportLeads(): Promise<Blob> {
+  const res = await fetch("/api/leads/export", {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  if (res.status === 401) {
+    clearToken();
+    window.location.href = "/";
+    throw new Error("Unauthorized");
+  }
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return res.blob();
+}
+
+export function deleteAllLeads() {
+  return request<{ ok: boolean }>("/api/leads", "", { method: "DELETE" });
 }
 
 export function getSettings() {

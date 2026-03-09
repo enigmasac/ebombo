@@ -121,6 +121,28 @@ router.get("/", requireAuth, async (req: Request, res: Response) => {
   res.json({ leads: rows, total, page, limit });
 });
 
+router.get("/export", requireAuth, async (_req: Request, res: Response) => {
+  const [rows] = await pool.query<RowDataPacket[]>(
+    "SELECT name, phone, email, interest, message, source, page_url, lang, created_at FROM leads ORDER BY created_at DESC"
+  );
+
+  const header = "Nombre,Telefono,Email,Interes,Mensaje,Fuente,Pagina,Idioma,Fecha";
+  const csvRows = rows.map((r) => {
+    const fields = [r.name, r.phone, r.email, r.interest, r.message, r.source, r.page_url, r.lang, r.created_at];
+    return fields.map((f) => `"${String(f ?? "").replace(/"/g, '""')}"`).join(",");
+  });
+  const csv = [header, ...csvRows].join("\n");
+
+  res.setHeader("Content-Type", "text/csv; charset=utf-8");
+  res.setHeader("Content-Disposition", "attachment; filename=leads.csv");
+  res.send(csv);
+});
+
+router.delete("/", requireAuth, requireSuperAdmin, async (_req: Request, res: Response) => {
+  await pool.execute("DELETE FROM leads");
+  res.json({ ok: true });
+});
+
 router.delete("/:id", requireAuth, requireSuperAdmin, async (req: Request, res: Response) => {
   await pool.execute("DELETE FROM leads WHERE id = ?", [req.params.id as string]);
   res.json({ ok: true });

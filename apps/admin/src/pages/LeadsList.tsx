@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getLeads, deleteLead, getUser, type Lead } from "../api";
+import { getLeads, deleteLead, exportLeads, deleteAllLeads, getUser, type Lead } from "../api";
 
 export default function LeadsList() {
   const [leads, setLeads] = useState<Lead[]>([]);
@@ -37,6 +37,24 @@ export default function LeadsList() {
     load();
   }
 
+  async function handleExport() {
+    const blob = await exportLeads();
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "leads.csv";
+    a.click();
+    URL.revokeObjectURL(url);
+  }
+
+  async function handleDeleteAll() {
+    if (!confirm("¿Seguro que deseas borrar TODOS los leads? Esta acción no se puede deshacer.")) return;
+    const typed = prompt("Escribe BORRAR para confirmar:");
+    if (typed !== "BORRAR") return;
+    await deleteAllLeads();
+    load();
+  }
+
   const totalPages = Math.ceil(total / limit);
 
   function formatDate(d: string) {
@@ -63,6 +81,10 @@ export default function LeadsList() {
           <option value="sidebar_form">Formulario sidebar</option>
         </select>
         <button className="btn btn-ghost" onClick={handleSearch}>Buscar</button>
+        <button className="btn btn-ghost" onClick={handleExport}>Descargar Excel</button>
+        {user?.role === "super_admin" && (
+          <button className="btn btn-danger" onClick={handleDeleteAll}>Borrar todo</button>
+        )}
       </div>
 
       <div className="card">
@@ -77,6 +99,7 @@ export default function LeadsList() {
                   <th>Teléfono</th>
                   <th>Email</th>
                   <th>Mensaje</th>
+                  <th>Interés</th>
                   <th>Fuente</th>
                   <th>Fecha</th>
                   {user?.role === "super_admin" && <th>Acciones</th>}
@@ -84,7 +107,7 @@ export default function LeadsList() {
               </thead>
               <tbody>
                 {leads.length === 0 && (
-                  <tr><td colSpan={7} style={{ textAlign: "center", padding: 40, color: "#888" }}>Sin leads</td></tr>
+                  <tr><td colSpan={8} style={{ textAlign: "center", padding: 40, color: "#888" }}>Sin leads</td></tr>
                 )}
                 {leads.map((lead) => (
                   <tr key={lead.id}>
@@ -92,6 +115,7 @@ export default function LeadsList() {
                     <td>{lead.phone || "—"}</td>
                     <td>{lead.email || "—"}</td>
                     <td className="truncate">{lead.message || "—"}</td>
+                    <td>{lead.interest || "—"}</td>
                     <td><span className="badge badge-en">{lead.source || "—"}</span></td>
                     <td style={{ whiteSpace: "nowrap" }}>{formatDate(lead.created_at)}</td>
                     {user?.role === "super_admin" && (
