@@ -65,10 +65,11 @@ export default function SidebarForm({ lang }: { lang: Lang }) {
         </div>
       )}
       <div>
-        <label className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
+        <label htmlFor="sidebar-name" className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
           {t.contactForm.nombreCompleto} <span className="text-red-500">*</span>
         </label>
         <input
+          id="sidebar-name"
           type="text"
           placeholder={t.contactForm.nombrePlaceholder}
           required
@@ -79,10 +80,11 @@ export default function SidebarForm({ lang }: { lang: Lang }) {
       </div>
       <div className="flex flex-col gap-4 md:flex-row">
         <div className="md:w-1/2">
-          <label className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
+          <label htmlFor="sidebar-phone" className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
             {t.contactForm.telefono} <span className="text-red-500">*</span>
           </label>
           <input
+            id="sidebar-phone"
             type="tel"
             placeholder={t.contactForm.telefonoPlaceholder}
             required
@@ -92,10 +94,11 @@ export default function SidebarForm({ lang }: { lang: Lang }) {
           />
         </div>
         <div className="md:w-1/2">
-          <label className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
+          <label htmlFor="sidebar-email" className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
             {t.contactForm.email}
           </label>
           <input
+            id="sidebar-email"
             type="email"
             placeholder={t.contactForm.emailPlaceholder}
             value={formData.email}
@@ -105,10 +108,11 @@ export default function SidebarForm({ lang }: { lang: Lang }) {
         </div>
       </div>
       <div>
-        <label className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
+        <label htmlFor="sidebar-message" className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
           {t.contactForm.mensaje}
         </label>
         <textarea
+          id="sidebar-message"
           rows={4}
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}

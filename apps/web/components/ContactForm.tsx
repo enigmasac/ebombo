@@ -106,10 +106,11 @@ export default function ContactForm({
                 </div>
               )}
               <div>
-                <label className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
+                <label htmlFor="contact-name" className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
                   {t.contactForm.nombreCompleto} <span className="text-red-500">*</span>
                 </label>
                 <input
+                  id="contact-name"
                   type="text"
                   placeholder={t.contactForm.nombrePlaceholder}
                   required
@@ -122,10 +123,11 @@ export default function ContactForm({
               </div>
               <div className="flex flex-col gap-5 md:flex-row md:gap-4">
                 <div className="md:w-1/2">
-                  <label className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
+                  <label htmlFor="contact-phone" className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
                     {t.contactForm.telefono} <span className="text-red-500">*</span>
                   </label>
                   <input
+                    id="contact-phone"
                     type="tel"
                     placeholder={t.contactForm.telefonoPlaceholder}
                     required
@@ -137,10 +139,11 @@ export default function ContactForm({
                   />
                 </div>
                 <div className="md:w-1/2">
-                  <label className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
+                  <label htmlFor="contact-email" className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
                     {t.contactForm.email}
                   </label>
                   <input
+                    id="contact-email"
                     type="email"
                     placeholder={t.contactForm.emailPlaceholder}
                     value={formData.email}
@@ -152,10 +155,11 @@ export default function ContactForm({
                 </div>
               </div>
               <div>
-                <label className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
+                <label htmlFor="contact-message" className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
                   {t.contactForm.mensaje}
                 </label>
                 <textarea
+                  id="contact-message"
                   rows={4}
                   value={formData.message}
                   onChange={(e) =>
