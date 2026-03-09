@@ -53,10 +53,10 @@ export function getDialByCountryCode(countryCode: string): string | null {
 
 export async function detectPrefixByIP(): Promise<string | null> {
   try {
-    const res = await fetch("https://ipapi.co/json/", { signal: AbortSignal.timeout(3000) });
+    const res = await fetch("http://ip-api.com/json/?fields=countryCode", { signal: AbortSignal.timeout(3000) });
     if (!res.ok) return null;
     const data = await res.json();
-    return getDialByCountryCode(data.country_code || "") || null;
+    return getDialByCountryCode(data.countryCode || "") || null;
   } catch {
     return null;
   }
