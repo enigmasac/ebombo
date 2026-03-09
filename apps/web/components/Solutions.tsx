@@ -47,8 +47,9 @@ export default function Solutions({ lang = "es" as Lang }: { lang?: Lang }) {
               <Image
                 src={card.image}
                 alt={card.title}
-                width={600}
-                height={332}
+                width={340}
+                height={188}
+                sizes="(max-width: 768px) 90vw, 340px"
                 className="w-full rounded-[18px]"
               />
               <div className="flex flex-col items-center gap-[7px] p-[8%]">

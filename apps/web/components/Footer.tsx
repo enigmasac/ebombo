@@ -226,6 +226,7 @@ export default function Footer({ lang = "es" as Lang }: { lang?: Lang }) {
           alt="eBombo logo"
           width={200}
           height={53}
+          sizes="200px"
           className="w-[200px] transition-transform duration-[600ms]"
         />
         <span className="text-center font-poppins text-xs font-light tracking-[-0.2px] text-ebombo-dark">

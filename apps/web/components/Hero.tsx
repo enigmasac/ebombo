@@ -43,6 +43,7 @@ export default function Hero({ lang = "es" }: { lang?: Lang }) {
                 alt="eBombo"
                 width={84}
                 height={22}
+                sizes="84px"
                 className="-mt-[5px] w-[84px]"
               />
             </div>
