@@ -60,21 +60,21 @@ function TableOfContents({
   if (headings.length < 3) return null;
 
   let topCounter = 0;
-  let h2Counter = 0;
-  let h3Counter = 0;
+  let subCounter = 0;
+  let lastTopNumber = 0;
   let seenH2 = false;
 
   const numbered = headings.map((h) => {
     if (h.type === "h2") {
       seenH2 = true;
-      h2Counter++;
-      h3Counter = 0;
-      topCounter = h2Counter;
-      return { ...h, number: `${h2Counter}`, indent: false };
+      topCounter++;
+      lastTopNumber = topCounter;
+      subCounter = 0;
+      return { ...h, number: `${topCounter}`, indent: false };
     }
     if (h.type === "h3" && seenH2) {
-      h3Counter++;
-      return { ...h, number: `${h2Counter}.${h3Counter}`, indent: true };
+      subCounter++;
+      return { ...h, number: `${lastTopNumber}.${subCounter}`, indent: true };
     }
     topCounter++;
     return { ...h, number: `${topCounter}`, indent: false };
