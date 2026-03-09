@@ -171,13 +171,7 @@ export default async function Nosotros({
                 >
                   <div className="mb-5 flex h-[70px] w-[70px] items-center justify-center rounded-full border-2 border-white/60 bg-white/20">
                     {valuesIcons[i] === "lightbulb" && (
-                      <svg
-                        className="h-8 w-8"
-                        fill="white"
-                        viewBox="0 0 384 512"
-                      >
-                        <path d="M112 272c0-35.3 28.7-64 64-64 8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96 0 8.8 7.2 16 16 16s16-7.2 16-16zM224 0C100.3 0 0 100.3 0 224c0 75.2 37.1 141.8 94 182.7 15.2 10.9 26 28.6 30.2 48.4l6.3 29.5c2.5 11.8 13 20.4 25 20.4h73c12 0 22.5-8.6 25-20.4l6.3-29.5c4.2-19.8 15-37.5 30.2-48.4C330.9 365.8 368 299.2 368 224 368 100.3 267.7 0 224 0z" />
-                      </svg>
+                      <span className="text-3xl">💡</span>
                     )}
                     {valuesIcons[i] === "bolt" && (
                       <svg
