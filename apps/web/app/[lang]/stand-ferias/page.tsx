@@ -23,7 +23,7 @@ export async function generateMetadata({
   };
 }
 
-const IMG = "https://ebombo.com/wp-content/uploads/stand-ferias";
+const IMG = "/uploads/stand-ferias";
 
 const featuresData = [
   {

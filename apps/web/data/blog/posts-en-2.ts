@@ -7,7 +7,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-15T19:27:29+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Content-Ideas-to-Promote-Your-Event-on-Specialized-Blogs-in-Florida-1.jpg`,
+    thumbnailUrl: `/uploads/2025/05/Content-Ideas-to-Promote-Your-Event-on-Specialized-Blogs-in-Florida-1.jpg`,
     wordCount: 962,
     bodyContent: [
       { type: "h2", text: `Introduction: Why Promoting Your Event on Specialized Blogs in Florida Matters` },
@@ -66,7 +66,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-15T19:25:13+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Mastering-Cross-Selling-Strategies-at-Florida-Conferences-with-Diverse-Audiences.jpg`,
+    thumbnailUrl: `/uploads/2025/05/Mastering-Cross-Selling-Strategies-at-Florida-Conferences-with-Diverse-Audiences.jpg`,
     wordCount: 1012,
     bodyContent: [
       { type: "p", text: `Attending conferences in Florida can be a goldmine for networking, brand exposure, and boosting sales. But here’s the kicker: How do you seamlessly introduce your additional products or services without coming off as pushy? That’s where effective cross-selling strategies step in. If you’re dealing with audiences as diverse as Florida’s Sunshine State itself—tourists, locals, industry experts, casual attendees—you need a tailored approach that speaks to everyone. Ready to turn your conference presence into a cross-selling success story? Let’s dive in!` },
@@ -133,7 +133,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-15T19:23:09+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/How-to-Plan-Interactive-Breaks-with-Team-Building-Activities-in-Florida.jpeg`,
+    thumbnailUrl: `/uploads/2025/05/How-to-Plan-Interactive-Breaks-with-Team-Building-Activities-in-Florida.jpeg`,
     wordCount: 930,
     bodyContent: [
       { type: "p", text: `Planning engaging team-building activities isn’t just about icebreakers or trust falls anymore. It’s about crafting experiences that energize, connect, and inspire your team—all while taking advantage of Florida’s vibrant landscapes and dynamic venues. Want your team to bond over sand dunes, waterfronts, or lush parks? Here’s your ultimate guide to planning memorable, interactive breaks in the Sunshine State!` },
@@ -208,7 +208,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-15T19:18:35+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/The-Importance-of-Ergonomics-in-Stand-Furniture-in-California.jpg`,
+    thumbnailUrl: `/uploads/2025/05/The-Importance-of-Ergonomics-in-Stand-Furniture-in-California.jpg`,
     wordCount: 1072,
     bodyContent: [
       { type: "p", text: `Imagine planning a luxurious getaway in Florida—the sun, the sand, the vibrant nightlife, and endless activities. Now, picture having someone to handle all the details, so your experience is seamless, stress-free, and truly unforgettable. That’s what a VIP concierge service can do for you. In this article, we’ll explore why offering a VIP concierge service in Florida is a game-changer for hospitality providers, travelers, and luxury brands alike.` },
@@ -291,7 +291,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-14T19:56:35+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Secrets-to-Planning-Executive-Lunches-with-Discussion-Tables-in-Texas.jpg`,
+    thumbnailUrl: `/uploads/2025/05/Secrets-to-Planning-Executive-Lunches-with-Discussion-Tables-in-Texas.jpg`,
     wordCount: 989,
     bodyContent: [
       { type: "h2", text: `Secrets to Planning Executive Lunches with Discussion Tables in Texas` },
@@ -362,7 +362,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-14T19:38:24+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/The-Importance-of-Music-and-Sound-Ambiance-in-the-Overall-Experience-in-Texas.jpg`,
+    thumbnailUrl: `/uploads/2025/05/The-Importance-of-Music-and-Sound-Ambiance-in-the-Overall-Experience-in-Texas.jpg`,
     wordCount: 996,
     bodyContent: [
       { type: "h2", text: `The Power of Sound: Why Music and Ambiance Matter in Texas` },
@@ -418,7 +418,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-14T19:35:58+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/How-to-Design-an-Emergency-Plan-Tailored-to-Indoor-Spaces-in-Texas.webp`,
+    thumbnailUrl: `/uploads/2025/05/How-to-Design-an-Emergency-Plan-Tailored-to-Indoor-Spaces-in-Texas.webp`,
     wordCount: 1101,
     bodyContent: [
       { type: "h2", text: `Why You Need a Tailored Emergency Plan for Indoor Spaces in Texas` },
@@ -490,7 +490,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-13T20:42:42+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Tips-for-managing-the-accreditation-of-international-guests-in-New-York.webp`,
+    thumbnailUrl: `/uploads/2025/05/Tips-for-managing-the-accreditation-of-international-guests-in-New-York.webp`,
     wordCount: 1142,
     bodyContent: [
       { type: "p", text: `When it comes to hosting international guests in New York, managing their accreditation can feel like navigating a complex maze. But don’t worry—think of it as orchestrating a smooth symphony where every instrument plays its part perfectly. In this guide, we’ll explore practical tips to streamline the accreditation process, ensuring your guests feel welcomed and your event runs seamlessly.` },
@@ -564,7 +564,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-13T20:34:09+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Ideas-for-organizing-pitch-contests-at-New-York-startup-events.jpg`,
+    thumbnailUrl: `/uploads/2025/05/Ideas-for-organizing-pitch-contests-at-New-York-startup-events.jpg`,
     wordCount: 1006,
     bodyContent: [
       { type: "p", text: `Organizing a successful pitch contest in New York can be a game-changer for startups, investors, and the entire local ecosystem. But how do you design an event that’s engaging, worthwhile, and memorable? Whether you’re a newbie or a seasoned event planner, these ideas will help you craft a compelling pitch contest that energizes your audience and elevates promising startups.` },
@@ -635,7 +635,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-13T20:33:01+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/The-Power-of-Meet-and-Greet-Events-with-Key-Speakers-in-New-York.jpeg`,
+    thumbnailUrl: `/uploads/2025/05/The-Power-of-Meet-and-Greet-Events-with-Key-Speakers-in-New-York.jpeg`,
     wordCount: 924,
     bodyContent: [
       { type: "p", text: `Imagine you’re at a bustling New York conference, surrounded by industry giants and visionaries. The energy is contagious. Now, picture having the golden opportunity to shake hands directly with these influential figures—what if that meet-and-greet could change your career? The value of connecting with key speakers in person in New York is beyond mere networking; it’s about forming genuine bonds and unlocking doors you never imagined. Ready to discover why these events are worth every second? Let’s dive in.` },
@@ -700,7 +700,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-13T20:31:39+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/How-to-incorporate-corporate-identity-into-every-detail-of-New-York-events.jpg`,
+    thumbnailUrl: `/uploads/2025/05/How-to-incorporate-corporate-identity-into-every-detail-of-New-York-events.jpg`,
     wordCount: 891,
     bodyContent: [
       { type: "p", text: `Planning a corporate event in the Big Apple isn’t just about booking a fancy venue or catering a great meal. It’s about weaving your company’s personality, values, and branding into every facet of the event. When done right, your event becomes a memorable experience that reinforces your corporate identity and sets you apart. Curious how? Let’s dive into practical tips to make your NYC event a true reflection of your brand.` },
@@ -755,7 +755,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-12T23:20:58+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/How-to-Integrate-a-Networking-App-into-Your-Conference-in-Texas.jpg`,
+    thumbnailUrl: `/uploads/2025/05/How-to-Integrate-a-Networking-App-into-Your-Conference-in-Texas.jpg`,
     wordCount: 941,
     bodyContent: [
       { type: "h2", text: `Why Networking Apps Are a Texas-Sized Win` },
@@ -810,7 +810,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-09T23:16:12+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/How-to-organize-thematic-tables-to-encourage-specific-discussions-in-New-York.jpg`,
+    thumbnailUrl: `/uploads/2025/05/How-to-organize-thematic-tables-to-encourage-specific-discussions-in-New-York.jpg`,
     wordCount: 943,
     bodyContent: [
       { type: "h2", text: `Why Thematic Tables Spark Magic` },
@@ -865,7 +865,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-09T23:07:29+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/The-importance-of-a-detailed-schedule-on-the-official-New-York-event-website_1.webp`,
+    thumbnailUrl: `/uploads/2025/05/The-importance-of-a-detailed-schedule-on-the-official-New-York-event-website_1.webp`,
     wordCount: 878,
     bodyContent: [
       { type: "h2", text: `Why a Schedule Is Your Event’s North Star` },
@@ -920,7 +920,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-09T23:02:53+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Segmented-email-marketing-strategies-for-different-types-of-attendees-in-New-York.png`,
+    thumbnailUrl: `/uploads/2025/05/Segmented-email-marketing-strategies-for-different-types-of-attendees-in-New-York.png`,
     wordCount: 946,
     bodyContent: [
       { type: "h2", text: `Why Segmentation Is Your Email Superpower` },
@@ -975,7 +975,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-09T23:01:48+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/How-to-measure-the-effectiveness-of-sponsorships-in-corporate-events-in-New-York.jpg`,
+    thumbnailUrl: `/uploads/2025/05/How-to-measure-the-effectiveness-of-sponsorships-in-corporate-events-in-New-York.jpg`,
     wordCount: 970,
     bodyContent: [
       { type: "h2", text: `Why Sponsorships Are a Big Deal` },
@@ -1030,7 +1030,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-08T16:07:51+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Content-Ideas-to-Promote-Your-Event-on-Specialized-Blogs-in-Florida.jpg`,
+    thumbnailUrl: `/uploads/2025/05/Content-Ideas-to-Promote-Your-Event-on-Specialized-Blogs-in-Florida.jpg`,
     wordCount: 948,
     bodyContent: [
       { type: "h2", text: `Why Specialized Blogs Are Your Secret Weapon` },
@@ -1085,7 +1085,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-08T16:06:06+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/How-to-Design-a-Networking-Lounge-for-Senior-Executives-in-Florida.jpg`,
+    thumbnailUrl: `/uploads/2025/05/How-to-Design-a-Networking-Lounge-for-Senior-Executives-in-Florida.jpg`,
     wordCount: 912,
     bodyContent: [
       { type: "h2", text: `Why a Networking Lounge Matters` },
@@ -1140,7 +1140,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-08T16:03:12+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/The-Importance-of-Local-Food-in-the-Attendee-Experience-in-Florida.jpg`,
+    thumbnailUrl: `/uploads/2025/05/The-Importance-of-Local-Food-in-the-Attendee-Experience-in-Florida.jpg`,
     wordCount: 949,
     bodyContent: [
       { type: "h2", text: `Why Food Sets the Tone for Corporate Events` },
@@ -1195,7 +1195,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-08T15:53:49+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Benefits-of-Using-Digital-Checklists-for-Event-Planning-in-Florida.jpg`,
+    thumbnailUrl: `/uploads/2025/05/Benefits-of-Using-Digital-Checklists-for-Event-Planning-in-Florida.jpg`,
     wordCount: 977,
     bodyContent: [
       { type: "h2", text: `Why Digital Checklists Are a Game-Changer` },
@@ -1250,7 +1250,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-07T15:41:10+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Why-invest-in-training-your-in-house-corporate-event-speakers-in-California.webp`,
+    thumbnailUrl: `/uploads/2025/05/Why-invest-in-training-your-in-house-corporate-event-speakers-in-California.webp`,
     wordCount: 957,
     bodyContent: [
       { type: "h2", text: `The Power of a Great Speaker` },
@@ -1305,7 +1305,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-07T15:33:48+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Tips-for-Planning-Corporate-Closing-Events-in-California.webp`,
+    thumbnailUrl: `/uploads/2025/05/Tips-for-Planning-Corporate-Closing-Events-in-California.webp`,
     wordCount: 988,
     bodyContent: [
       { type: "h2", text: `Why Corporate Closing Events Matter` },
@@ -1360,7 +1360,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-07T15:31:16+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/How-to-design-real-time-surveys-for-corporate-events-in-California.webp`,
+    thumbnailUrl: `/uploads/2025/05/How-to-design-real-time-surveys-for-corporate-events-in-California.webp`,
     wordCount: 921,
     bodyContent: [
       { type: "h2", text: `Why Real-Time Surveys Are a Must for Corporate Events` },
@@ -1415,7 +1415,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-07T15:28:45+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Ideas-for-Interactive-Events-with-Touch-Screens-in-California.jpg`,
+    thumbnailUrl: `/uploads/2025/05/Ideas-for-Interactive-Events-with-Touch-Screens-in-California.jpg`,
     wordCount: 1008,
     bodyContent: [
       { type: "h2", text: `Why Touch Screens Are a Game-Changer for Events` },
@@ -1468,7 +1468,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-07T01:08:34+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/The-Importance-of-Giant-Screens-at-Large-Scale-Events-in-Texas.jpg`,
+    thumbnailUrl: `/uploads/2025/05/The-Importance-of-Giant-Screens-at-Large-Scale-Events-in-Texas.jpg`,
     wordCount: 969,
     bodyContent: [
       { type: "p", text: `Picture a massive corporate event in Texas—maybe a tech expo in Austin or a trade show in Houston. Thousands of attendees are buzzing, but how do you make sure everyone feels front-row? Giant screens are your MVP, lighting up the room like a Lone Star sky full of fireworks. In a state where everything’s bigger, these screens aren’t just a nice touch—they’re essential for engagement, visibility, and impact. Let’s dive into why giant screens are a game-changer for your Texas large-scale event.` },
@@ -1528,7 +1528,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-07T01:06:42+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Ways-to-apply-inbound-marketing-in-the-organization-of-corporate-trade-shows-in-Texas.jpg`,
+    thumbnailUrl: `/uploads/2025/05/Ways-to-apply-inbound-marketing-in-the-organization-of-corporate-trade-shows-in-Texas.jpg`,
     wordCount: 1064,
     bodyContent: [
       { type: "p", text: `Picture this: you’re organizing a corporate trade show in Texas, aiming to pack the house with eager attendees in Houston or Austin. How do you draw the right crowd without shouting into the void? Inbound marketing is your secret weapon, like a magnet pulling in prospects with value-packed content and genuine connections. In the Lone Star State’s bold business landscape, these strategies can transform your trade show into a must-attend event. Let’s explore how to harness inbound marketing to make your Texas trade show a roaring success.` },
@@ -1588,7 +1588,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-07T01:04:16+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/How-to-Create-a-Database-Segmented-by-Roles-and-Interests-for-events-in-Texas.jpg`,
+    thumbnailUrl: `/uploads/2025/05/How-to-Create-a-Database-Segmented-by-Roles-and-Interests-for-events-in-Texas.jpg`,
     wordCount: 1021,
     bodyContent: [
       { type: "p", text: `Planning a corporate event in Texas is like herding cattle—you need a clear plan to guide the right folks to the right place. A segmented database, sorted by roles and interests, is your lasso, helping you target attendees with precision for your Austin tech summit or Houston gala. By organizing your audience data, you can craft personalized invites, boost engagement, and make your event a Lone Star hit. Let’s dive into how to build a database that’s as organized as a San Antonio rodeo.` },
@@ -1648,7 +1648,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-07T00:59:54+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Strategies-for-collaboration-with-chambers-of-commerce-and-local-associations-for-events-in-Texas.jpg`,
+    thumbnailUrl: `/uploads/2025/05/Strategies-for-collaboration-with-chambers-of-commerce-and-local-associations-for-events-in-Texas.jpg`,
     wordCount: 987,
     bodyContent: [
       { type: "p", text: `Planning a corporate event in Texas is like firing up a barbecue—get the right folks around the grill, and you’ll have a sizzling success. Chambers of commerce and local associations are your go-to partners, packed with connections and know-how to make your Austin conference or Houston gala shine. These groups are the heartbeat of Texas communities, and collaborating with them can elevate your event to Lone Star legend status. Let’s dive into some smart strategies to team up and make your Texas event unforgettable.` },
@@ -1708,7 +1708,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-05T21:52:17+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Why-graphic-design-is-key-in-the-image-of-a-corporate-event-in-New-York.jpg`,
+    thumbnailUrl: `/uploads/2025/05/Why-graphic-design-is-key-in-the-image-of-a-corporate-event-in-New-York.jpg`,
     wordCount: 985,
     bodyContent: [
       { type: "p", text: `Picture your corporate event in New York City—a sleek conference in Manhattan or a chic gala in Brooklyn. You’ve got the venue, the speakers, the vibe. But what’s the glue that ties it all together? Graphic design. It’s like the perfect lighting on a Broadway stage, making every moment pop and leaving a lasting impression. In a city as visually electric as New York, stellar graphic design isn’t just nice—it’s non-negotiable. Let’s dive into why it’s the secret sauce for your event’s image.` },
@@ -1764,7 +1764,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-05T21:49:11+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Ideas-for-virtual-reality-experiences-at-corporate-events-in-New-York-City.jpg`,
+    thumbnailUrl: `/uploads/2025/05/Ideas-for-virtual-reality-experiences-at-corporate-events-in-New-York-City.jpg`,
     wordCount: 998,
     bodyContent: [
       { type: "p", text: `Picture hosting a corporate event in New York City, where the skyline sparkles and innovation hums like a subway train. You want to wow your attendees, right? Virtual reality (VR) experiences are like dropping a high-tech cherry bomb into your event, blending NYC’s cutting-edge vibe with immersive fun. From team-building adventures to product demos, VR can make your Manhattan conference unforgettable. Let’s explore some creative ideas to bring VR magic to your NYC corporate event.` },
@@ -1824,7 +1824,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-05T21:47:12+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/How-to-incorporate-local-culture-into-your-New-York-event-program.jpg`,
+    thumbnailUrl: `/uploads/2025/05/How-to-incorporate-local-culture-into-your-New-York-event-program.jpg`,
     wordCount: 993,
     bodyContent: [
       { type: "p", text: `Planning a corporate event in New York is like staging a Broadway hit—you’ve got to capture the city’s electric vibe to make it unforgettable. From the gritty charm of Brooklyn to the polished buzz of Manhattan, New York’s local culture is a treasure chest of inspiration. Infusing your event with these elements is like adding hot sauce to a dish—it kicks everything up a notch. Let’s dive into how to weave New York’s unique flavor into your event program for a show-stopping experience.` },
@@ -1880,7 +1880,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-05T21:31:50+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/How-to-Adapt-Your-Event-to-Current-Health-Protocols-in-New-York.jpg`,
+    thumbnailUrl: `/uploads/2025/05/How-to-Adapt-Your-Event-to-Current-Health-Protocols-in-New-York.jpg`,
     wordCount: 981,
     bodyContent: [
       { type: "p", text: `Planning a corporate event in New York is like directing a Broadway show—every detail needs to dazzle, but safety is the star of the stage. With health protocols still shaping how we gather, adapting your event to keep attendees secure while capturing that Empire State energy is a must. Whether you’re hosting a conference in Manhattan or a retreat in the Hudson Valley, let’s explore how to align your event with New York’s current health guidelines and keep the vibe electric.` },
@@ -1936,7 +1936,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-02T21:00:29+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/How-to-Assess-if-Your-Conference-Needs-a-Simultaneous-Translation-Team-in-Florida.jpg`,
+    thumbnailUrl: `/uploads/2025/05/How-to-Assess-if-Your-Conference-Needs-a-Simultaneous-Translation-Team-in-Florida.jpg`,
     wordCount: 989,
     bodyContent: [
       { type: "p", text: `Planning a corporate conference in Florida is like orchestrating a vibrant Miami salsa band—every element needs to sync perfectly to keep the crowd engaged. But what if your attendees speak different languages? A simultaneous translation team can bridge that gap, ensuring everyone hears your message loud and clear. In a state as diverse as Florida, deciding whether you need this service is crucial. Let’s explore how to assess if your conference calls for a translation team to make it a Sunshine State success.` },
@@ -1992,7 +1992,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-02T20:57:54+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Social-Media-Contest-Techniques-to-Build-Corporate-Pre-Event-Anticipation-in-Florida.jpg`,
+    thumbnailUrl: `/uploads/2025/05/Social-Media-Contest-Techniques-to-Build-Corporate-Pre-Event-Anticipation-in-Florida.jpg`,
     wordCount: 1014,
     bodyContent: [
       { type: "p", text: `Imagine you’re planning a corporate event in Florida—a tech conference in Miami or a leadership summit in Orlando. You want the buzz to hit like a wave crashing on South Beach, but how do you get people talking? Social media contests are your secret sauce, sparking excitement and drawing crowds like moths to a Sunshine State flame. Let’s dive into some creative contest techniques to whip up pre-event anticipation for your Florida corporate event.` },
@@ -2052,7 +2052,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-02T20:52:31+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Ideas-for-Creating-and-Effectively-Distributing-a-Corporate-Press-Kit-for-events-in-Florida.jpg`,
+    thumbnailUrl: `/uploads/2025/05/Ideas-for-Creating-and-Effectively-Distributing-a-Corporate-Press-Kit-for-events-in-Florida.jpg`,
     wordCount: 1092,
     bodyContent: [
       { type: "p", text: `Picture your corporate event in Florida—maybe a tech summit in Miami or a leadership retreat in Orlando. You’ve got the venue locked and the agenda sizzling, but how do you get the word out to the right people? A corporate press kit is like a shiny key that unlocks media attention, giving journalists everything they need to cover your event with a Sunshine State flair. Let’s dive into how to craft a killer press kit and distribute it like a pro to make your Florida event the talk of the town.` },
@@ -2112,7 +2112,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-02T20:48:11+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/How-to-Adapt-Your-Corporate-Event-to-Current-Health-Protocols-in-Florida.jpg`,
+    thumbnailUrl: `/uploads/2025/05/How-to-Adapt-Your-Corporate-Event-to-Current-Health-Protocols-in-Florida.jpg`,
     wordCount: 1021,
     bodyContent: [
       { type: "p", text: `Planning a corporate event in Florida is like choreographing a lively salsa dance—you want it to be vibrant and fun, but every step needs to be safe and precise. With health protocols still shaping how we gather, adapting your event to keep attendees secure while maintaining that Sunshine State energy is key. Whether you’re hosting a conference in Miami or a retreat in Orlando, let’s explore how to tweak your corporate event to align with Florida’s current health guidelines and keep everyone smiling.` },
@@ -2168,7 +2168,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-01T18:14:26+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/The-Importance-of-Accessibility-in-Coporate-Conferences-in-California.jpg`,
+    thumbnailUrl: `/uploads/2025/05/The-Importance-of-Accessibility-in-Coporate-Conferences-in-California.jpg`,
     wordCount: 961,
     bodyContent: [
       { type: "p", text: `Picture this: you’re hosting a corporate conference in California, the land of innovation and sun-soaked vibes. Your agenda sparkles with big-name speakers, but have you made sure everyone can join the party? Accessibility is like rolling out a welcome mat wide enough for all, ensuring every attendee, regardless of ability, feels included. In a state as diverse as California, accessibility isn’t just a checkbox—it’s a game-changer for your conference’s success. Let’s unpack why it matters and how to make it happen.` },
@@ -2224,7 +2224,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-01T18:12:26+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/How-to-Create-a-Unique-Welcome-Experience-for-Attendees-of-Your-Corporate-Events-in-California.jpg`,
+    thumbnailUrl: `/uploads/2025/05/How-to-Create-a-Unique-Welcome-Experience-for-Attendees-of-Your-Corporate-Events-in-California.jpg`,
     wordCount: 1024,
     bodyContent: [
       { type: "p", text: `Rolling out the red carpet for your corporate event in California is like setting the stage for a blockbuster movie—first impressions matter, and a stellar welcome experience hooks attendees from the get-go. Whether you’re hosting a tech summit in Silicon Valley or a creative conference in Los Angeles, California’s vibrant energy demands a greeting that’s as unforgettable as a Pacific sunset. Let’s dive into how to craft a welcome that wows your guests and sets the tone for an epic event.` },
@@ -2280,7 +2280,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-01T18:06:22+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Techniques-to-Measure-the-Economic-Impact-in-the-Host-City-of-Your-Corporate-Event-in-California-1.webp`,
+    thumbnailUrl: `/uploads/2025/05/Techniques-to-Measure-the-Economic-Impact-in-the-Host-City-of-Your-Corporate-Event-in-California-1.webp`,
     wordCount: 1079,
     bodyContent: [
       { type: "p", text: `Hosting a corporate event in California is like dropping a shiny pebble into a pond—the ripples of economic impact spread far and wide. Whether it’s a tech summit in San Francisco or a finance conference in Los Angeles, your event can pump serious cash into the local economy. But how do you measure those dollars and cents? Let’s unpack some smart techniques to quantify the economic boost your event brings to its California host city, making you the hero of both your company and the community.` },
@@ -2336,7 +2336,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-01T18:02:49+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Ways-to-attract-the-specialized-press-to-your-business-conference-in-California.webp`,
+    thumbnailUrl: `/uploads/2025/05/Ways-to-attract-the-specialized-press-to-your-business-conference-in-California.webp`,
     wordCount: 1045,
     bodyContent: [
       { type: "p", text: `Hosting a business conference in California is like throwing a blockbuster premiere in Hollywood—you need the right buzz to draw the crowd that matters. Getting the specialized press to cover your event can skyrocket its visibility, credibility, and impact. But how do you catch the eye of journalists who are bombarded with invites daily? Let’s dive into actionable strategies to make your California conference the talk of the trade publications and industry blogs.` },
@@ -2392,7 +2392,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-04-30T15:47:27+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/The-importance-of-a-dress-rehearsal-before-opening-the-doors-for-corporate-events-in-Texas.jpg`,
+    thumbnailUrl: `/uploads/2025/05/The-importance-of-a-dress-rehearsal-before-opening-the-doors-for-corporate-events-in-Texas.jpg`,
     wordCount: 1034,
     bodyContent: [
       { type: "p", text: `Picture yourself gearing up for a corporate event in Texas—a high-stakes conference in Austin or a swanky gala in Dallas. You’ve nailed the venue, the catering’s on point, and the guest list is stacked. But are you really ready to swing open those doors? A dress rehearsal is like the final practice lap before a Texas-sized race, ensuring every detail pops and nothing trips you up. Let’s dive into why a dress rehearsal is your ticket to a flawless corporate event in the Lone Star State.` },
@@ -2448,7 +2448,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-04-30T15:45:57+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/How-to-Design-a-Schedule-of-Short-and-Agile-Presentations-in-Texas.webp`,
+    thumbnailUrl: `/uploads/2025/05/How-to-Design-a-Schedule-of-Short-and-Agile-Presentations-in-Texas.webp`,
     wordCount: 1086,
     bodyContent: [
       { type: "p", text: `Planning a corporate event in Texas with short, punchy presentations is like choreographing a lively two-step dance—every move needs to be sharp, engaging, and perfectly timed. In the Lone Star State, where bold ideas and big energy reign, your presentation schedule must keep attendees hooked without dragging on. Let’s dive into how to craft a schedule of agile, impactful talks that leave your Texas audience buzzing with excitement.` },
@@ -2508,7 +2508,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-04-30T15:41:25+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/The-Impact-of-Social-Listening-on-Improving-Your-Event-in-Texas.webp`,
+    thumbnailUrl: `/uploads/2025/05/The-Impact-of-Social-Listening-on-Improving-Your-Event-in-Texas.webp`,
     wordCount: 1216,
     bodyContent: [
       { type: "p", text: `Picture this: you’re planning a corporate event in Texas, aiming to dazzle attendees with a Lone Star-sized experience. But how do you know what your audience really wants? Enter social listening, your secret weapon for tuning into the chatter and turning your event into a showstopper. It’s like having a front-row seat to your audience’s thoughts, letting you craft an event that hits all the right notes. Let’s explore how social listening can transform your Texas event into a unforgettable success.` },
@@ -2560,7 +2560,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-04-30T15:40:17+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Ways-to-Build-Momentum-Before-Launching-a-Corporate-event-in-Texas.jpeg`,
+    thumbnailUrl: `/uploads/2025/05/Ways-to-Build-Momentum-Before-Launching-a-Corporate-event-in-Texas.jpeg`,
     wordCount: 1272,
     bodyContent: [
       { type: "p", text: `Planning a corporate event in Texas is like revving up a muscle car before a big race. You need to build momentum, spark excitement, and ensure everything’s firing on all cylinders before the big day. Whether you’re hosting a conference in Austin, a gala in Dallas, or a team-building retreat in Houston, the Lone Star State’s vibrant energy demands a launch that’s bold and unforgettable. Let’s dive into practical, actionable ways to create buzz and ensure your event is a runaway success.` },
@@ -2614,7 +2614,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-17T22:13:33+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/El-papel-del-organizador-en-eventos-corporativos-exitosos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/El-papel-del-organizador-en-eventos-corporativos-exitosos.jpg`,
     wordCount: 922,
     bodyContent: [
       { type: "p", text: `A successful corporate event doesn’t happen by chance; behind every perfect detail is the figure of the organizer. This role is the axis that connects planning, execution, and experience, ensuring that everything works like clockwork. But what exactly does an organizer do to make an event shine? Let’s dive in and discover!` },
@@ -2727,7 +2727,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-17T22:09:11+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-manejar-imprevistos-en-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-manejar-imprevistos-en-eventos-corporativos-internos.jpg`,
     wordCount: 920,
     bodyContent: [
       { type: "h2", text: `The Importance of Being Prepared for Unforeseen Events in Corporate Events` },
@@ -2836,7 +2836,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-17T22:01:28+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Los-mejores-souvenirs-para-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Los-mejores-souvenirs-para-eventos-corporativos-internos.jpg`,
     wordCount: 999,
     bodyContent: [
       { type: "p", text: `Who doesn’t love receiving a gift at the end of an event? Souvenirs are more than just small tokens; they’re a way to say «thank you for being here» and leave a lasting impression on attendees. In internal corporate events, souvenirs not only bring joy but also reinforce the company culture. Wondering how to choose the best ones? Here’s everything you need to know.` },
@@ -2957,7 +2957,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-17T21:53:32+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-elegir-el-catering-ideal-para-tus-eventos-corporativos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-elegir-el-catering-ideal-para-tus-eventos-corporativos.jpg`,
     wordCount: 887,
     bodyContent: [
       { type: "h2", text: `Why Is It Important to Choose the Right Catering for Corporate Events?` },
@@ -3066,7 +3066,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-14T21:54:41+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Actividades-recreativas-para-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Actividades-recreativas-para-eventos-corporativos-internos.jpg`,
     wordCount: 680,
     bodyContent: [
       { type: "p", text: `Corporate events don’t have to be just long meetings. Incorporating recreational activities can transform them into engaging experiences that boost motivation, strengthen team bonds, and create a positive workplace environment. Below are some ideas to make your events more dynamic and effective.` },
@@ -3171,7 +3171,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-14T21:44:50+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-personalizar-eventos-corporativos-internos-para-tu-equipo.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-personalizar-eventos-corporativos-internos-para-tu-equipo.jpg`,
     wordCount: 898,
     bodyContent: [
       { type: "h2", text: ` Why is it Important to Personalize Internal Corporate Events?` },
@@ -3261,7 +3261,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-14T21:40:39+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Eventos-corporativos-como-integrarlos-en-tu-estrategia-de-recursos-humanos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Eventos-corporativos-como-integrarlos-en-tu-estrategia-de-recursos-humanos.jpg`,
     wordCount: 937,
     bodyContent: [
       { type: "h2", text: ` Why Corporate Events Are Essential for Human Resources` },
@@ -3351,7 +3351,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-14T21:34:31+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-hacer-networking-en-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-hacer-networking-en-eventos-corporativos-internos.jpg`,
     wordCount: 608,
     bodyContent: [
       { type: "p", text: `When we think of «networking,» we often imagine external events where we connect with people from other companies. But have you ever considered the power of networking within your own organization? Internal corporate events are a goldmine for building relationships, sharing ideas, and discovering opportunities. Here’s everything you need to know to become an internal networking expert!` },
@@ -3390,7 +3390,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-07T17:36:55+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Ideas-de-eventos-corporativos-para-celebraciones-especiales.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Ideas-de-eventos-corporativos-para-celebraciones-especiales.jpg`,
     wordCount: 941,
     bodyContent: [
       { type: "h2", text: `Why Organize Special Celebrations in the Corporate World?` },
@@ -3499,7 +3499,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-07T17:20:51+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Las-mejores-fechas-para-organizar-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Las-mejores-fechas-para-organizar-eventos-corporativos-internos.jpg`,
     wordCount: 916,
     bodyContent: [
       { type: "p", text: `Choosing the right date for an internal corporate event is not just a logistical detail, it’s a strategic decision. Poor timing can reduce attendance and affect the event’s objectives, while a well-chosen date can guarantee an unforgettable experience. Here are the keys to getting it right on the calendar.` },
@@ -3610,7 +3610,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-07T17:06:47+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-fomentar-el-liderazgo-en-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-fomentar-el-liderazgo-en-eventos-corporativos-internos.jpg`,
     wordCount: 935,
     bodyContent: [
       { type: "p", text: `Have you ever wondered how some teams manage to achieve seemingly impossible goals while others get stuck? The answer, in many cases, lies in leadership. A good leader inspires, guides, and brings out the best in their team. And yes, internal corporate events are the perfect place to discover and enhance those talents. Here’s how to do it.` },
@@ -3713,7 +3713,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-07T16:07:38+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-convertir-un-evento-corporativo-en-una-experiencia-inolvidable.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-convertir-un-evento-corporativo-en-una-experiencia-inolvidable.jpg`,
     wordCount: 964,
     bodyContent: [
       { type: "p", text: `Have you ever wondered why some companies retain their talent for years while others face constant turnover? The answer might lie in a detail often overlooked: corporate events. These are not just opportunities to gather but can also be the key to retaining top employees.` },
@@ -3809,7 +3809,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-07T15:21:43+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Organizacion-de-eventos-corporativos-tendencias-y-novedades.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Organizacion-de-eventos-corporativos-tendencias-y-novedades.jpg`,
     wordCount: 813,
     bodyContent: [
       { type: "p", text: `Have you ever wondered why some companies retain their talent for years while others face constant turnover? The answer might lie in a detail often overlooked: corporate events. These are not just opportunities to gather but can also be the key to retaining top employees.` },
@@ -3906,7 +3906,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-07T15:18:21+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/El-impacto-de-los-eventos-corporativos-en-la-retencion-de-empleados.jpg`,
+    thumbnailUrl: `/uploads/2025/01/El-impacto-de-los-eventos-corporativos-en-la-retencion-de-empleados.jpg`,
     wordCount: 794,
     bodyContent: [
       { type: "h2", text: `Why Are Corporate Events Essential for Talent Retention?` },
@@ -3999,7 +3999,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-07T15:05:03+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-garantizar-la-seguridad-en-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-garantizar-la-seguridad-en-eventos-corporativos-internos.jpg`,
     wordCount: 792,
     bodyContent: [
       { type: "h2", text: `The Importance of Safety in Internal Corporate Events` },
@@ -4092,7 +4092,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-07T14:58:27+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Eventos-corporativos-tematicos-ideas-para-sorprender-a-tu-equipo.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Eventos-corporativos-tematicos-ideas-para-sorprender-a-tu-equipo.jpg`,
     wordCount: 827,
     bodyContent: [
       { type: "h2", text: `Why Choose a Theme for a Corporate Event?` },
@@ -4180,7 +4180,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-05T00:23:40+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-incorporar-tecnologia-en-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-incorporar-tecnologia-en-eventos-corporativos-internos.jpg`,
     wordCount: 778,
     bodyContent: [
       { type: "p", text: `In the digital age, organizing internal corporate events is no longer the same. Technology not only facilitates the process but also completely transforms the attendees’ experience. If you’ve ever wondered how to integrate these tools into your meetings or internal activities, this article will provide the answers you need.` },
@@ -4269,7 +4269,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-05T00:18:45+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Los-principales-desafios-al-organizar-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Los-principales-desafios-al-organizar-eventos-corporativos-internos.jpg`,
     wordCount: 708,
     bodyContent: [
       { type: "p", text: `What Are Internal Corporate Events, and Why Are They Essential?` },
@@ -4346,7 +4346,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-05T00:13:34+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-aprovechar-los-eventos-corporativos-para-mejorar-la-productividad.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-aprovechar-los-eventos-corporativos-para-mejorar-la-productividad.jpg`,
     wordCount: 777,
     bodyContent: [
       { type: "p", text: `When we talk about business productivity, many think of technical strategies, but have you considered that a well-planned corporate event can be just as powerful? Today, I’ll tell you how these gatherings can become the secret weapon to take your team to the next level.` },
@@ -4428,7 +4428,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-05T00:04:38+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Los-mejores-lugares-para-eventos-corporativos-internos-en-tu-ciudad.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Los-mejores-lugares-para-eventos-corporativos-internos-en-tu-ciudad.jpg`,
     wordCount: 801,
     bodyContent: [
       { type: "p", text: `Have you ever attended a corporate event where the venue seemed chosen at random? The truth is that the space can make the difference between a memorable event and one that goes unnoticed. If you’re looking for the best places to organize internal events in your city, here’s a complete guide to choosing the perfect venue!` },
@@ -4517,7 +4517,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-04T23:57:44+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-fomentar-la-creatividad-en-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-fomentar-la-creatividad-en-eventos-corporativos-internos.jpg`,
     wordCount: 728,
     bodyContent: [
       { type: "p", text: `Creativity is not just for artists or writers; it’s also the spark that can transform an ordinary corporate event into an unforgettable experience. How can we leverage it to the fullest for our internal events? Here, I share practical strategies to make creativity the driving force that propels your team towards success.` },
@@ -4608,7 +4608,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-04T23:51:42+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-gestionar-el-estres-en-la-planificacion-de-eventos-corporativos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-gestionar-el-estres-en-la-planificacion-de-eventos-corporativos.jpg`,
     wordCount: 796,
     bodyContent: [
       { type: "p", text: `Organizing a corporate event can feel like running a marathon while juggling. Tight deadlines, high expectations, and the countless decisions to be made can overwhelm anyone. But don’t worry, here are some tips to help you manage stress and stay in control throughout the process.` },
@@ -4696,7 +4696,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-04T23:43:00+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Beneficios-de-contratar-una-agencia-para-organizar-tus-eventos-corporativos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Beneficios-de-contratar-una-agencia-para-organizar-tus-eventos-corporativos.jpg`,
     wordCount: 814,
     bodyContent: [
       { type: "p", text: `If you’ve ever organized a corporate event, you know that the task can be as exciting as it is exhausting. From finding vendors to coordinating every detail, it’s a time-consuming, energy-draining, and sometimes patience-testing job. This is where a specialized agency becomes your best ally. Ready to find out why you should delegate this task?` },
@@ -4777,7 +4777,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-04T23:36:59+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Los-secretos-para-crear-eventos-corporativos-internos-inolvidables.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Los-secretos-para-crear-eventos-corporativos-internos-inolvidables.jpg`,
     wordCount: 723,
     bodyContent: [
       { type: "p", text: `Who doesn’t enjoy a good corporate event? Those moments when the team gathers, shares, and builds connections beyond daily tasks are essential for any company. But how can you make an internal event more than just a simple gathering? Here, I’ll share the secrets you need to make your employees talk about the event for weeks (or even months).` },
@@ -4866,7 +4866,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-03T23:40:38+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-mejorar-la-comunicacion-interna-con-eventos-corporativos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-mejorar-la-comunicacion-interna-con-eventos-corporativos.jpg`,
     wordCount: 1027,
     bodyContent: [
       { type: "p", text: `Have you ever noticed that communication within your company could be better? You’re not alone! Effective internal communication is the backbone of any successful organization. One of the best ways to strengthen it is through well-organized corporate events. But how can you ensure these events truly improve communication within your company? Let’s dive in!` },
@@ -4959,7 +4959,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-03T23:04:00+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Organizacion-de-eventos-hibridos-una-solucion-innovadora-para-empresas.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Organizacion-de-eventos-hibridos-una-solucion-innovadora-para-empresas.jpg`,
     wordCount: 1027,
     bodyContent: [
       { type: "p", text: `Have you ever wondered how to take your corporate events to the next level without leaving anyone out? Hybrid events are the innovative solution many companies are adopting today. Combining the best of in-person meetings with the flexibility of virtual formats can transform how your company celebrates, communicates, and motivates its team. Want to know how to organize a successful hybrid event? Let’s dive in!` },
@@ -5062,7 +5062,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-03T22:53:25+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Eventos-corporativos-como-adaptarlos-a-la-cultura-de-tu-empresa.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Eventos-corporativos-como-adaptarlos-a-la-cultura-de-tu-empresa.jpg`,
     wordCount: 869,
     bodyContent: [
       { type: "p", text: `Have you ever attended a corporate event that just didn’t resonate with you? It’s frustrating! Adapting your corporate events to your company’s culture not only enhances the employee experience, but it also strengthens the identity and values of the organization. Want to know how to achieve this? Let’s discover it together!` },
@@ -5142,7 +5142,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-03T22:47:15+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Los-mejores-temas-para-eventos-corporativos-de-fin-de-ano.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Los-mejores-temas-para-eventos-corporativos-de-fin-de-ano.jpg`,
     wordCount: 901,
     bodyContent: [
       { type: "p", text: `Are you planning your company’s year-end event and want it to be unforgettable? Choosing the perfect theme can transform your gathering into a memorable experience for all attendees. From elegant galas to fun themed parties, here are the best themes for year-end corporate events that will surely delight your team. Let’s discover which one is ideal for you!` },
@@ -5231,7 +5231,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-30T23:54:17+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-incluir-actividades-sostenibles-en-tus-eventos-corporativos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-incluir-actividades-sostenibles-en-tus-eventos-corporativos.jpg`,
     wordCount: 988,
     bodyContent: [
       { type: "p", text: `Have you ever thought about how to make your next corporate event not only successful but also eco-friendly? Incorporating sustainable activities into your events not only shows environmental responsibility but can also strengthen your company’s image and motivate your team. Wondering where to start? Here are some foolproof tips to make your events as green as they are unforgettable!` },
@@ -5330,7 +5330,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-30T23:47:26+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Tips-para-optimizar-el-presupuesto-de-tus-eventos-corporativos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Tips-para-optimizar-el-presupuesto-de-tus-eventos-corporativos.jpg`,
     wordCount: 946,
     bodyContent: [
       { type: "p", text: `Worried about your next corporate event going over budget? You’re not alone! Organizing successful events without overspending is entirely possible. Here are foolproof tips to optimize your corporate event budget, ensuring every dollar invested delivers maximum value.` },
@@ -5437,7 +5437,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-30T23:38:13+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-crear-experiencias-unicas-en-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-crear-experiencias-unicas-en-eventos-corporativos-internos.jpg`,
     wordCount: 1087,
     bodyContent: [
       { type: "p", text: `Have you ever attended a corporate event that left you feeling indifferent? Not anymore! Creating unique experiences in internal corporate events can transform how your team perceives these gatherings. Imagine an event that is not only productive but also unforgettable. Interested in learning how to achieve this? Keep reading!` },
@@ -5544,7 +5544,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-30T23:29:36+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Eventos-corporativos-internos-estrategias-para-fomentar-la-cohesion-del-equipo.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Eventos-corporativos-internos-estrategias-para-fomentar-la-cohesion-del-equipo.jpg`,
     wordCount: 937,
     bodyContent: [
       { type: "p", text: `Have you noticed how a well-cohesive team can transform a company’s dynamics? Internal corporate events are a powerful tool to strengthen bonds among team members, improve communication, and boost productivity. In this article, we will share effective strategies for planning and executing events that truly foster team cohesion.` },
@@ -5617,7 +5617,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-29T20:13:29+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Los-mejores-juegos-para-integrar-equipos-en-eventos-corporativos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Los-mejores-juegos-para-integrar-equipos-en-eventos-corporativos.jpg`,
     wordCount: 726,
     bodyContent: [
       { type: "p", text: `Do corporate events often feel monotonous and unproductive? You’re not alone! Team-building games can transform a dull meeting into an unforgettable experience. Here, we explore the best options to foster camaraderie among colleagues and improve workplace dynamics.` },
@@ -5692,7 +5692,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-29T19:51:29+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-medir-el-exito-de-tus-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-medir-el-exito-de-tus-eventos-corporativos-internos.jpg`,
     wordCount: 891,
     bodyContent: [
       { type: "p", text: `Organizing an internal corporate event is a great step toward motivating your team, reinforcing values, and improving workplace morale. But how do you know if it was truly successful? Measuring the impact of these events is essential to justify the investment and fine-tune future editions. In this article, I’ll show you how to do it effectively.` },
@@ -5858,7 +5858,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-29T03:07:19+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Que-considerar-al-contratar-un-organizador-de-eventos-corporativos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Que-considerar-al-contratar-un-organizador-de-eventos-corporativos.jpg`,
     wordCount: 912,
     bodyContent: [
       { type: "h2", text: `Introduction` },
@@ -5952,7 +5952,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-28T03:52:29+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Errores-comunes-al-organizar-eventos-corporativos-y-como-evitarlos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Errores-comunes-al-organizar-eventos-corporativos-y-como-evitarlos.jpg`,
     wordCount: 740,
     bodyContent: [
       { type: "h2", text: `Introduction` },
@@ -6030,7 +6030,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-28T03:49:52+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Beneficios-de-organizar-eventos-corporativos-internos-para-tu-empresa.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Beneficios-de-organizar-eventos-corporativos-internos-para-tu-empresa.jpg`,
     wordCount: 712,
     bodyContent: [
       { type: "h2", text: `Introduction` },
@@ -6108,7 +6108,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-28T03:46:56+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Tendencias-en-eventos-corporativos-para-2025.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Tendencias-en-eventos-corporativos-para-2025.jpg`,
     wordCount: 710,
     bodyContent: [
       { type: "h2", text: `Introduction` },
@@ -6186,7 +6186,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-28T03:42:43+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Actividades-de-team-building-para-eventos-corporativos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Actividades-de-team-building-para-eventos-corporativos.jpg`,
     wordCount: 948,
     bodyContent: [
       { type: "h2", text: `Introduction` },
@@ -6286,7 +6286,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-28T03:38:50+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-elegir-el-mejor-lugar-para-tus-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-elegir-el-mejor-lugar-para-tus-eventos-corporativos-internos.jpg`,
     wordCount: 954,
     bodyContent: [
       { type: "p", text: ` ` },
@@ -6387,7 +6387,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-28T03:35:14+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/La-importancia-de-los-eventos-corporativos-para-la-motivacion-del-equipo.jpg`,
+    thumbnailUrl: `/uploads/2025/01/La-importancia-de-los-eventos-corporativos-para-la-motivacion-del-equipo.jpg`,
     wordCount: 920,
     bodyContent: [
       { type: "p", text: ` ` },
@@ -6482,7 +6482,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-28T03:30:31+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Ideas-innovadoras-para-eventos-corporativos-que-inspiran-a-tu-personal.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Ideas-innovadoras-para-eventos-corporativos-que-inspiran-a-tu-personal.jpg`,
     wordCount: 730,
     bodyContent: [
       { type: "p", text: ` ` },
@@ -6549,7 +6549,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-28T03:23:19+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-organizar-eventos-corporativos-exitosos-para-tu-equipo-interno.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-organizar-eventos-corporativos-exitosos-para-tu-equipo-interno.jpg`,
     wordCount: 1429,
     bodyContent: [
       { type: "h2", text: `Introduction` },
@@ -6695,7 +6695,7 @@ export const postsEn2: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-22T17:58:55+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Pasos-para-planificar-un-evento-corporativo-memorable.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Pasos-para-planificar-un-evento-corporativo-memorable.jpg`,
     wordCount: 1447,
     bodyContent: [
       { type: "p", text: ` ` },

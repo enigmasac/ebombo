@@ -23,7 +23,7 @@ export async function generateMetadata({
   };
 }
 
-const IMG = "https://ebombo.com/wp-content/uploads/merchandising";
+const IMG = "/uploads/merchandising";
 
 const categoriesData = [
   {
@@ -91,7 +91,7 @@ export default async function Merchandising({
             </div>
             <div className="flex items-center justify-center md:w-[45%]">
               <Image
-                src="https://ebombo.com/wp-content/uploads/2026/01/ebombomertch-e1768602976559.png"
+                src="/uploads/2026/01/ebombomertch-e1768602976559.png"
                 alt="Merchandising eBombo"
                 width={1024}
                 height={978}

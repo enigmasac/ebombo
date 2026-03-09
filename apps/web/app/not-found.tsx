@@ -18,7 +18,7 @@ export default function NotFound() {
       >
         <div style={{ textAlign: "center", padding: "2rem", maxWidth: "500px" }}>
           <img
-            src="https://ebombo.com/wp-content/uploads/2025/11/logoEbomboAColor.webp"
+            src="/uploads/2025/11/logoEbomboAColor.webp"
             alt="eBombo"
             width={180}
             height={48}

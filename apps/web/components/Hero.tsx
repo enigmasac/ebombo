@@ -6,10 +6,10 @@ import Link from "next/link";
 import { Lang, getDictionary, localePath } from "@/lib/i18n";
 
 const heroImages = [
-  "https://ebombo.com/wp-content/uploads/2025/12/589815987_18094649159498979_6288247503322878337_n.jpg",
-  "https://ebombo.com/wp-content/uploads/2025/12/588720329_18094649147498979_1544328596509381935_n.jpg",
-  "https://ebombo.com/wp-content/uploads/2025/12/589152199_18094649138498979_5046094930520157946_n.jpg",
-  "https://ebombo.com/wp-content/uploads/2025/12/588293929_18094649129498979_3666561184829064941_n.jpg",
+  "/uploads/2025/12/589815987_18094649159498979_6288247503322878337_n.jpg",
+  "/uploads/2025/12/588720329_18094649147498979_1544328596509381935_n.jpg",
+  "/uploads/2025/12/589152199_18094649138498979_5046094930520157946_n.jpg",
+  "/uploads/2025/12/588293929_18094649129498979_3666561184829064941_n.jpg",
 ];
 
 export default function Hero({ lang = "es" }: { lang?: Lang }) {
@@ -39,7 +39,7 @@ export default function Hero({ lang = "es" }: { lang?: Lang }) {
             <div className="flex items-center justify-center gap-[5px] md:justify-end">
               <span className="font-roboto text-base text-white">{t.hero.con}</span>
               <Image
-                src="https://ebombo.com/wp-content/uploads/2025/11/ebombo-white.png"
+                src="/uploads/2025/11/ebombo-white.png"
                 alt="eBombo"
                 width={84}
                 height={22}

@@ -3,7 +3,7 @@ import { Poppins, Roboto } from "next/font/google";
 import { getDictionary, isValidLang } from "@/lib/i18n";
 import type { Lang } from "@/lib/i18n";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://ebombo.enigmasac.com";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://ebombo.com";
 
 const poppins = Poppins({
   subsets: ["latin"],

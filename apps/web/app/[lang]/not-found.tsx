@@ -6,7 +6,7 @@ export default function NotFound() {
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-ebombo-bg via-ebombo-light-purple to-ebombo-bg px-6">
       <div className="max-w-[500px] text-center">
         <Image
-          src="https://ebombo.com/wp-content/uploads/2025/11/logoEbomboAColor.webp"
+          src="/uploads/2025/11/logoEbomboAColor.webp"
           alt="eBombo"
           width={180}
           height={48}

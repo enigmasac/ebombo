@@ -222,7 +222,7 @@ export default function Footer({ lang = "es" as Lang }: { lang?: Lang }) {
 
       <div className="mx-auto mt-[2%] flex max-w-container flex-col items-center gap-3 rounded-[18px] bg-white p-[5%] shadow-[0_0_10px_rgba(0,0,0,0.05)] md:p-[2%]">
         <Image
-          src="https://ebombo.com/wp-content/uploads/2025/11/logoEbomboAColor.webp"
+          src="/uploads/2025/11/logoEbomboAColor.webp"
           alt="eBombo logo"
           width={200}
           height={53}

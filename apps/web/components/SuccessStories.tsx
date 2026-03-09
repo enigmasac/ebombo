@@ -7,7 +7,7 @@ const stories = [
   {
     title: "Penka Corporativa Uruguay",
     image:
-      "https://ebombo.com/wp-content/uploads/2026/03/Penka-Corporativa-Uruguay-.jpg",
+      "/uploads/2026/03/Penka-Corporativa-Uruguay-.jpg",
     badge: "Deporte",
     duration: "30 min",
     href: "/experiencias/penka-corporativa-uruguay",
@@ -15,7 +15,7 @@ const stories = [
   {
     title: "Agencia de Eventos en Madrid",
     image:
-      "https://ebombo.com/wp-content/uploads/2026/03/Agencia-de-Eventos-en-Madrid-.jpg",
+      "/uploads/2026/03/Agencia-de-Eventos-en-Madrid-.jpg",
     badge: "Outdoor",
     duration: "30 min",
     href: "/experiencias/agencia-eventos-madrid",
@@ -23,7 +23,7 @@ const stories = [
   {
     title: "Clase de Mixología para Team Building",
     image:
-      "https://ebombo.com/wp-content/uploads/2026/01/Clase-de-Mixologia-de-Cocteles-para-Team-Building.jpg",
+      "/uploads/2026/01/Clase-de-Mixologia-de-Cocteles-para-Team-Building.jpg",
     badge: "Cocina",
     duration: "30 min",
     href: "/experiencias/clase-mixologia-team-building",
@@ -31,7 +31,7 @@ const stories = [
   {
     title: "Conferencias",
     image:
-      "https://ebombo.com/wp-content/uploads/2026/02/Conferencias.jpg",
+      "/uploads/2026/02/Conferencias.jpg",
     badge: "Innovación",
     duration: "30 min",
     href: "/experiencias/conferencias",
@@ -39,7 +39,7 @@ const stories = [
   {
     title: "Duelo de Compañeros",
     image:
-      "https://ebombo.com/wp-content/uploads/2025/12/6a2PyEck.jpeg",
+      "/uploads/2025/12/6a2PyEck.jpeg",
     badge: "Trivia",
     duration: "30 min",
     href: "/experiencias/duelo-de-companeros",
@@ -47,7 +47,7 @@ const stories = [
   {
     title: "Evento de Team Building Solidario",
     image:
-      "https://ebombo.com/wp-content/uploads/2026/01/Evento-de-Team-Building-Solidario.jpg",
+      "/uploads/2026/01/Evento-de-Team-Building-Solidario.jpg",
     badge: "Voluntariado",
     duration: "30 min",
     href: "/experiencias/team-building-solidario",

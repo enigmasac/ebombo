@@ -7,7 +7,7 @@ export const postsEn1: BlogPost[] = [
     description: `Discover team building games for adults that boost engagement, strengthen connections, and help teams collaborate more effectively.`,
     datePublished: "2026-01-05T16:55:51+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2026/01/Team-Building-Games-for-Adults-Engaging-Activities-That-Build-Stronger-More-Connected-Teams.jpg`,
+    thumbnailUrl: `/uploads/2026/01/Team-Building-Games-for-Adults-Engaging-Activities-That-Build-Stronger-More-Connected-Teams.jpg`,
     wordCount: 1128,
     bodyContent: [
       { type: "p", text: `Corporate events shouldn’t feel like just another meeting with nicer chairs. When done well, they become opportunities to inspire, connect, and energize your audience, whether that audience is made up of clients, employees, partners, or industry professionals. ` },
@@ -95,7 +95,7 @@ export const postsEn1: BlogPost[] = [
     description: `Discover entertainment for corporate events that guests actually enjoy, creating engaging, memorable experiences that energize your team.`,
     datePublished: "2026-01-05T16:23:06+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2026/01/Entertainment-for-Corporate-Events-How-to-Create-Experiences-People-Actually-Enjoy.jpg`,
+    thumbnailUrl: `/uploads/2026/01/Entertainment-for-Corporate-Events-How-to-Create-Experiences-People-Actually-Enjoy.jpg`,
     wordCount: 1126,
     bodyContent: [
       { type: "p", text: `Corporate events shouldn’t feel like just another meeting with nicer chairs. When done well, they become opportunities to inspire, connect, and energize your audience, whether that audience is made up of clients, employees, partners, or industry professionals. ` },
@@ -183,7 +183,7 @@ export const postsEn1: BlogPost[] = [
     description: `Explore creative company event ideas designed to engage teams, strengthen connections, and inspire meaningful workplace experiences.`,
     datePublished: "2026-01-05T16:00:42+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2026/01/Company-Event-Ideas-Creative-Ways-to-Engage-Connect-and-Inspire-Your-Team.jpg`,
+    thumbnailUrl: `/uploads/2026/01/Company-Event-Ideas-Creative-Ways-to-Engage-Connect-and-Inspire-Your-Team.jpg`,
     wordCount: 1107,
     bodyContent: [
       { type: "p", text: `Company events play a larger role in workplace culture than many people realize. They bring people together, break down silos, celebrate milestones, and reinforce a sense of community, something that has become increasingly important as organizations balance remote, hybrid, and in-person dynamics. ` },
@@ -276,7 +276,7 @@ export const postsEn1: BlogPost[] = [
     description: `Discover fun morning meeting games that energize your team, boost focus, and set a positive tone before the workday begins.`,
     datePublished: "2026-01-05T15:50:59+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2026/01/Morning-Meeting-Games-Energizing-Your-Team-Before-the-Workday-Begins.jpg`,
+    thumbnailUrl: `/uploads/2026/01/Morning-Meeting-Games-Energizing-Your-Team-Before-the-Workday-Begins.jpg`,
     wordCount: 1219,
     bodyContent: [
       { type: "p", text: `The first few minutes of a morning meeting set the tone for the entire day. When teams start their mornings feeling alert, connected, and mentally warmed up, they communicate better, collaborate more easily, and approach challenges with more energy. ` },
@@ -361,7 +361,7 @@ export const postsEn1: BlogPost[] = [
     description: `Explore unusual team building activities that spark creativity, energize teams, and inspire stronger connections in the workplace.`,
     datePublished: "2026-01-05T14:00:46+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2026/01/Unusual-Team-Building-Activities-Creative-Ways-to-Energize-and-Inspire-Your-Team.jpg`,
+    thumbnailUrl: `/uploads/2026/01/Unusual-Team-Building-Activities-Creative-Ways-to-Energize-and-Inspire-Your-Team.jpg`,
     wordCount: 1154,
     bodyContent: [
       { type: "p", text: `Traditional team building activities, like trust falls, simple icebreakers, or standard scavenger hunts, can be helpful, but they often leave teams wanting more. ` },
@@ -456,7 +456,7 @@ export const postsEn1: BlogPost[] = [
     description: `Discover creative Bring Your Child to Work Day ideas that create meaningful experiences for families while strengthening workplace culture.`,
     datePublished: "2026-01-05T13:30:41+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2026/01/Bring-Your-Child-to-Work-Day-Creating-Meaningful-Experiences-for-Families-and-the-Workplace.jpg`,
+    thumbnailUrl: `/uploads/2026/01/Bring-Your-Child-to-Work-Day-Creating-Meaningful-Experiences-for-Families-and-the-Workplace.jpg`,
     wordCount: 1067,
     bodyContent: [
       { type: "p", text: `Bring Your Child to Work Day is more than a fun break from routine, it’s an opportunity for organizations to open their doors, showcase their culture, and strengthen the connection between employees’ professional and personal lives. ` },
@@ -524,7 +524,7 @@ export const postsEn1: BlogPost[] = [
     description: `Celebrate Administrative Assistant Day with thoughtful ideas that recognize dedication, support morale, and honor the people who keep teams running.`,
     datePublished: "2026-01-05T13:25:46+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2026/01/Administrative-Assistant-Day-Honoring-the-People-Who-Keep-Organizations-Running.jpg`,
+    thumbnailUrl: `/uploads/2026/01/Administrative-Assistant-Day-Honoring-the-People-Who-Keep-Organizations-Running.jpg`,
     wordCount: 1047,
     bodyContent: [
       { type: "p", text: `Every successful organization has a group of individuals who work tirelessly behind the scenes, organizing schedules, managing communication, solving problems before they escalate, and ensuring that everything runs smoothly. ` },
@@ -602,7 +602,7 @@ export const postsEn1: BlogPost[] = [
     description: `Discover summer team building activities that energize teams, strengthen connections, and create memorable experiences employees will love.`,
     datePublished: "2026-01-05T13:15:11+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2026/01/Summer-Team-Building-Activities-Energizing-Experiences-That-Bring-Teams-Together.jpg`,
+    thumbnailUrl: `/uploads/2026/01/Summer-Team-Building-Activities-Energizing-Experiences-That-Bring-Teams-Together.jpg`,
     wordCount: 1021,
     bodyContent: [
       { type: "p", text: `Summer brings a natural shift in energy. Longer days, warmer weather, and a lighter seasonal mindset create the perfect opportunity for teams to reconnect, recharge, and strengthen relationships outside of their usual routines. ` },
@@ -683,7 +683,7 @@ export const postsEn1: BlogPost[] = [
     description: `Explore meaningful retirement celebration ideas to honor a career, celebrate a legacy, and mark a memorable new beginning.`,
     datePublished: "2026-01-05T12:05:07+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2026/01/Retirement-Celebration-Ideas-Honoring-a-Career-a-Legacy-and-a-New-Beginning.jpg`,
+    thumbnailUrl: `/uploads/2026/01/Retirement-Celebration-Ideas-Honoring-a-Career-a-Legacy-and-a-New-Beginning.jpg`,
     wordCount: 1125,
     bodyContent: [
       { type: "p", text: `A retirement celebration is a milestone that marks the end of one chapter and the beginning of another. For the retiree, it’s a moment filled with pride, reflection, and anticipation. ` },
@@ -755,7 +755,7 @@ export const postsEn1: BlogPost[] = [
     description: `Explore engaging lunch and learn topics that inspire growth, continuous learning, and meaningful connection across your team.`,
     datePublished: "2026-01-05T11:45:55+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2026/01/Lunch-and-Learn-Topics-That-Inspire-Growth-Learning-and-Connection.jpg`,
+    thumbnailUrl: `/uploads/2026/01/Lunch-and-Learn-Topics-That-Inspire-Growth-Learning-and-Connection.jpg`,
     wordCount: 1063,
     bodyContent: [
       { type: "p", text: `In busy workplaces, finding time for meaningful professional development can be challenging. Employees juggle project deadlines, meetings, and constant digital communication, leaving little room for learning. ` },
@@ -836,7 +836,7 @@ export const postsEn1: BlogPost[] = [
     description: `Discover fun virtual happy hour games that bring teams together online, spark connection, and make remote bonding enjoyable and engaging.`,
     datePublished: "2026-01-05T11:00:43+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2026/01/Virtual-Happy-Hour-Games-How-to-Bring-Your-Team-Together-Online.jpg`,
+    thumbnailUrl: `/uploads/2026/01/Virtual-Happy-Hour-Games-How-to-Bring-Your-Team-Together-Online.jpg`,
     wordCount: 1170,
     bodyContent: [
       { type: "p", text: `As remote and hybrid work become increasingly common, companies are searching for new ways to keep employees connected, engaged, and energized. ` },
@@ -907,7 +907,7 @@ export const postsEn1: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2026-01-05T09:45:37+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2026/01/Bring-Your-Child-to-Work-Day-Creating-Meaningful-Experiences-for-Families-and-the-Workplace.jpg`,
+    thumbnailUrl: `/uploads/2026/01/Bring-Your-Child-to-Work-Day-Creating-Meaningful-Experiences-for-Families-and-the-Workplace.jpg`,
     wordCount: 199,
     bodyContent: [
       { type: "h2", text: `Introduction to Corporate Team Building` },
@@ -928,7 +928,7 @@ export const postsEn1: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-11-10T21:26:17+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/11/Team-Building-Activities-for-Executives-Strengthening-Leadership-Through-Connection.jpg`,
+    thumbnailUrl: `/uploads/2025/11/Team-Building-Activities-for-Executives-Strengthening-Leadership-Through-Connection.jpg`,
     wordCount: 1214,
     bodyContent: [
       { type: "p", text: `Leadership doesn’t exist in isolation. Behind every strategic decision, innovation, or organizational success is a team of executives working together toward a shared vision. ` },
@@ -1015,7 +1015,7 @@ export const postsEn1: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-11-10T21:16:58+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/11/Happy-Employee-Appreciation-Day-Meaningful-Ways-to-Celebrate-Your-Team.jpg`,
+    thumbnailUrl: `/uploads/2025/11/Happy-Employee-Appreciation-Day-Meaningful-Ways-to-Celebrate-Your-Team.jpg`,
     wordCount: 1220,
     bodyContent: [
       { type: "p", text: `Every successful company shares one common thread: great people. Behind every milestone, innovation, and satisfied client stands a team of hardworking individuals who make it all possible.` },
@@ -1087,7 +1087,7 @@ export const postsEn1: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-11-10T20:46:41+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/11/Virtual-Holiday-Party-Ideas-for-Work-Celebrate-Together-from-Anywhere.jpg`,
+    thumbnailUrl: `/uploads/2025/11/Virtual-Holiday-Party-Ideas-for-Work-Celebrate-Together-from-Anywhere.jpg`,
     wordCount: 1851,
     bodyContent: [
       { type: "p", text: `The holiday season is all about connection, sharing laughter, stories, and gratitude with the people who make your year meaningful. But in today’s hybrid and remote work world, celebrating together often means finding new, creative ways to make virtual gatherings feel just as special.` },
@@ -1181,7 +1181,7 @@ export const postsEn1: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-11-10T20:23:06+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/11/Company-Gift-Ideas-That-Make-Employees-Feel-Value.jpg`,
+    thumbnailUrl: `/uploads/2025/11/Company-Gift-Ideas-That-Make-Employees-Feel-Value.jpg`,
     wordCount: 1530,
     bodyContent: [
       { type: "p", text: `In today’s workplace, recognition and appreciation go a long way. Whether you’re celebrating a milestone, welcoming new hires, or simply saying thank you, thoughtful company gifts can make employees feel seen, valued, and motivated.` },
@@ -1272,7 +1272,7 @@ export const postsEn1: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-10-23T19:04:51+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/10/How-to-Write-a-Press-Release-for-an-Event-A-Complete-Guide.jpg`,
+    thumbnailUrl: `/uploads/2025/10/How-to-Write-a-Press-Release-for-an-Event-A-Complete-Guide.jpg`,
     wordCount: 1853,
     bodyContent: [
       { type: "p", text: `When you’re organizing an event, whether it’s a corporate conference, product launch, charity fundraiser, or community gathering, getting the word out is crucial. One of the most effective tools for doing that is a press release.` },
@@ -1366,7 +1366,7 @@ Founded in 2012, Tech Innovators is a global leader in AI-driven enterprise solu
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-10-18T15:31:28+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/10/Event-ROI-How-to-Measure-the-Real-Value-of-Your-Events.jpg`,
+    thumbnailUrl: `/uploads/2025/10/Event-ROI-How-to-Measure-the-Real-Value-of-Your-Events.jpg`,
     wordCount: 1536,
     bodyContent: [
       { type: "p", text: `In a world where businesses spend billions every year on corporate events, conferences, and brand activations, one question remains constant: Was it worth it?` },
@@ -1456,7 +1456,7 @@ Founded in 2012, Tech Innovators is a global leader in AI-driven enterprise solu
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-10-18T15:19:38+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/10/Event-Branding-How-to-Create-Experiences-That-Leave-a-Lasting-Impression.jpg`,
+    thumbnailUrl: `/uploads/2025/10/Event-Branding-How-to-Create-Experiences-That-Leave-a-Lasting-Impression.jpg`,
     wordCount: 1325,
     bodyContent: [
       { type: "p", text: `In the world of marketing and corporate communication, events are powerful opportunities to bring people together, to share ideas, celebrate success, or launch something new.` },
@@ -1525,7 +1525,7 @@ Founded in 2012, Tech Innovators is a global leader in AI-driven enterprise solu
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-10-18T15:02:30+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/10/Brand-Activation-The-Ultimate-Guide.jpg`,
+    thumbnailUrl: `/uploads/2025/10/Brand-Activation-The-Ultimate-Guide.jpg`,
     wordCount: 1529,
     bodyContent: [
       { type: "p", text: `In an era where consumers are bombarded with digital ads, emails, and social media posts every second, attention has become the most valuable currency in marketing.` },
@@ -1610,7 +1610,7 @@ Founded in 2012, Tech Innovators is a global leader in AI-driven enterprise solu
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-10-08T20:55:02+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/10/How-to-Plan-a-Memorable-Corporate-Party-Themes-Ideas-and-Tips-for-Success.jpg`,
+    thumbnailUrl: `/uploads/2025/10/How-to-Plan-a-Memorable-Corporate-Party-Themes-Ideas-and-Tips-for-Success.jpg`,
     wordCount: 1203,
     bodyContent: [
       { type: "p", text: `Corporate parties are more than just social gatherings, they’re opportunities to celebrate success, strengthen relationships, and boost company culture. ` },
@@ -1679,7 +1679,7 @@ Founded in 2012, Tech Innovators is a global leader in AI-driven enterprise solu
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-10-08T20:35:19+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/10/Top-Entertainment-Ideas-for-Corporate-Events-How-to-Engage-Energize-and-Inspire-Your-Team.jpg`,
+    thumbnailUrl: `/uploads/2025/10/Top-Entertainment-Ideas-for-Corporate-Events-How-to-Engage-Energize-and-Inspire-Your-Team.jpg`,
     wordCount: 1067,
     bodyContent: [
       { type: "p", text: `Corporate events have evolved far beyond traditional meetings and seminars. Today, companies are embracing creativity and innovation to host experiences that inspire connection, engagement, and excitement. ` },
@@ -1743,7 +1743,7 @@ Founded in 2012, Tech Innovators is a global leader in AI-driven enterprise solu
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-10-02T19:05:02+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/10/Trust-Team-Building-Activities-That-Work.jpg`,
+    thumbnailUrl: `/uploads/2025/10/Trust-Team-Building-Activities-That-Work.jpg`,
     wordCount: 1166,
     bodyContent: [
       { type: "p", text: `Trust is the cornerstone of every successful team. Without it, collaboration suffers, communication breaks down, and innovation stalls. ` },
@@ -1825,7 +1825,7 @@ Founded in 2012, Tech Innovators is a global leader in AI-driven enterprise solu
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-10-02T18:38:17+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/10/Corporate-Retreats-Why-They-Matter-and-How-to-Make-Yours-Unforgettable.jpg`,
+    thumbnailUrl: `/uploads/2025/10/Corporate-Retreats-Why-They-Matter-and-How-to-Make-Yours-Unforgettable.jpg`,
     wordCount: 994,
     bodyContent: [
       { type: "p", text: `In today’s fast-paced work environment, it’s easy for teams to get caught up in the day-to-day grind. Deadlines, meetings, and performance metrics dominate schedules, often leaving little time for reflection, connection, or innovation.` },
@@ -1891,7 +1891,7 @@ Founded in 2012, Tech Innovators is a global leader in AI-driven enterprise solu
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-10-02T18:31:08+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/10/5-Minute-Team-Building-Activities.jpg`,
+    thumbnailUrl: `/uploads/2025/10/5-Minute-Team-Building-Activities.jpg`,
     wordCount: 1218,
     bodyContent: [
       { type: "p", text: `In today’s fast-paced workplaces, teams often struggle to find time for bonding. Between back-to-back meetings, tight deadlines, and the challenges of hybrid or remote setups, it can feel impossible to squeeze in meaningful team-building. ` },
@@ -1989,7 +1989,7 @@ Can yield inside jokes and traditions.`] },
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-09-03T15:59:04+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/09/leadership-activities.jpg`,
+    thumbnailUrl: `/uploads/2025/09/leadership-activities.jpg`,
     wordCount: 1017,
     bodyContent: [
       { type: "p", text: `Strong leadership is the backbone of every successful organization. Whether you’re managing a small team or guiding a large company, leadership isn’t just about giving directions. It’s about inspiring people, solving problems, and creating an environment where everyone can thrive.` },
@@ -2055,7 +2055,7 @@ Can yield inside jokes and traditions.`] },
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-09-03T15:51:55+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/09/virtual-thanksgiving-games.jpg`,
+    thumbnailUrl: `/uploads/2025/09/virtual-thanksgiving-games.jpg`,
     wordCount: 986,
     bodyContent: [
       { type: "p", text: `The holiday season is all about gratitude, connection, and celebration. While traditional Thanksgiving gatherings often happen around the dinner table, today’s workplace has evolved. Many companies operate remotely or with hybrid teams spread across different locations. That doesn’t mean you can’t celebrate together, it just means you need to get creative.` },
@@ -2123,7 +2123,7 @@ Can yield inside jokes and traditions.`] },
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-08-21T23:43:33+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/08/20-Creative-Office-Halloween-Party-Ideas-to-Bring-Spooky-Fun-to-Work.jpg`,
+    thumbnailUrl: `/uploads/2025/08/20-Creative-Office-Halloween-Party-Ideas-to-Bring-Spooky-Fun-to-Work.jpg`,
     wordCount: 857,
     bodyContent: [
       { type: "p", text: `Halloween isn’t just for kids, it’s also a fantastic opportunity to boost employee morale, foster team bonding, and inject some fun into the workplace. ` },
@@ -2189,7 +2189,7 @@ Can yield inside jokes and traditions.`] },
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-08-21T23:36:43+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/08/25-Fun-and-Festive-Christmas-Team-Building-Activities-for-Work.jpg`,
+    thumbnailUrl: `/uploads/2025/08/25-Fun-and-Festive-Christmas-Team-Building-Activities-for-Work.jpg`,
     wordCount: 1147,
     bodyContent: [
       { type: "p", text: `The holiday season is the perfect time to boost morale, strengthen company culture, and bring employees together. Beyond decorations and gift exchanges, planning Christmas team building activities gives your team the chance to bond, laugh, and create lasting memories.` },
@@ -2274,7 +2274,7 @@ Can yield inside jokes and traditions.`] },
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-08-21T23:29:02+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/08/20-Creative-Spirit-Week-Ideas-for-Work.jpg`,
+    thumbnailUrl: `/uploads/2025/08/20-Creative-Spirit-Week-Ideas-for-Work.jpg`,
     wordCount: 1865,
     bodyContent: [
       { type: "p", text: `Spirit Week isn’t just for schools anymore, it’s a fantastic way to boost employee morale, bring energy to the office, and strengthen company culture. ` },
@@ -2404,7 +2404,7 @@ Can yield inside jokes and traditions.`] },
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-08-21T23:19:56+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/08/19-Small-Fun-Activities-to-Boost-Employee-Engagement-in-the-Office.jpg`,
+    thumbnailUrl: `/uploads/2025/08/19-Small-Fun-Activities-to-Boost-Employee-Engagement-in-the-Office.jpg`,
     wordCount: 1278,
     bodyContent: [
       { type: "p", text: `Keeping employees happy and engaged doesn’t always require grand events or costly outings. Sometimes, small and fun office activities can do wonders to break the monotony and enhance workplace culture. ` },
@@ -2483,7 +2483,7 @@ Can yield inside jokes and traditions.`] },
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-08-13T17:00:46+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/08/25-Creative-Employee-Incentive-Ideas-to-Boost-Motivation-and-Retention.jpg`,
+    thumbnailUrl: `/uploads/2025/08/25-Creative-Employee-Incentive-Ideas-to-Boost-Motivation-and-Retention.jpg`,
     wordCount: 1095,
     bodyContent: [
       { type: "p", text: `Keeping employees motivated goes far beyond salary, especially in today’s hybrid and fast-paced work environment. Employee incentives are a powerful way to recognize great work, show appreciation, and build a culture where people feel valued.` },
@@ -2581,7 +2581,7 @@ Can yield inside jokes and traditions.`] },
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-08-13T16:42:11+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/08/What-Is-a-Destination-Management-Company-DMC-Everything-You-Need-to-Know.jpg`,
+    thumbnailUrl: `/uploads/2025/08/What-Is-a-Destination-Management-Company-DMC-Everything-You-Need-to-Know.jpg`,
     wordCount: 1217,
     bodyContent: [
       { type: "p", text: `Planning an event in an unfamiliar city or country can be overwhelming, especially when you’re dealing with logistics, vendors, cultural nuances, and time zones. That’s where a Destination Management Company (DMC) comes in.` },
@@ -2681,7 +2681,7 @@ Can yield inside jokes and traditions.`] },
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-08-13T16:26:57+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/08/15-Fun-Festive-Virtual-Holiday-Party-Ideas-for-Remote-Teams.jpg`,
+    thumbnailUrl: `/uploads/2025/08/15-Fun-Festive-Virtual-Holiday-Party-Ideas-for-Remote-Teams.jpg`,
     wordCount: 1267,
     bodyContent: [
       { type: "p", text: `The holiday season is the perfect time to show appreciation, spread cheer, and bring your team together, even when working remotely.` },
@@ -2752,7 +2752,7 @@ Can yield inside jokes and traditions.`] },
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-08-13T15:53:33+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/08/Lunch-and-Learn-Boost-Team-Engagement-Over-a-Meal.jpg`,
+    thumbnailUrl: `/uploads/2025/08/Lunch-and-Learn-Boost-Team-Engagement-Over-a-Meal.jpg`,
     wordCount: 922,
     bodyContent: [
       { type: "p", text: `In the fast-paced world of modern business, companies are always seeking innovative ways to engage employees, encourage continuous learning, and foster a positive work culture. One simple yet powerful solution that checks all these boxes? The Lunch and Learn session.` },
@@ -2808,7 +2808,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-08-05T19:56:45+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/08/field-day.jpg`,
+    thumbnailUrl: `/uploads/2025/08/field-day.jpg`,
     wordCount: 1021,
     bodyContent: [
     ],
@@ -2819,7 +2819,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-08-05T19:50:16+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/08/improv-games.jpg`,
+    thumbnailUrl: `/uploads/2025/08/improv-games.jpg`,
     wordCount: 1432,
     bodyContent: [
       { type: "p", text: `When it comes to building trust, improving communication, and sparking creativity, few tools are as effective, or as fun, as improv. Short for “improvisation,” these unscripted games encourage participants to think on their feet, actively listen, and support each other in the moment.` },
@@ -2898,7 +2898,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-08-05T19:38:20+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/08/fall-team-building.jpg`,
+    thumbnailUrl: `/uploads/2025/08/fall-team-building.jpg`,
     wordCount: 878,
     bodyContent: [
       { type: "p", text: `As the leaves change and the air gets crisp, fall presents the perfect opportunity to refresh team spirit with seasonal team-building activities. Whether your team is remote, hybrid, or in-person, autumn offers unique opportunities to connect, collaborate, and celebrate.` },
@@ -2952,7 +2952,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-08-05T19:32:33+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/08/corporate-olympics.jpg`,
+    thumbnailUrl: `/uploads/2025/08/corporate-olympics.jpg`,
     wordCount: 945,
     bodyContent: [
       { type: "p", text: `Corporate Olympics, also known as office Olympics, company sports day, or workplace games day, turn friendly competition into a powerful team‑building engine. By pitting cross‑functional teams against each other in a series of fun challenges, you can spark camaraderie, improve communication, and supercharge employee engagement.` },
@@ -3004,7 +3004,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-07-28T22:41:05+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/07/team-retreat.jpg`,
+    thumbnailUrl: `/uploads/2025/07/team-retreat.jpg`,
     wordCount: 1086,
     bodyContent: [
       { type: "p", text: `A team retreat is more than just a getaway. It’s a powerful opportunity to strengthen relationships, improve communication, and align your team towards shared goals.` },
@@ -3053,7 +3053,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-07-28T22:36:02+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/07/treasure-hunt-for-team-building.jpg`,
+    thumbnailUrl: `/uploads/2025/07/treasure-hunt-for-team-building.jpg`,
     wordCount: 1117,
     bodyContent: [
       { type: "p", text: `Team-building activities are essential for fostering communication, trust, and collaboration among employees. One of the most exciting and engaging ways to promote these values is by organizing a treasure hunt.` },
@@ -3081,7 +3081,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-07-28T22:31:04+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/07/quick-team-building-activities.jpg`,
+    thumbnailUrl: `/uploads/2025/07/quick-team-building-activities.jpg`,
     wordCount: 1587,
     bodyContent: [
       { type: "p", text: `When it comes to fostering collaboration, improving communication, and boosting morale, team-building activities are an effective way to engage employees. But sometimes, finding the time for longer activities can be challenging in a fast-paced work environment.` },
@@ -3147,7 +3147,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-07-28T22:24:29+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/07/work-potluck-ideas.jpg`,
+    thumbnailUrl: `/uploads/2025/07/work-potluck-ideas.jpg`,
     wordCount: 1606,
     bodyContent: [
       { type: "p", text: `A team-building potluck is an excellent way for HR teams to foster collaboration, boost employee morale, and create a relaxed, fun environment where employees can bond over delicious food. Organizing a company-wide potluck that is engaging, inclusive, and memorable requires careful planning and attention to detail. Here’s how HR can take the lead and organize a potluck that will strengthen company culture and bring teams closer together.` },
@@ -3191,7 +3191,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-07-21T21:01:33+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/07/indoor-team-building.jpg`,
+    thumbnailUrl: `/uploads/2025/07/indoor-team-building.jpg`,
     wordCount: 1207,
     bodyContent: [
       { type: "p", text: `Weather-proof, space-efficient, and packed with potential, indoor team building events are an ideal way to build connection and boost morale in any season. Whether you’re facing cold weather, planning a company-wide retreat, or organizing a spontaneous afternoon session, indoor events can be just as impactful (and fun!) as their outdoor counterparts.` },
@@ -3294,7 +3294,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-07-21T20:55:19+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/07/leadership-retreat.jpg`,
+    thumbnailUrl: `/uploads/2025/07/leadership-retreat.jpg`,
     wordCount: 1397,
     bodyContent: [
       { type: "p", text: `Strong leadership isn’t built in the boardroom alone. Great leaders need time and space to pause, reflect, and reconnect with their vision, and with each other. That’s where a leadership retreat comes in.` },
@@ -3402,7 +3402,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-07-21T20:44:40+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/07/team-building-workshops.jpg`,
+    thumbnailUrl: `/uploads/2025/07/team-building-workshops.jpg`,
     wordCount: 1364,
     bodyContent: [
       { type: "p", text: `In today’s fast-paced, collaborative work environments, strong teams aren’t just a bonus, they’re essential. One of the most effective ways to cultivate trust, improve communication, and enhance collaboration is through team building workshops.` },
@@ -3499,7 +3499,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-07-21T20:38:23+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/07/team-outing-ideas.jpg`,
+    thumbnailUrl: `/uploads/2025/07/team-outing-ideas.jpg`,
     wordCount: 1403,
     bodyContent: [
       { type: "p", text: `When was the last time your team shared a laugh outside the office or Zoom screen?` },
@@ -3607,7 +3607,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-07-15T22:31:09+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/07/fun-corporate-event-ideas.jpg`,
+    thumbnailUrl: `/uploads/2025/07/fun-corporate-event-ideas.jpg`,
     wordCount: 1264,
     bodyContent: [
       { type: "p", text: `As a corporate event planning agency, we know one truth: nobody wants another stiff, awkward corporate event. Teams crave fresh, engaging experiences that help them connect, laugh, and make lasting memories, whether it’s a celebration, team-building session, or annual retreat.` },
@@ -3674,7 +3674,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-07-15T22:21:14+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/07/team-building-scavenger-hunt.jpg`,
+    thumbnailUrl: `/uploads/2025/07/team-building-scavenger-hunt.jpg`,
     wordCount: 1067,
     bodyContent: [
       { type: "p", text: `In today’s fast-paced corporate world, fostering a strong team culture is more important than ever. Companies are constantly looking for innovative ways to break the ice, spark collaboration, and boost morale. That’s where we come in, with a proven strategy that’s equal parts fun, engaging, and effective: the team-building scavenger hunt.` },
@@ -3745,7 +3745,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-07-15T22:14:30+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/07/charity-team-building.jpg`,
+    thumbnailUrl: `/uploads/2025/07/charity-team-building.jpg`,
     wordCount: 1031,
     bodyContent: [
       { type: "p", text: `In today’s business landscape, companies are looking for more meaningful ways to engage their teams. Gone are the days of trust falls and awkward icebreakers. Employees want purpose-driven experiences that resonate beyond the boardroom. That’s where charity team building comes in.` },
@@ -3797,7 +3797,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-07-15T22:06:17+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/07/outdoor-team-building-activities.jpg`,
+    thumbnailUrl: `/uploads/2025/07/outdoor-team-building-activities.jpg`,
     wordCount: 1466,
     bodyContent: [
       { type: "p", text: `In today’s fast-paced work environment, building strong team connections is more important than ever. While virtual meetings and email threads are great for productivity, they don’t always leave room for the personal bonding that fuels collaboration and trust. That’s where outdoor team building activities come in.` },
@@ -3880,7 +3880,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-06-11T17:49:15+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Loyalty-Strategies-Through-Membership-Events-in-Florida.jpg`,
+    thumbnailUrl: `/uploads/2025/05/Loyalty-Strategies-Through-Membership-Events-in-Florida.jpg`,
     wordCount: 827,
     bodyContent: [
       { type: "h2", text: `Maximizing Customer Loyalty: The Power of Membership Events in Florida` },
@@ -3938,7 +3938,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-06-11T17:43:42+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/06/Brainstorming-Techniques-to-Generate-Innovative-Event-Topics-in-Houston.jpg`,
+    thumbnailUrl: `/uploads/2025/06/Brainstorming-Techniques-to-Generate-Innovative-Event-Topics-in-Houston.jpg`,
     wordCount: 1048,
     bodyContent: [
       { type: "p", text: `Have you ever found yourself staring at a blank calendar, wondering what kind of event will truly capture the spirit of Houston? If so, you’re not alone. Coming up with fresh, engaging event ideas can feel like searching for a needle in a haystack—especially in a city known for its vibrant culture, diverse population, and lively community scenes. But don’t worry; with the right brainstorming techniques, you can unlock a treasure trove of innovative ideas that resonate with Houstonians and elevate your event game.` },
@@ -4014,7 +4014,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-06-10T17:03:32+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/The-Importance-of-Liability-Insurance-for-Events-in-Houston.jpg`,
+    thumbnailUrl: `/uploads/2025/05/The-Importance-of-Liability-Insurance-for-Events-in-Houston.jpg`,
     wordCount: 933,
     bodyContent: [
       { type: "p", text: `Hosting an event in Houston? Whether you’re planning a lively wedding, a corporate gathering, or a community festival, there’s one thing that should be at the top of your checklist: liability insurance. Think of liability insurance as your safety net—it catches you when unexpected things happen. Without it, a single mishap could turn your dream event into a financial nightmare. Let’s explore why liability insurance isn’t just a good idea; it’s a must-have for any event in Houston.` },
@@ -4081,7 +4081,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-06-10T16:44:51+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Steps-for-Efficient-Crowd-Control-at-Closed-Corporate-Events-in-Florida.jpg`,
+    thumbnailUrl: `/uploads/2025/05/Steps-for-Efficient-Crowd-Control-at-Closed-Corporate-Events-in-Florida.jpg`,
     wordCount: 951,
     bodyContent: [
       { type: "h2", text: `Mastering Crowd Control at Closed Corporate Events in Florida: Your Step-by-Step Guide` },
@@ -4149,7 +4149,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-06-09T16:27:56+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/How-to-Improve-Digital-Accessibility-in-Registration-Platforms-in-Houston.jpg`,
+    thumbnailUrl: `/uploads/2025/05/How-to-Improve-Digital-Accessibility-in-Registration-Platforms-in-Houston.jpg`,
     wordCount: 970,
     bodyContent: [
       { type: "h2", text: `Understanding the Importance of Digital Accessibility in Houston’s Registration Platforms` },
@@ -4217,7 +4217,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-06-09T16:27:43+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/The-Importance-of-Themed-Decor-for-Seasonal-Corporate-Events-in-Florida.jpg`,
+    thumbnailUrl: `/uploads/2025/05/The-Importance-of-Themed-Decor-for-Seasonal-Corporate-Events-in-Florida.jpg`,
     wordCount: 1097,
     bodyContent: [
       { type: "p", text: `Organizing a corporate event in Florida? Whether it’s a summer celebration or a holiday bash, choosing themed decor can transform an ordinary gathering into an unforgettable experience. But why is it so important? Think of themed decor as the secret sauce that spices up your event, creates an immersive environment, and leaves a lasting impression on your guests. In a state like Florida, where sunshine and vibrant culture are king, tapping into themed decor amplifies the event’s vibe, making it resonate with the local flavor and seasonal spirit.` },
@@ -4280,7 +4280,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-06-06T16:22:20+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Techniques-for-Resolving-Logistical-Conflicts-with-Suppliers-in-Houston.jpg`,
+    thumbnailUrl: `/uploads/2025/05/Techniques-for-Resolving-Logistical-Conflicts-with-Suppliers-in-Houston.jpg`,
     wordCount: 814,
     bodyContent: [
       { type: "h2", text: `Mastering the Art of Resolving Logistical Conflicts with Suppliers in Houston` },
@@ -4336,7 +4336,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-06-06T16:11:24+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/How-to-Structure-an-Internal-Competition-to-Motivate-Staff-in-Florida.jpg`,
+    thumbnailUrl: `/uploads/2025/05/How-to-Structure-an-Internal-Competition-to-Motivate-Staff-in-Florida.jpg`,
     wordCount: 926,
     bodyContent: [
       { type: "h2", text: `Why Internal Competitions Are a Game-Changer for Motivation in Florida` },
@@ -4412,7 +4412,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-06-05T16:07:28+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/The-Role-of-Professional-Emceeing-in-Business-Openings-in-Houston.jpeg`,
+    thumbnailUrl: `/uploads/2025/05/The-Role-of-Professional-Emceeing-in-Business-Openings-in-Houston.jpeg`,
     wordCount: 955,
     bodyContent: [
       { type: "h2", text: `The Power of Professional Emceeing in Houston Business Openings` },
@@ -4465,7 +4465,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-06-05T15:45:10+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/06/Ideas-for-Creating-a-Quiet-Workspace-at-Multi-Day-Events-in-Florida.jpg`,
+    thumbnailUrl: `/uploads/2025/06/Ideas-for-Creating-a-Quiet-Workspace-at-Multi-Day-Events-in-Florida.jpg`,
     wordCount: 995,
     bodyContent: [
       { type: "p", text: `Planning to attend a multi-day event in Florida but worried about finding a peaceful spot to focus? You’re not alone. Large conferences, trade shows, and workshops can be bustling and noisy, making it tough to concentrate or recharge. Luckily, with some clever strategies, you can carve out your own quiet sanctuary in the midst of the Florida hustle. Let’s explore practical ideas to craft a tranquil workspace that keeps you productive and refreshed across those busy days.` },
@@ -4522,7 +4522,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-06-05T04:07:36+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Theatrical-Improvisation-Techniques-to-Break-the-Ice-at-Corporate-Events-in-Florida.jpg`,
+    thumbnailUrl: `/uploads/2025/05/Theatrical-Improvisation-Techniques-to-Break-the-Ice-at-Corporate-Events-in-Florida.jpg`,
     wordCount: 999,
     bodyContent: [
       { type: "h2", text: `Unlocking the Power of Theatrical Improvisation to Break the Ice at Florida’s Corporate Events` },
@@ -4593,7 +4593,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-06-04T15:20:57+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/06/How-to-Create-Effective-Backstage-Management-for-Speakers-in-Houston.jpg`,
+    thumbnailUrl: `/uploads/2025/06/How-to-Create-Effective-Backstage-Management-for-Speakers-in-Houston.jpg`,
     wordCount: 955,
     bodyContent: [
       { type: "h2", text: `Mastering Backstage Management for Speakers in Houston: Your Ultimate Guide` },
@@ -4672,7 +4672,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-06-03T13:30:10+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/06/The-Impact-of-LED-Signage-Visuals-in-Corporate-Events-in-Houston.webp`,
+    thumbnailUrl: `/uploads/2025/06/The-Impact-of-LED-Signage-Visuals-in-Corporate-Events-in-Houston.webp`,
     wordCount: 1009,
     bodyContent: [
       { type: "h2", text: `Why Are LED Signages a Game-Changer in Corporate Events?` },
@@ -4724,7 +4724,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-06-03T13:30:01+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/06/The-Impact-of-Green-Marketing-on-Sustainable-Corporate-Events-in-Florida.jpg`,
+    thumbnailUrl: `/uploads/2025/06/The-Impact-of-Green-Marketing-on-Sustainable-Corporate-Events-in-Florida.jpg`,
     wordCount: 1042,
     bodyContent: [
       { type: "p", text: `Ever wondered why some companies shine brighter in Florida’s bustling corporate scene? The secret often lies in how they market themselves—specifically, through green marketing. In sunny Florida, where nature’s beauty is on display every day, leveraging eco-friendly strategies can turn a standard event into a sustainable spectacle. This isn’t just about saving the planet; it’s a savvy business move that boosts brand reputation, attracts eco-conscious clients, and fosters genuine community trust. Let’s explore how green marketing is transforming the way Floridian companies put together their corporate events and why it’s more than just a trend—it’s a necessity.` },
@@ -4777,7 +4777,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-06-02T13:23:19+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/How-to-Design-an-Interactive-Map-for-Your-Event-Route-in-Florida.webp`,
+    thumbnailUrl: `/uploads/2025/05/How-to-Design-an-Interactive-Map-for-Your-Event-Route-in-Florida.webp`,
     wordCount: 1051,
     bodyContent: [
       { type: "h2", text: `How to Design an Interactive Map for Your Event Route in Florida` },
@@ -4838,7 +4838,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-06-02T13:23:17+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Loyalty-Strategies-for-Regular-Event-Attendees-in-Houston.webp`,
+    thumbnailUrl: `/uploads/2025/05/Loyalty-Strategies-for-Regular-Event-Attendees-in-Houston.webp`,
     wordCount: 930,
     bodyContent: [
       { type: "h2", text: `Unlocking Loyalty Strategies for Regular Event Attendees in Houston` },
@@ -4896,7 +4896,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-30T12:53:17+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Ideas-for-Showcasing-Product-Innovations-in-Dynamic-Settings-in-Florida.jpg`,
+    thumbnailUrl: `/uploads/2025/05/Ideas-for-Showcasing-Product-Innovations-in-Dynamic-Settings-in-Florida.jpg`,
     wordCount: 1195,
     bodyContent: [
       { type: "h2", text: `Ideas for Showcasing Product Innovations in Dynamic Settings in Florida` },
@@ -4958,7 +4958,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-30T12:53:14+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Ideas-for-Engaging-Universities-in-Specialized-Events-in-Houston.webp`,
+    thumbnailUrl: `/uploads/2025/05/Ideas-for-Engaging-Universities-in-Specialized-Events-in-Houston.webp`,
     wordCount: 911,
     bodyContent: [
       { type: "h2", text: `Ideas for Engaging Universities in Specialized Events in Houston` },
@@ -5020,7 +5020,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-29T12:48:21+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Sound-Testing-and-Setup-Strategies-for-Flawless-Events-in-Florida.jpg`,
+    thumbnailUrl: `/uploads/2025/05/Sound-Testing-and-Setup-Strategies-for-Flawless-Events-in-Florida.jpg`,
     wordCount: 1059,
     bodyContent: [
       { type: "h2", text: `Sound Testing and Setup Strategies for Flawless Events in Florida` },
@@ -5088,7 +5088,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-29T12:48:19+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/The-Relevance-of-Cybersecurity-in-Corporate-Events-in-Houston.jpg`,
+    thumbnailUrl: `/uploads/2025/05/The-Relevance-of-Cybersecurity-in-Corporate-Events-in-Houston.jpg`,
     wordCount: 1026,
     bodyContent: [
       { type: "h2", text: `The Importance of Cybersecurity in Houston’s Corporate Events` },
@@ -5152,7 +5152,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-28T12:22:24+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/How-to-Leverage-Video-Marketing-to-Promote-a-Corporate-Event-in-Houston-1.png`,
+    thumbnailUrl: `/uploads/2025/05/How-to-Leverage-Video-Marketing-to-Promote-a-Corporate-Event-in-Houston-1.png`,
     wordCount: 954,
     bodyContent: [
       { type: "h2", text: `Mastering Video Marketing to Elevate Your Houston Corporate Event` },
@@ -5229,7 +5229,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-28T12:22:20+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Why-Participation-in-Business-Rounds-Boosts-ROI-in-Florida.jpg`,
+    thumbnailUrl: `/uploads/2025/05/Why-Participation-in-Business-Rounds-Boosts-ROI-in-Florida.jpg`,
     wordCount: 900,
     bodyContent: [
       { type: "h2", text: `Unlocking Growth: How Business Rounds in Florida Can Boost Your ROI` },
@@ -5285,7 +5285,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-27T12:13:35+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/The-Relevance-of-Codes-of-Conduct-for-Corporate-Events-in-Florida-1.png`,
+    thumbnailUrl: `/uploads/2025/05/The-Relevance-of-Codes-of-Conduct-for-Corporate-Events-in-Florida-1.png`,
     wordCount: 844,
     bodyContent: [
       { type: "h2", text: `The Relevance of Codes of Conduct for Corporate Events in Florida` },
@@ -5357,7 +5357,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-27T12:13:33+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/How-to-Attract-Freelance-Professionals-to-Your-Corporate-Event-in-Houston.jpg`,
+    thumbnailUrl: `/uploads/2025/05/How-to-Attract-Freelance-Professionals-to-Your-Corporate-Event-in-Houston.jpg`,
     wordCount: 1003,
     bodyContent: [
       { type: "h2", text: `Unlocking the Secrets to Attracting Freelance Professionals to Your Houston Corporate Event` },
@@ -5429,7 +5429,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-26T13:49:58+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/How-to-Manage-Multiple-Stages-and-Talks-Simultaneously-in-Florida.jpg`,
+    thumbnailUrl: `/uploads/2025/05/How-to-Manage-Multiple-Stages-and-Talks-Simultaneously-in-Florida.jpg`,
     wordCount: 972,
     bodyContent: [
       { type: "h2", text: `Mastering the Art of Managing Multiple Stages and Talks in Florida` },
@@ -5517,7 +5517,7 @@ Talk to the expert planners at eBombo to create an engaging, on-brand session yo
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-26T13:49:54+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/How-to-Incorporate-Childcare-or-Playroom-Services-in-Corporate-Events-in-Houston.webp`,
+    thumbnailUrl: `/uploads/2025/05/How-to-Incorporate-Childcare-or-Playroom-Services-in-Corporate-Events-in-Houston.webp`,
     wordCount: 1128,
     bodyContent: [
       { type: "h2", text: `Introducing Childcare and Playroom Services in Corporate Events: Why They Matter` },
@@ -5580,7 +5580,7 @@ Pro tip: Schedule site visits to see their setup firsthand. Think of vendors as 
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-26T13:47:12+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Pasos-para-calcular-el-presupuesto-de-marketing-para-tu-congreso.jpeg`,
+    thumbnailUrl: `/uploads/2025/05/Pasos-para-calcular-el-presupuesto-de-marketing-para-tu-congreso.jpeg`,
     wordCount: 1290,
     bodyContent: [
       { type: "h2", text: `¿Por qué es crucial calcular bien tu presupuesto de marketing para un congreso?` },
@@ -5635,7 +5635,7 @@ Pro tip: Schedule site visits to see their setup firsthand. Think of vendors as 
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-23T13:45:11+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/How-to-Plan-Tourist-Routes-for-Foreign-Attendees-in-Florida.jpg`,
+    thumbnailUrl: `/uploads/2025/05/How-to-Plan-Tourist-Routes-for-Foreign-Attendees-in-Florida.jpg`,
     wordCount: 1005,
     bodyContent: [
       { type: "p", text: `Planning a memorable trip for international visitors is like crafting a perfect playlist—you want a little bit of everything to keep everyone engaged. Florida, with its endless beaches, vibrant cities, and natural wonders, is a treasure trove for tourists. But how do you create routes that truly captivate foreign travelers? Let’s dive into the art and science of planning seamless, exciting tourist routes in the Sunshine State.` },
@@ -5704,7 +5704,7 @@ Pro tip: Schedule site visits to see their setup firsthand. Think of vendors as 
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-23T13:45:11+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Ways-to-Reduce-Waste-in-Stands-with-Recyclable-Materials-in-Houston.webp`,
+    thumbnailUrl: `/uploads/2025/05/Ways-to-Reduce-Waste-in-Stands-with-Recyclable-Materials-in-Houston.webp`,
     wordCount: 954,
     bodyContent: [
       { type: "h2", text: `Transforming Events: Reducing Waste in Houston Stand Setups with Recyclable Materials` },
@@ -5760,7 +5760,7 @@ Pro tip: Schedule site visits to see their setup firsthand. Think of vendors as 
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-22T18:41:52+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/How-to-Define-a-Photography-and-Video-Protocol-for-Events-in-Florida.jpg`,
+    thumbnailUrl: `/uploads/2025/05/How-to-Define-a-Photography-and-Video-Protocol-for-Events-in-Florida.jpg`,
     wordCount: 979,
     bodyContent: [
       { type: "h2", text: `Why You Need a Photography and Video Protocol for Your Florida Event` },
@@ -5835,7 +5835,7 @@ Pro tip: Schedule site visits to see their setup firsthand. Think of vendors as 
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-22T18:40:34+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/The-Importance-of-an-Editorial-Calendar-for-Event-Promotion-in-Houston.jpg`,
+    thumbnailUrl: `/uploads/2025/05/The-Importance-of-an-Editorial-Calendar-for-Event-Promotion-in-Houston.jpg`,
     wordCount: 965,
     bodyContent: [
       { type: "h2", text: `Why an Editorial Calendar is a Game-Changer for Event Promotion in Houston` },
@@ -5883,7 +5883,7 @@ Pro tip: Schedule site visits to see their setup firsthand. Think of vendors as 
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-21T18:44:59+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Ideas-for-an-Unforgettable-Closing-Session-at-Your-Corporate-Event-in-Houston-2025.webp`,
+    thumbnailUrl: `/uploads/2025/05/Ideas-for-an-Unforgettable-Closing-Session-at-Your-Corporate-Event-in-Houston-2025.webp`,
     wordCount: 943,
     bodyContent: [
       { type: "p", text: `Planning the perfect closing session can make or break your corporate event. It’s the moment everyone remembers—so, why settle for ordinary? Houston’s vibrant culture and dynamic energy provide the perfect backdrop for a memorable finale. Ready to leave your attendees inspired, energized, and talking about your event for months? Let’s dive into creative, effective ideas that will make your closing session stand out.` },
@@ -5949,7 +5949,7 @@ Pro tip: Schedule site visits to see their setup firsthand. Think of vendors as 
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-21T18:44:57+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Benefits-of-Integrating-Sponsor-Stands-with-Interactive-Spaces-in-Florida.jpg`,
+    thumbnailUrl: `/uploads/2025/05/Benefits-of-Integrating-Sponsor-Stands-with-Interactive-Spaces-in-Florida.jpg`,
     wordCount: 941,
     bodyContent: [
       { type: "h2", text: `Unlocking the Power of Sponsor Stands in Interactive Spaces Across Florida` },
@@ -6006,7 +6006,7 @@ Pro tip: Schedule site visits to see their setup firsthand. Think of vendors as 
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-16T22:42:14+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Benefits-of-Live-Demonstration-Rooms-for-Technological-Products-in-Florida.jpg`,
+    thumbnailUrl: `/uploads/2025/05/Benefits-of-Live-Demonstration-Rooms-for-Technological-Products-in-Florida.jpg`,
     wordCount: 1027,
     bodyContent: [
       { type: "h2", text: `Why Live Demonstration Rooms Are Game-Changers for Tech Product Buyers in Florida` },
@@ -6063,7 +6063,7 @@ Pro tip: Schedule site visits to see their setup firsthand. Think of vendors as 
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-16T22:41:06+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/The-Impact-of-a-Good-Coffee-Station-on-Overall-Satisfaction-in-Florida.jpg`,
+    thumbnailUrl: `/uploads/2025/05/The-Impact-of-a-Good-Coffee-Station-on-Overall-Satisfaction-in-Florida.jpg`,
     wordCount: 923,
     bodyContent: [
       { type: "p", text: `Ever since I moved to Florida, I’ve noticed one thing that’s hard to miss—people take their coffee seriously. It’s more than just a morning pick-me-up; a thoughtfully designed coffee station can transform an ordinary space into a hub of energy, comfort, and productivity. But why does a good coffee station matter so much, and how does it influence overall satisfaction? Let’s dive into this caffeinated world and explore how the right setup can make all the difference.` },
@@ -6120,7 +6120,7 @@ Pro tip: Schedule site visits to see their setup firsthand. Think of vendors as 
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-16T22:40:51+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/How-to-Launch-an-Official-Podcast-for-Your-Conference-for-Greater-Reach-in-California.webp`,
+    thumbnailUrl: `/uploads/2025/05/How-to-Launch-an-Official-Podcast-for-Your-Conference-for-Greater-Reach-in-California.webp`,
     wordCount: 840,
     bodyContent: [
       { type: "h2", text: `Kickstart Your Conference’s Podcast Journey: A Step-by-Step Guide for Greater Reach in California` },
@@ -6189,7 +6189,7 @@ Pro tip: Schedule site visits to see their setup firsthand. Think of vendors as 
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-16T22:37:52+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Techniques-for-streamlined-queue-and-access-management-for-events-in-New-York.jpg`,
+    thumbnailUrl: `/uploads/2025/05/Techniques-for-streamlined-queue-and-access-management-for-events-in-New-York.jpg`,
     wordCount: 1010,
     bodyContent: [
       { type: "h2", text: `Understanding the Importance of Efficient Queue and Access Management at Events in New York` },
@@ -6247,7 +6247,7 @@ Pro tip: Schedule site visits to see their setup firsthand. Think of vendors as 
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-05-15T19:41:29+00:00",
     lang: "en",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/05/Strategies-for-Retaining-Attendees-Year-After-Year-in-Texas.jpeg`,
+    thumbnailUrl: `/uploads/2025/05/Strategies-for-Retaining-Attendees-Year-After-Year-in-Texas.jpeg`,
     wordCount: 1082,
     bodyContent: [
       { type: "h2", text: `Strategies for Retaining Attendees Year After Year in Texas` },

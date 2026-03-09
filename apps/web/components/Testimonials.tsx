@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { Lang } from "@/lib/i18n";
 import { getDictionary, localePath } from "@/lib/i18n";
 
-const IMG = "https://ebombo.com/wp-content/uploads/2025/12";
+const IMG = "/uploads/2025/12";
 
 const testimonials = [
   {

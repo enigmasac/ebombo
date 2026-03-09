@@ -23,7 +23,7 @@ export async function generateMetadata({
   };
 }
 
-const IMG = "https://ebombo.com/wp-content/uploads/2025/12";
+const IMG = "/uploads/2025/12";
 
 const howToPlayCardsData = [
   {

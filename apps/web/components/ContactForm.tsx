@@ -181,7 +181,7 @@ export default function ContactForm({
 
             <div className="hidden md:flex md:w-[40%] md:items-center md:justify-center">
               <Image
-                src="https://ebombo.com/wp-content/uploads/2025/12/Mask-Group-27.png.webp"
+                src="/uploads/2025/12/Mask-Group-27.png.webp"
                 alt="Photobooth 360 de eBombo en evento"
                 width={539}
                 height={390}

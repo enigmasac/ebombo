@@ -56,7 +56,7 @@ export default function WhyEbombo({ lang = "es" as Lang }: { lang?: Lang }) {
 
         <div className="order-last hidden md:block md:flex-1">
           <Image
-            src="https://ebombo.com/wp-content/uploads/2025/12/events-home4.jpg.webp"
+            src="/uploads/2025/12/events-home4.jpg.webp"
             alt={t.whyEbombo.title}
             width={1651}
             height={1101}

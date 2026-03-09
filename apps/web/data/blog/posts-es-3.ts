@@ -7,7 +7,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-12T16:04:14+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/Ideas-para-involucrar-a-la-comunidad-local-en-grandes-convenciones.webp`,
+    thumbnailUrl: `/uploads/2025/03/Ideas-para-involucrar-a-la-comunidad-local-en-grandes-convenciones.webp`,
     wordCount: 576,
     bodyContent: [
       { type: "p", text: `¿Alguna vez has ido a una convención enorme y sentido que la ciudad alrededor apenas se entera? Es como montar una fiesta gigante y no invitar a los vecinos. Involucrar a la comunidad local en grandes convenciones no solo le da vida al evento, sino que crea un puente entre los asistentes y el lugar. Es una oportunidad para que todos ganen: los organizadores, los locales y hasta los visitantes. Vamos a explorar ideas prácticas y frescas para que la gente de la zona se sienta parte del show. ¡Prepárate para que tu convención sea el tema del barrio!` },
@@ -66,7 +66,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-11T23:06:13+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/El-valor-de-las-charlas-motivacionales-en-reuniones-internas.webp`,
+    thumbnailUrl: `/uploads/2025/03/El-valor-de-las-charlas-motivacionales-en-reuniones-internas.webp`,
     wordCount: 594,
     bodyContent: [
       { type: "p", text: `¿Alguna vez has sentido que una reunión interna es como un café descafeinado: está ahí, pero no despierta a nadie? Las charlas motivacionales son como un shot de espresso que sacude al equipo y lo pone a mil. En un mundo donde el día a día puede volverse un loop de tareas, estas sesiones cortas pero potentes traen aire fresco, inspiración y un empujón para que todos den lo mejor. Vamos a explorar por qué estas charlas son un tesoro escondido para tus reuniones internas y cómo sacarle el jugo. ¡Prepárate para cargar pilas como nunca!` },
@@ -125,7 +125,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-11T23:03:38+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/La-relevancia-de-las-alianzas-estrategicas-en-la-organizacion-de-eventos.webp`,
+    thumbnailUrl: `/uploads/2025/03/La-relevancia-de-las-alianzas-estrategicas-en-la-organizacion-de-eventos.webp`,
     wordCount: 635,
     bodyContent: [
       { type: "p", text: `¿Te has preguntado cómo algunos eventos parecen salir perfectos, como si todo encajara por arte de magia? Spoiler: no es magia, son alianzas estratégicas. En la organización de eventos, unir fuerzas con los socios adecuados es como tener un equipo de superhéroes que te respalda. No se trata solo de repartir tareas; es sumar recursos, ideas y alcance para que tu evento pase de ser “uno más” a “el que todos recuerdan”. Vamos a explorar por qué estas alianzas son oro puro y cómo hacerlas funcionar. ¡Prepárate para descubrir el poder de no ir solo!` },
@@ -184,7 +184,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-11T23:00:04+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/Como-ofrecer-certificaciones-de-asistencia-en-conferencias-especializadas.webp`,
+    thumbnailUrl: `/uploads/2025/03/Como-ofrecer-certificaciones-de-asistencia-en-conferencias-especializadas.webp`,
     wordCount: 634,
     bodyContent: [
       { type: "p", text: `¿Te has preguntado alguna vez cómo hacer que los asistentes a tu conferencia se vayan con algo más que un café frío y un par de notas? Las certificaciones de asistencia son como el broche de oro que dice: “Estuviste aquí y valió la pena”. En conferencias especializadas, donde el conocimiento es rey, estos documentos no solo son un detalle bonito, sino un valor añadido que marca la diferencia. Vamos a ver cómo ofrecerlas de manera práctica, rápida y con un toque pro que deje a todos contentos. ¡Prepárate para darle a tu evento ese plus que todos recordarán!` },
@@ -243,7 +243,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-11T22:32:30+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/El-papel-de-la-iluminacion-arquitectonica-en-eventos-al-aire-libre.jpg`,
+    thumbnailUrl: `/uploads/2025/03/El-papel-de-la-iluminacion-arquitectonica-en-eventos-al-aire-libre.jpg`,
     wordCount: 630,
     bodyContent: [
       { type: "p", text: `¿Alguna vez has estado en un evento al aire libre y sentido que la noche se transforma en algo mágico solo por cómo está iluminado? La iluminación arquitectónica no es solo poner focos y ya; es como el pincel de un artista que da vida a cada rincón. En eventos bajo el cielo, desde bodas hasta festivales, las luces no solo alumbran: crean ambiente, guían y hasta emocionan. Vamos a explorar cómo este detalle puede hacer que tu evento pase de ser “bonito” a “¡guau!”. ¡Prepárate para encender la chispa de tus noches al aire libre!` },
@@ -302,7 +302,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-10T22:13:21+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/Como-seleccionar-la-musica-adecuada-para-cada-momento-del-evento.jpg`,
+    thumbnailUrl: `/uploads/2025/03/Como-seleccionar-la-musica-adecuada-para-cada-momento-del-evento.jpg`,
     wordCount: 648,
     bodyContent: [
       { type: "p", text: `¿Te has parado a pensar cómo una canción puede cambiar el vibe de un evento en un segundo? La música no es solo ruido de fondo; es como el director invisible que marca el ritmo de todo. Elegir la adecuada para cada momento es como mezclar los ingredientes perfectos para un plato: si te pasas o te quedas corto, se nota. Ya sea una conferencia, una boda o una expo, la música tiene el poder de emocionar, relajar o encender la fiesta. Vamos a desglosar cómo acertar con la playlist para que tu evento suene a éxito total. ¡Sube el volumen y empecemos!` },
@@ -361,7 +361,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-10T22:01:45+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/La-importancia-de-los-simulacros-de-seguridad-en-eventos-masivos.jpg`,
+    thumbnailUrl: `/uploads/2025/03/La-importancia-de-los-simulacros-de-seguridad-en-eventos-masivos.jpg`,
     wordCount: 622,
     bodyContent: [
       { type: "p", text: `¿Te imaginas estar en un concierto con miles de personas y que algo salga mal, pero nadie sabe qué hacer? Es como subirse a un barco sin chalecos salvavidas. Los simulacros de seguridad en eventos masivos no son un trámite aburrido; son como el ensayo general que salva vidas y evita el caos. Cuando hay tanta gente junta, desde un festival hasta una conferencia, cualquier imprevisto puede convertirse en una avalancha si no estás preparado. Vamos a ver por qué estos ensayos son clave y cómo hacen que todos salgan ganando. ¡Prepárate para entender por qué practicar no es opcional!` },
@@ -420,7 +420,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-10T21:30:52+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/que-es-un-evento-corporativo.webp`,
+    thumbnailUrl: `/uploads/2025/03/que-es-un-evento-corporativo.webp`,
     wordCount: 597,
     bodyContent: [
       { type: "p", text: `¿Alguna vez has llegado a una expo con el reloj en contra, sudando la gota gorda porque el stand parece un rompecabezas sin instrucciones? Montar rápido y bien no es solo cuestión de suerte; es como coreografiar una danza donde cada paso cuenta. En las exposiciones, donde la primera impresión es tu carta de presentación, un montaje eficaz te pone por delante. Vamos a desglosar consejos prácticos para que tu stand esté listo en un abrir y cerrar de ojos, sin estrés y con todo en su sitio. ¡Prepárate para brillar sin despeinarte!` },
@@ -479,7 +479,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-10T11:44:55+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/Como-disenar-un-itinerario-de-actividades-paralelas-atractivo.jpg`,
+    thumbnailUrl: `/uploads/2025/03/Como-disenar-un-itinerario-de-actividades-paralelas-atractivo.jpg`,
     wordCount: 654,
     bodyContent: [
       { type: "p", text: `¿Alguna vez has ido a un evento y sentido que las actividades extras eran como el postre que nadie pidió? Un buen itinerario de actividades paralelas puede ser el ingrediente secreto que hace que tu evento pase de “meh” a “¡qué pasada!”. No se trata solo de llenar huecos; es como tejer una red de experiencias que mantengan a todos enganchados. Vamos a ver cómo armar un plan paralelo que sea un imán para tus asistentes, con ideas que los saquen de la silla y los hagan vibrar. ¡Prepárate para que tu evento sea inolvidable desde todos los ángulos!` },
@@ -538,7 +538,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-07T21:13:34+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/Como-ofrecer-traduccion-simultanea-de-manera-eficiente.webp`,
+    thumbnailUrl: `/uploads/2025/03/Como-ofrecer-traduccion-simultanea-de-manera-eficiente.webp`,
     wordCount: 658,
     bodyContent: [
       { type: "p", text: `¿Te imaginas un congreso internacional donde la mitad de los asistentes no entiende ni papa? Sería como poner una peli sin subtítulos: caos total. La traducción simultánea es como un puente invisible que une a todos, sin importar el idioma. Pero hacerlo bien no es solo enchufar micrófonos y cruzar los dedos; requiere estrategia y un toque de magia tecnológica. Vamos a explorar cómo ofrecerla de manera eficiente para que tu evento fluya como río y nadie se quede atrás. ¡Prepárate para romper las barreras del idioma como un pro!` },
@@ -597,7 +597,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-07T21:09:56+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/Ideas-para-integrar-la-realidad-aumentada-en-tus-exposiciones.webp`,
+    thumbnailUrl: `/uploads/2025/03/Ideas-para-integrar-la-realidad-aumentada-en-tus-exposiciones.webp`,
     wordCount: 651,
     bodyContent: [
       { type: "p", text: `¿Te imaginas que tus visitantes no solo vean tu exposición, sino que la vivan como si estuvieran dentro de un videojuego? La realidad aumentada (RA) es como un superpoder que convierte stands y muestras en experiencias que enganchan. Ya no se trata de colgar carteles o apilar productos; ahora puedes meter a la gente en un mundo donde tu marca cobra vida. Vamos a explorar ideas prácticas para integrar la RA en tus exposiciones y hacer que todos hablen de ti. ¡Prepárate para llevar tus eventos al próximo nivel!` },
@@ -656,7 +656,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-07T21:07:25+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/El-poder-del-follow-up-personalizado-tras-un-evento-empresarial-2.jpg`,
+    thumbnailUrl: `/uploads/2025/03/El-poder-del-follow-up-personalizado-tras-un-evento-empresarial-2.jpg`,
     wordCount: 699,
     bodyContent: [
       { type: "p", text: `¿Alguna vez has salido de un evento empresarial pensando que hiciste contactos geniales, pero luego todo se queda en el aire? Es como tirar una piedra al agua y no esperar las ondas. El follow-up personalizado no es solo un correo de cortesía; es como el remate perfecto de un golazo que asegura que tu evento deje huella. En un mundo donde las conexiones valen oro, este pequeño gesto puede transformar asistentes en aliados, clientes o amigos. Vamos a explorar cómo sacarle jugo a esta técnica y por qué es tu arma secreta post-evento. ¡Prepárate para que nadie te olvide!` },
@@ -715,7 +715,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-07T21:04:07+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/Tecnicas-para-manejar-imprevistos-de-ultima-hora-en-congresos-corporativos.webp`,
+    thumbnailUrl: `/uploads/2025/03/Tecnicas-para-manejar-imprevistos-de-ultima-hora-en-congresos-corporativos.webp`,
     wordCount: 704,
     bodyContent: [
       { type: "p", text: `¿Te ha pasado que estás a punto de arrancar un congreso y de repente todo se tambalea como castillo de naipes? Un ponente se retrasa, el proyector falla o el café no llega. ¡Bienvenido al club de los imprevistos! En un congreso, donde cada minuto vale oro, estos sobresaltos son tan comunes como el café de la mañana. Pero no te preocupes, hay técnicas para capear el temporal y salir airoso. Vamos a ver cómo manejar esos líos de última hora como un pro, convirtiendo el caos en una oportunidad para brillar. ¡Prepárate para domar cualquier tormenta!` },
@@ -774,7 +774,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-06T17:43:16+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/Ideas-para-optimizar-la-duracion-de-cada-ponencia-sin-aburrir.jpg`,
+    thumbnailUrl: `/uploads/2025/03/Ideas-para-optimizar-la-duracion-de-cada-ponencia-sin-aburrir.jpg`,
     wordCount: 675,
     bodyContent: [
       { type: "p", text: `¿Alguna vez has estado en una ponencia que parece eterna, como si el reloj se hubiera aliado con el aburrimiento para torturarte? No eres el único. En un mundo donde la atención es oro, hacer que cada charla sea justa en tiempo y vibrante es todo un arte. Optimizar la duración de una ponencia no significa solo cortar minutos; es como afinar un instrumento para que suene perfecto sin desafinar. Vamos a explorar ideas prácticas para que tus ponencias sean un hit, mantengan a todos despiertos y dejen ganas de aplaudir. ¡Prepárate para darle ritmo a tus charlas!` },
@@ -833,7 +833,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-06T17:40:04+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/El-rol-de-un-maestro-de-ceremonias-profesional-en-eventos-corporativos.jpeg`,
+    thumbnailUrl: `/uploads/2025/03/El-rol-de-un-maestro-de-ceremonias-profesional-en-eventos-corporativos.jpeg`,
     wordCount: 790,
     bodyContent: [
       { type: "p", text: `¿Te has imaginado un evento corporativo sin alguien que lo dirija, como un barco a la deriva en plena tormenta? Un maestro de ceremonias (o MC, para los amigos) no es solo un tipo con micrófono; es como el alma del evento, el que pone orden, chispa y ritmo a todo. En el mundo de las empresas, donde cada detalle cuenta, este rol puede ser la diferencia entre un evento que pasa sin pena ni gloria y uno que todos recuerdan. Vamos a explorar qué hace un MC profesional y por qué es tu as bajo la manga en cualquier evento corporativo. ¡Prepárate para ver cómo este crack transforma el caos en magia!` },
@@ -892,7 +892,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-06T17:36:36+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/Como-utilizar-la-gamificacion-para-promover-la-asistencia-anticipada-1.jpeg`,
+    thumbnailUrl: `/uploads/2025/03/Como-utilizar-la-gamificacion-para-promover-la-asistencia-anticipada-1.jpeg`,
     wordCount: 714,
     bodyContent: [
       { type: "p", text: `¿Te ha pasado que organizas un evento y, a pocos días del gran momento, te das cuenta de que casi nadie se ha apuntado? Es como preparar una fiesta épica y que los invitados se queden en el sofá. Pero, ¿y si te digo que la gamificación puede ser tu arma secreta para que la gente corra a registrarse antes de tiempo? Hacer que asistir sea un juego no solo suena divertido, sino que funciona. Vamos a explorar cómo usar esta técnica para llenar tu evento de asistentes motivados desde el arranque. ¡Prepárate para transformar la espera en pura emoción!` },
@@ -951,7 +951,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-06T17:30:26+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/Innovaciones-en-stands-modulares-y-su-impacto-en-ferias.jpg`,
+    thumbnailUrl: `/uploads/2025/03/Innovaciones-en-stands-modulares-y-su-impacto-en-ferias.jpg`,
     wordCount: 746,
     bodyContent: [
       { type: "p", text: `¿Alguna vez has caminado por una feria y te has detenido en un stand que parece sacado de una película futurista? Los stands modulares ya no son solo estructuras aburridas de metal y tela; se han convertido en lienzos vivos que capturan miradas y cuentan historias. Con las innovaciones de hoy, estas piezas transforman ferias enteras, haciendo que las marcas brillen como nunca. ¿Quieres saber cómo lo logran y qué significa para tu próximo evento? Vamos a sumergirnos en este mundo de creatividad y tecnología que está revolucionando las exposiciones.` },
@@ -1010,7 +1010,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-05T21:49:59+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/Como-estructurar-un-ciclo-de-conferencias-para-publicos-globales.webp`,
+    thumbnailUrl: `/uploads/2025/03/Como-estructurar-un-ciclo-de-conferencias-para-publicos-globales.webp`,
     wordCount: 693,
     bodyContent: [
       { type: "p", text: `¿Te imaginas organizar un ciclo de conferencias que conecte a gente desde Tokio hasta Buenos Aires sin que nadie se sienta perdido? Suena como un reto de titanes, ¿verdad? Pero con una buena estructura, puedes convertir ese sueño en realidad. Hacer que un evento hable a públicos globales no es solo juntar charlas; es como armar un rompecabezas donde cada pieza —idiomas, horarios, temas— encaja perfecto. Vamos a desglosar cómo estructurar un ciclo de conferencias que cruce fronteras y deje a todos con ganas de más. ¡Prepárate para conquistar el mundo, una charla a la vez!` },
@@ -1069,7 +1069,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-05T21:44:38+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/La-importancia-de-la-iluminacion-en-presentaciones-y-stands.jpg`,
+    thumbnailUrl: `/uploads/2025/03/La-importancia-de-la-iluminacion-en-presentaciones-y-stands.jpg`,
     wordCount: 763,
     bodyContent: [
       { type: "p", text: `¿Alguna vez has entrado a un stand o una sala de conferencias y sentido que algo no encajaba, pero no sabías qué? Spoiler: probablemente era la luz. La iluminación en presentaciones y stands no es solo un detalle técnico; es como el maquillaje de un evento: si está bien puesto, todo brilla; si falla, se nota. Puede transformar un espacio aburrido en algo vibrante o hacer que una ponencia pase de “meh” a “¡qué impacto!”. Vamos a explorar por qué la luz importa tanto y cómo sacarle el jugo para que tus asistentes se queden con la boca abierta.` },
@@ -1128,7 +1128,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-05T21:41:44+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/Herramientas-de-inteligencia-artificial-para-la-gestion-de-eventos.webp`,
+    thumbnailUrl: `/uploads/2025/03/Herramientas-de-inteligencia-artificial-para-la-gestion-de-eventos.webp`,
     wordCount: 716,
     bodyContent: [
       { type: "p", text: `¿Alguna vez has sentido que organizar un evento es como tratar de domar un tornado? Entre invitaciones, horarios y mil detalles, es fácil perder el control. Pero, ¿y si te digo que la inteligencia artificial (IA) puede ser tu aliada para que todo fluya como río tranquilo? Las herramientas de IA están revolucionando cómo planeamos y ejecutamos eventos, desde congresos hasta fiestas. Vamos a explorar cómo estas maravillas tecnológicas pueden ahorrarte tiempo, estrés y hasta un par de canas. ¡Prepárate para descubrir cómo la IA lleva tus eventos al siguiente nivel!` },
@@ -1187,7 +1187,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-05T21:38:06+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/Como-disenar-concursos-y-sorteos-que-fortalezcan-la-interaccion-2025.jpg`,
+    thumbnailUrl: `/uploads/2025/03/Como-disenar-concursos-y-sorteos-que-fortalezcan-la-interaccion-2025.jpg`,
     wordCount: 699,
     bodyContent: [
       { type: "p", text: `¿Te has preguntado cómo hacer que la gente no solo mire tu evento o marca, sino que se enganche de verdad? Imagina un sorteo o concurso que prende la chispa: todos participando, comentando, compartiendo. No es solo dar un premio; es como lanzar un anzuelo que pesca atención y la convierte en acción. Diseñar concursos y sorteos que realmente fortalezcan la interacción no es cosa de suerte, es estrategia pura. Vamos a desglosar cómo hacerlo bien, con ideas que harán que tu audiencia no pueda resistirse. ¡Prepárate para que se prendan como nunca!` },
@@ -1246,7 +1246,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-04T18:02:48+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/El-impacto-de-un-buen-coffee-break-en-la-satisfaccion-del-asistente-2025.jpg`,
+    thumbnailUrl: `/uploads/2025/03/El-impacto-de-un-buen-coffee-break-en-la-satisfaccion-del-asistente-2025.jpg`,
     wordCount: 800,
     bodyContent: [
       { type: "p", text: `¿Alguna vez te has sentido como un zombie a mitad de un evento, con el cerebro pidiéndote a gritos un respiro? Ahora imagina que, justo entonces, te encuentras con un coffee break bien puesto: café humeante, algo rico para picar y un momento para charlar. ¿No cambia todo? Un buen coffee break no es solo un paréntesis; es como un botón de reinicio que puede hacer que tus asistentes pasen de “qué largo está esto” a “qué buena onda este evento”. Vamos a explorar cómo algo tan simple puede marcar la diferencia en la satisfacción de quienes asisten. ¡Prepárate para darle un giro a tus pausas!` },
@@ -1305,7 +1305,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-04T18:00:42+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/Evento-corporativo-1280x720-1.jpg`,
+    thumbnailUrl: `/uploads/2025/03/Evento-corporativo-1280x720-1.jpg`,
     wordCount: 770,
     bodyContent: [
       { type: "p", text: `¿Te imaginas llegar a un evento y que el registro sea tan fácil como sacar el celular y escanear un código? Los códigos QR han revolucionado cómo manejamos el acceso en eventos, desde congresos hasta conciertos. Pero no todo es tan simple como parece: si no lo haces bien, puedes terminar con filas eternas o asistentes frustrados. Es como tener una varita mágica, pero necesitas saber cómo agitarla. Vamos a explorar recomendaciones prácticas para que el registro y control de acceso con códigos QR sea un éxito rotundo. ¡Prepárate para dejar atrás el caos y darle un toque moderno a tus eventos!` },
@@ -1364,7 +1364,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-04T17:57:16+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/Como-adaptar-un-congreso-empresarial-a-diferentes-perfiles-de-asistentes-2025-1.jpg`,
+    thumbnailUrl: `/uploads/2025/03/Como-adaptar-un-congreso-empresarial-a-diferentes-perfiles-de-asistentes-2025-1.jpg`,
     wordCount: 815,
     bodyContent: [
       { type: "p", text: `¿Alguna vez te has preguntado cómo hacer que un congreso empresarial no sea un “meh” para algunos y un “¡wow!” para otros? Imagina esto: tienes CEOs, emprendedores jóvenes, empleados de nivel medio y hasta freelancers, todos bajo el mismo techo. ¿Cómo logras que todos se vayan felices? Adaptar un congreso a distintos perfiles no es magia; es estrategia pura. Es como cocinar una sopa que le guste a todos: necesitas los ingredientes correctos y un poco de sazón. Vamos a desglosar cómo hacerlo para que tu evento sea un éxito rotundo sin importar quién esté en la sala.` },
@@ -1423,7 +1423,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-04T17:54:56+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/participacion-en-evento-corporativo.png`,
+    thumbnailUrl: `/uploads/2025/03/participacion-en-evento-corporativo.png`,
     wordCount: 868,
     bodyContent: [
       { type: "p", text: `¿Alguna vez has estado en un panel donde el público parece más interesado en su celular que en lo que pasa en el escenario? Es como hablarle a una pared, ¿verdad? Los paneles pueden ser oro puro para compartir ideas y conectar, pero si la audiencia no se engancha, todo se queda en el aire. Por suerte, hay técnicas que pueden convertir ese silencio incómodo en un intercambio vibrante. Vamos a explorar cómo hacer que la gente participe, pregunte y hasta se emocione. Si moderas o participas en paneles, esto es para ti. ¡Prepárate para prender la chispa!` },
@@ -1482,7 +1482,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-03T19:36:24+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/La-relevancia-de-las-encuestas-post-evento-para-mejorar-la-experiencia.jpg`,
+    thumbnailUrl: `/uploads/2025/03/La-relevancia-de-las-encuestas-post-evento-para-mejorar-la-experiencia.jpg`,
     wordCount: 750,
     bodyContent: [
       { type: "p", text: `¿Alguna vez has organizado un evento y te has quedado pensando si realmente salió tan bien como creías? Las luces se apagan, la gente se va, pero ¿qué pensaron de verdad? Aquí es donde las encuestas post-evento entran al juego como un superpoder silencioso. No son solo un formulario aburrido; son como una linterna que ilumina lo que funcionó y lo que se tambaleó. Si quieres que tu próximo evento pase de “estuvo bueno” a “fue increíble”, sigue leyendo. Vamos a ver por qué estas encuestas son clave y cómo usarlas para pulir cada detalle.` },
@@ -1541,7 +1541,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-03T19:31:32+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/Como-desarrollar-un-guion-maestro-para-presentaciones-y-ponencias.jpg`,
+    thumbnailUrl: `/uploads/2025/03/Como-desarrollar-un-guion-maestro-para-presentaciones-y-ponencias.jpg`,
     wordCount: 850,
     bodyContent: [
       { type: "p", text: `¿Alguna vez te has quedado en blanco frente a una audiencia, con el corazón latiendo a mil y sin saber qué decir? Tranquilo, no eres el único. Hablar en público puede ser un reto, pero con un guion maestro en tus manos, es como tener un mapa que te guía por el escenario sin perderte. No hablo de leer un papel palabra por palabra, sino de construir una hoja de ruta que te haga brillar. Vamos a desglosar cómo crear un guion para tus presentaciones y ponencias que sea claro, potente y conecte con la gente. ¡Prepárate para dominar el arte de hablar como crack!` },
@@ -1602,7 +1602,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-03T19:27:02+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/relaxed-happy-businessman-student-worker-600nw-1495965008-1.png`,
+    thumbnailUrl: `/uploads/2025/03/relaxed-happy-businessman-student-worker-600nw-1495965008-1.png`,
     wordCount: 903,
     bodyContent: [
       { type: "p", text: `¿Alguna vez has entrado a un evento y sentido que algo te envuelve, aunque no sepas qué es? Probablemente sea la música ambiental. No es solo ruido de fondo; es como el alma invisible que le da vida a cualquier reunión, desde una boda hasta una conferencia. La música tiene el poder de transformar un espacio frío en algo cálido, de calmar nervios o de encender la fiesta. Si estás organizando un evento y no has pensado en esto, quédate conmigo. Vamos a explorar cómo la música ambiental puede hacer o deshacer el ambiente de tu evento, con tips prácticos para sacarle el máximo jugo.` },
@@ -1661,7 +1661,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-03-03T19:21:47+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/03/VOLUNTARIADO-1.png`,
+    thumbnailUrl: `/uploads/2025/03/VOLUNTARIADO-1.png`,
     wordCount: 922,
     bodyContent: [
       { type: "p", text: `¿Te has preguntado alguna vez cómo tu empresa podría hacer algo más que ganar dinero? Imagina a tu equipo recogiendo basura en un parque, pintando una escuela o ayudando en un comedor social. Suena bien, ¿verdad? El voluntariado corporativo no solo es una forma de devolverle algo al mundo, sino también de unir a tus empleados y darle un propósito extra a tu negocio. Pero no basta con decir “vamos a hacerlo”; hay que planearlo bien para que realmente funcione. Vamos a explorar cómo integrar estas actividades de manera práctica, divertida y efectiva. ¡Prepárate para darle un giro positivo a tu empresa!` },
@@ -1721,7 +1721,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-28T18:32:23+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/02/Diseno-sin-titulo-4.png`,
+    thumbnailUrl: `/uploads/2025/02/Diseno-sin-titulo-4.png`,
     wordCount: 1279,
     bodyContent: [
       { type: "p", text: `Las reuniones corporativas masivas, como convenciones, conferencias o seminarios de gran escala, presentan una serie de desafíos en términos de seguridad. La protección de los asistentes, el control de acceso, la gestión de emergencias y la seguridad cibernética son algunos de los aspectos clave que deben ser considerados para garantizar un evento exitoso y libre de incidentes. Aquí te presentamos algunas estrategias esenciales para asegurar la seguridad en reuniones corporativas de gran envergadura.` },
@@ -1785,7 +1785,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-28T18:26:07+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/02/Diseno-sin-titulo-3.png`,
+    thumbnailUrl: `/uploads/2025/02/Diseno-sin-titulo-3.png`,
     wordCount: 1346,
     bodyContent: [
       { type: "p", text: `La iluminación adecuada puede transformar un evento corporativo y crear una atmósfera única que impacte tanto a los asistentes como a los organizadores. En una convención empresarial, la iluminación no solo tiene un propósito práctico, sino que también puede ser una herramienta poderosa para resaltar la marca, crear una experiencia inmersiva y reforzar el mensaje del evento. A continuación, te presentamos algunas ideas creativas de iluminación que pueden llevar tu convención empresarial al siguiente nivel.` },
@@ -1848,7 +1848,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-28T18:11:13+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/02/pexels-artempodrez-5716001-scaled-1.jpg`,
+    thumbnailUrl: `/uploads/2025/02/pexels-artempodrez-5716001-scaled-1.jpg`,
     wordCount: 998,
     bodyContent: [
       { type: "p", text: `Calcular el retorno de inversión (ROI) de un evento corporativo es esencial para evaluar su éxito y determinar si los objetivos se han cumplido de manera rentable. El ROI mide la relación entre lo que se ha invertido en el evento y los beneficios obtenidos. Este cálculo te permite justificar el gasto y optimizar futuras estrategias de marketing y eventos. ` },
@@ -1901,7 +1901,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-28T18:04:13+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/02/pexels-pixabay-50675-scaled-1.jpg`,
+    thumbnailUrl: `/uploads/2025/02/pexels-pixabay-50675-scaled-1.jpg`,
     wordCount: 1066,
     bodyContent: [
       { type: "p", text: `La elección del lugar (venue) para un evento corporativo es uno de los factores más importantes que influye en su éxito. Un lugar adecuado no solo establece el tono y la atmósfera del evento, sino que también puede optimizar la logística, mejorar la experiencia de los asistentes y ayudar a alcanzar los objetivos del evento. Elegir el venue correcto puede ser la diferencia entre un evento memorable y uno que pase desapercibido.` },
@@ -1946,7 +1946,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-26T22:44:41+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/02/DSC03702-1.jpg`,
+    thumbnailUrl: `/uploads/2025/02/DSC03702-1.jpg`,
     wordCount: 995,
     bodyContent: [
       { type: "p", text: `¿Alguna vez has visto a un ponente luchar con un micrófono que no suena o un proyector que se apaga a media charla? Es como ver un tren descarrilar en cámara lenta: incómodo para todos. La supervisión técnica antes de una ponencia no es solo un trámite; es el cimiento que sostiene una presentación exitosa. Si quieres que tus eventos brillen y que los asistentes se vayan hablando del contenido y no de los fallos, tienes que ponerle atención a los detalles técnicos. Vamos a desmenuzar por qué esto importa tanto y cómo hacerlo bien, paso a paso.` },
@@ -2005,7 +2005,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-26T22:40:46+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/02/in-out-travel-and-events-convencion-de-empresas-800x533-img-destacada-2.jpg`,
+    thumbnailUrl: `/uploads/2025/02/in-out-travel-and-events-convencion-de-empresas-800x533-img-destacada-2.jpg`,
     wordCount: 1110,
     bodyContent: [
       { type: "p", text: `¿Te has preguntado alguna vez qué pasa cuando las luces se apagan y todos se van de una convención empresarial? Podrías pensar que el trabajo termina ahí, pero déjame decirte algo: el verdadero juego empieza justo después. Una convención no es solo un evento de un día o dos; es una oportunidad para construir relaciones, cerrar tratos y plantar semillas para el futuro. Si no sabes cómo cerrar con fuerza ni dar seguimiento como profesional, estás dejando dinero y conexiones sobre la mesa. Vamos a desglosar estrategias prácticas y efectivas para que tu convención no termine en un “hasta luego”, sino en un “¡sigamos en contacto!” que realmente valga la pena.` },
@@ -2066,7 +2066,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-26T22:31:11+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/02/evento-corporativo-imgpost.webp`,
+    thumbnailUrl: `/uploads/2025/02/evento-corporativo-imgpost.webp`,
     wordCount: 1226,
     bodyContent: [
       { type: "p", text: `¿Alguna vez has ido a un evento y te has sentido como zombie al final del día? Entre el ruido, las charlas interminables y la comida pesada, no es raro terminar agotado. Pero, ¿y si te digo que organizar un evento no tiene que ser sinónimo de cansancio para tus asistentes? Cuidar su bienestar y salud no solo es posible, sino que puede marcar la diferencia entre un “fue bueno” y un “¡qué increíble experiencia!”. Vamos a explorar cómo lograrlo con ideas prácticas, frescas y fáciles de aplicar. Prepárate para transformar tu próximo evento en un oasis de energía y buena vibra.` },
@@ -2128,7 +2128,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-26T22:27:46+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/02/Como-dar-un-giro-innovador-a-las-cenas-de-gala-empresariales.jpg`,
+    thumbnailUrl: `/uploads/2025/02/Como-dar-un-giro-innovador-a-las-cenas-de-gala-empresariales.jpg`,
     wordCount: 1227,
     bodyContent: [
       { type: "p", text: `¿Te ha pasado que asistes a una cena de gala empresarial y sientes que estás en un déjà vu? Mesas perfectamente alineadas, un menú predecible y discursos que parecen eternos. No me malinterpretes, hay un encanto en lo clásico, pero en un mundo que avanza a mil por hora, ¿no crees que estas veladas merecen un toque de innovación? Si estás organizando una y quieres que tus invitados hablen de ella por meses, estás en el lugar correcto. Vamos a sumergirnos en cómo transformar esas cenas en algo inolvidable, con ideas que mezclan creatividad, tecnología y un poco de audacia.` },
@@ -2186,7 +2186,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-24T23:04:58+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/02/pexels-rdne-7648022-scaled-1.jpg`,
+    thumbnailUrl: `/uploads/2025/02/pexels-rdne-7648022-scaled-1.jpg`,
     wordCount: 1044,
     bodyContent: [
       { type: "p", text: `Las ferias y exposiciones empresariales son una excelente oportunidad para que las marcas conecten con nuevos clientes, socios y proveedores. Sin embargo, para destacar entre la multitud y garantizar el éxito de la participación, es fundamental contar con una estrategia de marketing sólida. Existen diversas técnicas que pueden ayudarte a maximizar la visibilidad y el impacto de tu empresa en estos eventos.` },
@@ -2231,7 +2231,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-24T22:30:16+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/02/pexels-yankrukov-7691740-scaled-1.jpg`,
+    thumbnailUrl: `/uploads/2025/02/pexels-yankrukov-7691740-scaled-1.jpg`,
     wordCount: 875,
     bodyContent: [
       { type: "p", text: `El networking es una herramienta poderosa en el mundo de los negocios. Se refiere al proceso de construir y cultivar relaciones profesionales que pueden aportar valor tanto a nivel personal como organizacional. En las reuniones de negocios, el networking no solo se trata de conocer a nuevas personas, sino también de crear alianzas, compartir conocimientos y ampliar las oportunidades de crecimiento.` },
@@ -2276,7 +2276,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-02-24T21:56:34+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/02/pexels-rdne-7648051-scaled-1.jpg`,
+    thumbnailUrl: `/uploads/2025/02/pexels-rdne-7648051-scaled-1.jpg`,
     wordCount: 492,
     bodyContent: [
       { type: "p", text: `Organizar un evento corporativo exitoso requiere una logística eficiente. Desde la planificación inicial hasta la ejecución, cada detalle cuenta para garantizar una experiencia fluida y satisfactoria para los asistentes. Aquí te presentamos estrategias clave para optimizar la logística en eventos corporativos.` },
@@ -2321,7 +2321,7 @@ export const postsEs3: BlogPost[] = [
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-12T04:08:05+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/El-papel-del-organizador-en-eventos-corporativos-exitosos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/El-papel-del-organizador-en-eventos-corporativos-exitosos.jpg`,
     wordCount: 1083,
     bodyContent: [
       { type: "p", text: `Un evento corporativo exitoso no ocurre por casualidad; detrás de cada detalle perfecto está la figura del organizador. Este rol es el eje que une planificación, ejecución y experiencia, asegurando que todo funcione como un reloj suizo. Pero, ¿qué hace exactamente un organizador para que un evento brille? ¡Acompáñame a descubrirlo!` },
@@ -2434,7 +2434,7 @@ El equipo es crucial; un organizador exitoso sabe delegar y coordinar de manera 
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-12T04:02:40+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-manejar-imprevistos-en-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-manejar-imprevistos-en-eventos-corporativos-internos.jpg`,
     wordCount: 1111,
     bodyContent: [
       { type: "p", text: `Si hay algo seguro en la organización de eventos, es que los imprevistos siempre aparecerán. Desde fallos técnicos hasta cambios de último minuto, estar preparado para lo inesperado es la clave para que un evento corporativo interno sea un éxito. Aquí encontrarás estrategias y consejos para gestionar cualquier contratiempo como un verdadero profesional.` },
@@ -2545,7 +2545,7 @@ Evalúa lo sucedido, recopila feedback y documenta lecciones aprendidas para mej
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-12T03:55:31+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Los-mejores-souvenirs-para-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Los-mejores-souvenirs-para-eventos-corporativos-internos.jpg`,
     wordCount: 1160,
     bodyContent: [
       { type: "p", text: `¿Quién no ama recibir un regalo al final de un evento? Los souvenirs son más que simples detalles; son una forma de decir «gracias por estar aquí» y de dejar una huella en la memoria de los asistentes. En los eventos corporativos internos, los souvenirs no solo generan alegría, sino que también refuerzan la cultura de la empresa. ¿Te preguntas cómo elegir los mejores? Aquí te cuento todo.` },
@@ -2666,7 +2666,7 @@ Al cierre del evento, tras un discurso o como parte de una dinámica especial pa
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-12T03:52:41+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-elegir-el-catering-ideal-para-tus-eventos-corporativos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-elegir-el-catering-ideal-para-tus-eventos-corporativos.jpg`,
     wordCount: 1090,
     bodyContent: [
       { type: "p", text: `Elegir el catering para un evento corporativo puede parecer una tarea sencilla, pero es mucho más que decidir qué servir. Un buen catering no solo alimenta, sino que también deja una impresión duradera, refuerza los valores de tu empresa y contribuye al éxito del evento. Aquí encontrarás todo lo que necesitas para elegir el catering perfecto que encantará a tus asistentes.` },
@@ -2777,7 +2777,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-11T03:40:12+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Actividades-recreativas-para-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Actividades-recreativas-para-eventos-corporativos-internos.jpg`,
     wordCount: 1161,
     bodyContent: [
       { type: "p", text: `¿Crees que los eventos corporativos son solo reuniones largas y aburridas? ¡Piénsalo otra vez! Las actividades recreativas pueden transformar cualquier evento en una experiencia memorable que motive a los empleados, fortalezca los lazos y mejore el ambiente laboral. Aquí te comparto ideas y consejos para incorporar actividades recreativas que marquen la diferencia.` },
@@ -2900,7 +2900,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-11T03:36:17+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-personalizar-eventos-corporativos-internos-para-tu-equipo.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-personalizar-eventos-corporativos-internos-para-tu-equipo.jpg`,
     wordCount: 1114,
     bodyContent: [
       { type: "p", text: `¿Alguna vez te has sentido desconectado en un evento que parecía no tener nada que ver contigo? Eso es exactamente lo que queremos evitar cuando se trata de organizar eventos corporativos internos. Personalizarlos no solo es una tendencia, sino una necesidad para crear experiencias significativas que conecten a tu equipo con los valores de la empresa. Acompáñame mientras te explico cómo puedes llevar la personalización a otro nivel.` },
@@ -3003,7 +3003,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-11T03:34:00+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Eventos-corporativos-como-integrarlos-en-tu-estrategia-de-recursos-humanos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Eventos-corporativos-como-integrarlos-en-tu-estrategia-de-recursos-humanos.jpg`,
     wordCount: 1256,
     bodyContent: [
       { type: "p", text: `Cuando hablamos de recursos humanos, muchas veces pensamos en procesos de reclutamiento, evaluaciones de desempeño o capacitaciones. Sin embargo, ¿te has planteado alguna vez cómo los eventos corporativos pueden ser un motor clave para potenciar tu estrategia de RRHH? No solo son una forma de romper con la rutina, sino que también pueden fortalecer la cultura organizacional, mejorar la motivación y, en última instancia, contribuir al éxito de tu empresa. Aquí te cuento cómo hacerlo de manera efectiva.` },
@@ -3106,7 +3106,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-11T02:33:27+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-hacer-networking-en-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-hacer-networking-en-eventos-corporativos-internos.jpg`,
     wordCount: 1211,
     bodyContent: [
       { type: "p", text: `Cuando escuchamos la palabra «networking», solemos pensar en eventos externos, donde conectamos con personas de otras empresas. Pero, ¿alguna vez has considerado el poder del networking dentro de tu propia organización? Los eventos corporativos internos son una mina de oro para construir relaciones, compartir ideas y descubrir oportunidades. ¡Aquí tienes todo lo que necesitas saber para convertirte en un experto en networking interno!` },
@@ -3209,7 +3209,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-11T02:30:07+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Ideas-de-eventos-corporativos-para-celebraciones-especiales.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Ideas-de-eventos-corporativos-para-celebraciones-especiales.jpg`,
     wordCount: 1177,
     bodyContent: [
       { type: "p", text: `Cuando se trata de celebrar en el ámbito corporativo, lo último que quieres es un evento aburrido y predecible. Las celebraciones especiales son la oportunidad perfecta para fortalecer la cultura de tu empresa, agradecer a tu equipo y, por supuesto, crear momentos inolvidables. ¿Necesitas inspiración? Aquí te dejo algunas ideas y consejos para diseñar eventos únicos que harán que todos hablen de ellos durante semanas.` },
@@ -3320,7 +3320,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-11T02:25:23+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Las-mejores-fechas-para-organizar-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Las-mejores-fechas-para-organizar-eventos-corporativos-internos.jpg`,
     wordCount: 1079,
     bodyContent: [
       { type: "p", text: `Elegir la fecha adecuada para un evento corporativo interno no es solo un detalle logístico, es una decisión estratégica. Un mal timing puede reducir la asistencia y afectar los objetivos del evento, mientras que una fecha bien seleccionada puede garantizar una experiencia inolvidable. Aquí te doy las claves para acertar en el calendario.` },
@@ -3431,7 +3431,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-11T02:22:13+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-fomentar-el-liderazgo-en-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-fomentar-el-liderazgo-en-eventos-corporativos-internos.jpg`,
     wordCount: 1146,
     bodyContent: [
       { type: "p", text: `¿Te has preguntado cómo algunos equipos logran alcanzar metas aparentemente imposibles mientras otros se estancan? La respuesta, en muchos casos, está en el liderazgo. Un buen líder inspira, guía y saca lo mejor de su equipo. Y sí, los eventos corporativos internos son el lugar perfecto para descubrir y potenciar esos talentos. Aquí te explico cómo hacerlo.` },
@@ -3534,7 +3534,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-11T02:18:47+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-convertir-un-evento-corporativo-en-una-experiencia-inolvidable.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-convertir-un-evento-corporativo-en-una-experiencia-inolvidable.jpg`,
     wordCount: 1064,
     bodyContent: [
       { type: "p", text: `Organizar un evento corporativo puede ser sencillo, pero ¿convertirlo en una experiencia inolvidable? Eso es otro nivel. Cuando los asistentes salen de un evento recordando no solo lo que hicieron, sino cómo se sintieron, sabes que lograste algo extraordinario. Hoy te contaré cómo puedes transformar cualquier reunión empresarial en un momento que deje huella.` },
@@ -3629,7 +3629,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-11T02:06:07+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Organizacion-de-eventos-corporativos-tendencias-y-novedades.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Organizacion-de-eventos-corporativos-tendencias-y-novedades.jpg`,
     wordCount: 1082,
     bodyContent: [
       { type: "p", text: `¿Estás buscando darle un giro innovador a tus eventos corporativos? La organización de estos encuentros ha evolucionado a pasos agigantados en los últimos años. Con nuevas tecnologías, sostenibilidad y experiencias personalizadas al frente, los eventos corporativos ya no son lo que eran. En este artículo te contaré sobre las tendencias y novedades que están marcando la pauta en 2025.` },
@@ -3726,7 +3726,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-11T01:57:59+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/El-impacto-de-los-eventos-corporativos-en-la-retencion-de-empleados.jpg`,
+    thumbnailUrl: `/uploads/2025/01/El-impacto-de-los-eventos-corporativos-en-la-retencion-de-empleados.jpg`,
     wordCount: 1069,
     bodyContent: [
       { type: "p", text: `¿Alguna vez te has preguntado por qué algunas empresas logran mantener a su talento durante años mientras otras enfrentan constantes renuncias? La respuesta puede estar en un detalle que a veces pasa desapercibido: los eventos corporativos. Estos no solo son una oportunidad para compartir, sino que también pueden ser la clave para retener a los mejores empleados.` },
@@ -3821,7 +3821,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-11T01:53:57+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-garantizar-la-seguridad-en-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-garantizar-la-seguridad-en-eventos-corporativos-internos.jpg`,
     wordCount: 1005,
     bodyContent: [
       { type: "p", text: `Los eventos corporativos internos son oportunidades increíbles para fortalecer al equipo y alcanzar objetivos comunes. Pero, ¿qué pasa si la seguridad no está garantizada? Pequeños descuidos pueden convertirse en grandes problemas. En este artículo te explico cómo priorizar la seguridad en tu próximo evento para que todos disfruten sin preocupaciones.` },
@@ -3916,7 +3916,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-11T01:50:11+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Eventos-corporativos-tematicos-ideas-para-sorprender-a-tu-equipo.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Eventos-corporativos-tematicos-ideas-para-sorprender-a-tu-equipo.jpg`,
     wordCount: 1109,
     bodyContent: [
       { type: "p", text: `¿Quieres que tu próximo evento corporativo sea inolvidable? Los eventos temáticos son la respuesta. No solo agregan un toque divertido y creativo, sino que también fortalecen los lazos del equipo, motivan y hacen que todos hablen de la empresa con una sonrisa. Vamos a sumergirnos en este fascinante mundo y explorar ideas y consejos para que el tuyo sea un éxito.` },
@@ -4007,7 +4007,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-10T15:40:46+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-incorporar-tecnologia-en-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-incorporar-tecnologia-en-eventos-corporativos-internos.jpg`,
     wordCount: 935,
     bodyContent: [
       { type: "p", text: `En la era digital, organizar eventos corporativos internos ya no es lo mismo. La tecnología no solo facilita el proceso, sino que transforma por completo la experiencia de los asistentes. Si alguna vez te has preguntado cómo incorporar estas herramientas en tus reuniones o actividades internas, este artículo te dará las respuestas que necesitas.` },
@@ -4096,7 +4096,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-10T15:28:26+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Los-principales-desafios-al-organizar-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Los-principales-desafios-al-organizar-eventos-corporativos-internos.jpg`,
     wordCount: 899,
     bodyContent: [
       { type: "p", text: `Organizar un evento corporativo interno puede parecer una tarea sencilla: reunir al equipo, elegir un tema y listo. Pero la realidad es que detrás de cada evento exitoso hay un sinfín de retos que deben enfrentarse con creatividad y estrategia. Aquí exploraremos los desafíos más comunes y cómo superarlos.` },
@@ -4175,7 +4175,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-10T05:15:59+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-aprovechar-los-eventos-corporativos-para-mejorar-la-productividad.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-aprovechar-los-eventos-corporativos-para-mejorar-la-productividad.jpg`,
     wordCount: 916,
     bodyContent: [
       { type: "p", text: `Cuando se habla de productividad empresarial, muchos piensan en estrategias técnicas, pero ¿has considerado que un evento corporativo bien planeado puede ser igual de poderoso? Hoy te voy a contar cómo estos encuentros pueden convertirse en el arma secreta para llevar a tu equipo al siguiente nivel.` },
@@ -4257,7 +4257,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-09T18:26:31+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Beneficios-de-contratar-una-agencia-para-organizar-tus-eventos-corporativos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Beneficios-de-contratar-una-agencia-para-organizar-tus-eventos-corporativos.jpg`,
     wordCount: 911,
     bodyContent: [
       { type: "p", text: `Si alguna vez has organizado un evento corporativo, sabes que la tarea puede ser tan emocionante como agotadora. Desde buscar proveedores hasta coordinar cada detalle, es un trabajo que consume tiempo, energía y, a veces, hasta la paciencia. Aquí es donde una agencia especializada se convierte en tu mejor aliada. ¿Listo para descubrir por qué deberías delegar esta tarea?` },
@@ -4338,7 +4338,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-09T18:26:31+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-fomentar-la-creatividad-en-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-fomentar-la-creatividad-en-eventos-corporativos-internos.jpg`,
     wordCount: 880,
     bodyContent: [
       { type: "p", text: `La creatividad no es solo cosa de artistas o escritores; también es la chispa que puede transformar un evento corporativo común en una experiencia inolvidable. ¿Cómo podemos aprovecharla al máximo para nuestros eventos internos? Aquí te comparto estrategias prácticas para que la creatividad sea el motor que impulse a tu equipo hacia el éxito.` },
@@ -4429,7 +4429,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-09T18:26:31+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-gestionar-el-estres-en-la-planificacion-de-eventos-corporativos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-gestionar-el-estres-en-la-planificacion-de-eventos-corporativos.jpg`,
     wordCount: 972,
     bodyContent: [
       { type: "p", text: `Organizar un evento corporativo puede sentirse como correr una maratón mientras haces malabares. Los plazos ajustados, las expectativas altas y las miles de decisiones que tomar son suficientes para que cualquiera se sienta abrumado. Pero no te preocupes, aquí te comparto algunos consejos que te ayudarán a gestionar el estrés y mantener el control durante todo el proceso.` },
@@ -4520,7 +4520,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-09T18:26:31+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Los-mejores-lugares-para-eventos-corporativos-internos-en-tu-ciudad.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Los-mejores-lugares-para-eventos-corporativos-internos-en-tu-ciudad.jpg`,
     wordCount: 919,
     bodyContent: [
       { type: "p", text: `¿Alguna vez has asistido a un evento corporativo donde el lugar parecía elegido al azar? La verdad es que el espacio puede marcar la diferencia entre un evento memorable y uno que pase desapercibido. Si estás buscando los mejores lugares para organizar eventos internos en tu ciudad, ¡aquí tienes una guía completa para elegir el sitio perfecto!` },
@@ -4611,7 +4611,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-09T18:26:31+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Los-secretos-para-crear-eventos-corporativos-internos-inolvidables.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Los-secretos-para-crear-eventos-corporativos-internos-inolvidables.jpg`,
     wordCount: 821,
     bodyContent: [
       { type: "p", text: `¿Quién no disfruta de un buen evento corporativo? Esos momentos donde el equipo se reúne, comparte, y crea conexiones más allá de las tareas diarias son esenciales para cualquier empresa. Pero, ¿cómo lograr que un evento interno sea más que un simple encuentro? Aquí te comparto los secretos que necesitas para que tus colaboradores hablen del evento por semanas (o incluso meses).` },
@@ -4700,7 +4700,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-09T17:51:59+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-mejorar-la-comunicacion-interna-con-eventos-corporativos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-mejorar-la-comunicacion-interna-con-eventos-corporativos.jpg`,
     wordCount: 1214,
     bodyContent: [
       { type: "p", text: `¿Has notado alguna vez que la comunicación en tu empresa podría mejorar? ¡No estás solo! Una comunicación interna efectiva es la columna vertebral de cualquier organización exitosa. Y una de las mejores maneras de fortalecerla es a través de eventos corporativos bien organizados. Pero, ¿cómo lograr que estos eventos realmente mejoren la comunicación dentro de tu empresa? ¡Aquí te lo contamos!` },
@@ -4785,7 +4785,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-07T21:43:04+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Actividades-de-team-building-para-eventos-corporativos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Actividades-de-team-building-para-eventos-corporativos.jpg`,
     wordCount: 1062,
     bodyContent: [
       { type: "p", text: `El team building no es solo una moda; es una herramienta clave para cualquier empresa que quiera fortalecer su equipo. Si alguna vez te has preguntado cómo transformar un grupo de personas en una máquina bien aceitada de colaboración, estás en el lugar indicado. Aquí exploraremos actividades creativas, dinámicas y efectivas que harán de tu próximo evento corporativo un éxito rotundo.` },
@@ -4870,7 +4870,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-07T21:43:04+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Beneficios-de-organizar-eventos-corporativos-internos-para-tu-empresa.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Beneficios-de-organizar-eventos-corporativos-internos-para-tu-empresa.jpg`,
     wordCount: 981,
     bodyContent: [
       { type: "p", text: `¿Sabías que un simple evento corporativo interno puede transformar por completo el ambiente de trabajo? Más que una excusa para salir de la rutina, estas actividades son el motor que puede impulsar la motivación, la productividad y la conexión entre los empleados. Si quieres saber por qué deberías considerar organizar este tipo de eventos, ¡sigue leyendo!` },
@@ -4948,7 +4948,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-07T21:43:04+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-crear-experiencias-unicas-en-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-crear-experiencias-unicas-en-eventos-corporativos-internos.jpg`,
     wordCount: 1095,
     bodyContent: [
       { type: "p", text: `¿Alguna vez has asistido a un evento corporativo que simplemente te dejó indiferente? ¡No más! Crear experiencias únicas en eventos corporativos internos puede transformar la manera en que tu equipo percibe estos encuentros. Imagina un evento que no solo sea productivo, sino también inolvidable. ¿Te interesa saber cómo lograrlo? ¡Sigue leyendo!` },
@@ -5029,7 +5029,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-07T21:43:04+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-elegir-el-mejor-lugar-para-tus-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-elegir-el-mejor-lugar-para-tus-eventos-corporativos-internos.jpg`,
     wordCount: 1002,
     bodyContent: [
       { type: "p", text: `Elegir el lugar perfecto para un evento corporativo interno puede parecer un desafío, pero es uno de los aspectos más importantes para garantizar el éxito. El lugar no solo define el ambiente, sino que también influye en la comodidad y motivación de los asistentes. Así que, si estás organizando un evento, toma nota porque aquí te contamos todo lo que necesitas saber para acertar.` },
@@ -5114,7 +5114,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-07T21:43:04+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-incluir-actividades-sostenibles-en-tus-eventos-corporativos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-incluir-actividades-sostenibles-en-tus-eventos-corporativos.jpg`,
     wordCount: 985,
     bodyContent: [
       { type: "p", text: `¿Alguna vez has pensado en cómo hacer que tu próximo evento corporativo no solo sea exitoso, sino también amigable con el planeta? Incorporar actividades sostenibles en tus eventos no solo demuestra responsabilidad ambiental, sino que también puede fortalecer la imagen de tu empresa y motivar a tu equipo. ¿Te preguntas por dónde empezar? ¡Aquí te dejo algunos tips infalibles para que tus eventos sean tan verdes como inolvidables!` },
@@ -5186,7 +5186,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-07T21:43:04+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-medir-el-exito-de-tus-eventos-corporativos-internos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-medir-el-exito-de-tus-eventos-corporativos-internos.jpg`,
     wordCount: 1041,
     bodyContent: [
       { type: "p", text: `Organizar un evento corporativo interno es un gran paso para motivar a tu equipo, reforzar valores y mejorar el ambiente laboral. Pero, ¿cómo saber si realmente fue exitoso? Medir el impacto de estos eventos es fundamental para justificar la inversión y perfeccionar futuras ediciones. En este artículo, te enseñaré cómo hacerlo de manera efectiva.` },
@@ -5272,7 +5272,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-07T21:43:04+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Como-organizar-eventos-corporativos-exitosos-para-tu-equipo-interno.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Como-organizar-eventos-corporativos-exitosos-para-tu-equipo-interno.jpg`,
     wordCount: 823,
     bodyContent: [
       { type: "p", text: `Organizar un evento corporativo puede ser todo un desafío, pero si lo haces bien, puede transformar la dinámica de tu equipo. Ya sea para celebrar un logro, fomentar el trabajo en equipo o simplemente desconectar del estrés diario, un evento bien planificado puede dejar huella. ¿Listo para convertirte en el maestro de ceremonias de tu equipo? Vamos a ello.` },
@@ -5347,7 +5347,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-07T21:43:04+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Errores-comunes-al-organizar-eventos-corporativos-y-como-evitarlos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Errores-comunes-al-organizar-eventos-corporativos-y-como-evitarlos.jpg`,
     wordCount: 956,
     bodyContent: [
       { type: "p", text: `Organizar un evento corporativo puede ser como armar un rompecabezas gigante: necesitas que cada pieza encaje perfectamente para que todo fluya. Sin embargo, los errores pueden aparecer cuando menos los esperas. Ya sea por falta de planificación o detalles olvidados, un pequeño fallo puede tener un gran impacto. Pero no te preocupes, aquí te contamos cuáles son los errores más comunes y, lo más importante, cómo evitarlos.` },
@@ -5425,7 +5425,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-07T21:43:04+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Eventos-corporativos-como-adaptarlos-a-la-cultura-de-tu-empresa.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Eventos-corporativos-como-adaptarlos-a-la-cultura-de-tu-empresa.jpg`,
     wordCount: 2086,
     bodyContent: [
       { type: "p", text: `¿Alguna vez has asistido a un evento corporativo que simplemente no resonaba contigo? ¡Es frustrante! Adaptar tus eventos corporativos a la cultura de tu empresa no solo mejora la experiencia de los empleados, sino que también fortalece la identidad y los valores de la organización. ¿Quieres saber cómo lograrlo? ¡Vamos a descubrirlo juntos!` },
@@ -5580,7 +5580,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-07T21:43:04+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Eventos-corporativos-internos-estrategias-para-fomentar-la-cohesion-del-equipo.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Eventos-corporativos-internos-estrategias-para-fomentar-la-cohesion-del-equipo.jpg`,
     wordCount: 1240,
     bodyContent: [
       { type: "p", text: `¿Te has dado cuenta de cómo un equipo bien cohesionado puede transformar la dinámica de una empresa? Los eventos corporativos internos son una herramienta poderosa para fortalecer los lazos entre los miembros del equipo, mejorar la comunicación y aumentar la productividad. En este artículo, te compartiremos estrategias efectivas para planificar y ejecutar eventos que realmente fomenten la cohesión de tu equipo.` },
@@ -5670,7 +5670,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-07T21:43:04+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Ideas-innovadoras-para-eventos-corporativos-que-inspiran-a-tu-personal.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Ideas-innovadoras-para-eventos-corporativos-que-inspiran-a-tu-personal.jpg`,
     wordCount: 946,
     bodyContent: [
       { type: "p", text: `Cuando se trata de eventos corporativos, salir de la rutina puede ser un verdadero cambio de juego. No estamos hablando de las típicas charlas en auditorios aburridos ni de meriendas con croissants, sino de experiencias que realmente conecten, sorprendan e inspiren a tu equipo. ¿Suena complicado? Para nada. Aquí tienes una guía repleta de ideas que harán que tu próximo evento sea el tema de conversación en la oficina durante semanas.` },
@@ -5737,7 +5737,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-07T21:43:04+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/La-importancia-de-los-eventos-corporativos-para-la-motivacion-del-equipo.jpg`,
+    thumbnailUrl: `/uploads/2025/01/La-importancia-de-los-eventos-corporativos-para-la-motivacion-del-equipo.jpg`,
     wordCount: 960,
     bodyContent: [
       { type: "p", text: `Los eventos corporativos son mucho más que reuniones o celebraciones. Son momentos diseñados para inspirar, conectar y motivar. Si estás buscando maneras de fortalecer a tu equipo, este artículo es para ti.` },
@@ -5816,7 +5816,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-07T21:43:04+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Los-mejores-juegos-para-integrar-equipos-en-eventos-corporativos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Los-mejores-juegos-para-integrar-equipos-en-eventos-corporativos.jpg`,
     wordCount: 923,
     bodyContent: [
       { type: "p", text: `¿Te ha pasado que los eventos corporativos se sienten monótonos y poco productivos? ¡No estás solo! Los juegos diseñados para integrar equipos pueden transformar una reunión aburrida en una experiencia inolvidable. Aquí exploramos las mejores opciones para fomentar la unión entre colegas y mejorar la dinámica laboral.` },
@@ -5900,7 +5900,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-07T21:43:04+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Los-mejores-temas-para-eventos-corporativos-de-fin-de-ano.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Los-mejores-temas-para-eventos-corporativos-de-fin-de-ano.jpg`,
     wordCount: 1148,
     bodyContent: [
       { type: "p", text: `¿Estás planeando el evento corporativo de fin de año y quieres que sea inolvidable? Elegir el tema perfecto puede transformar tu reunión en una experiencia memorable para todos los asistentes. Desde elegantes galas hasta fiestas temáticas divertidas, aquí te presento los mejores temas para eventos corporativos de fin de año que seguramente encantarán a tu equipo. ¡Vamos a descubrir cuál es el ideal para ti!` },
@@ -5987,7 +5987,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-07T21:43:04+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Organizacion-de-eventos-hibridos-una-solucion-innovadora-para-empresas.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Organizacion-de-eventos-hibridos-una-solucion-innovadora-para-empresas.jpg`,
     wordCount: 1849,
     bodyContent: [
       { type: "p", text: `¿Te has preguntado cómo llevar tus eventos corporativos al siguiente nivel sin dejar a nadie fuera? Los eventos híbridos son la respuesta innovadora que muchas empresas están adoptando hoy en día. Combinar lo mejor de los encuentros presenciales con la flexibilidad de los formatos virtuales puede transformar la manera en que tu empresa celebra, se comunica y motiva a su equipo. ¿Quieres saber cómo organizar un evento híbrido exitoso? ¡Vamos allá!` },
@@ -6111,7 +6111,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-07T21:43:04+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Pasos-para-planificar-un-evento-corporativo-memorable.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Pasos-para-planificar-un-evento-corporativo-memorable.jpg`,
     wordCount: 1199,
     bodyContent: [
       { type: "p", text: `¿Alguna vez te has preguntado cómo algunas empresas logran organizar eventos que quedan grabados en la memoria de todos los asistentes? ¡La clave está en una planificación meticulosa! Vamos a desglosar los pasos esenciales para que tu próximo evento corporativo sea todo un éxito.` },
@@ -6201,7 +6201,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-07T21:43:04+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Que-considerar-al-contratar-un-organizador-de-eventos-corporativos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Que-considerar-al-contratar-un-organizador-de-eventos-corporativos.jpg`,
     wordCount: 1263,
     bodyContent: [
       { type: "p", text: `¿Estás pensando en organizar un evento corporativo y no sabes por dónde empezar? Contratar a un organizador de eventos corporativos puede ser la clave para asegurar que todo salga perfecto. Pero, ¿qué aspectos debes tener en cuenta antes de dar este paso tan importante? ¡Aquí te lo contamos!` },
@@ -6300,7 +6300,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-07T21:43:04+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Tendencias-en-eventos-corporativos-para-2025.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Tendencias-en-eventos-corporativos-para-2025.jpg`,
     wordCount: 921,
     bodyContent: [
       { type: "p", text: `¿Quién dijo que los eventos corporativos deben ser aburridos? Si algo nos ha enseñado la evolución de estos encuentros es que cada año vienen cargados de innovaciones. Para 2025, las tendencias en eventos corporativos están enfocadas en tecnología, sostenibilidad y experiencias que realmente conecten a las personas. ¿Quieres estar un paso adelante? Aquí te lo contamos todo.` },
@@ -6378,7 +6378,7 @@ Elige proveedores que utilicen ingredientes locales, reduzcan el desperdicio y o
     description: `From corporate events to team building retreats, we craft interactive, high-impact corporate parties designed to connect and inspire your teams.`,
     datePublished: "2025-01-07T21:43:04+00:00",
     lang: "es",
-    thumbnailUrl: `https://ebombo.com/wp-content/uploads/2025/01/Tips-para-optimizar-el-presupuesto-de-tus-eventos-corporativos.jpg`,
+    thumbnailUrl: `/uploads/2025/01/Tips-para-optimizar-el-presupuesto-de-tus-eventos-corporativos.jpg`,
     wordCount: 1062,
     bodyContent: [
       { type: "p", text: `¿Te preocupa que tu próximo evento corporativo pueda salir de control en cuanto al presupuesto? ¡No estás solo! Organizar eventos exitosos sin gastar una fortuna es totalmente posible. Aquí te comparto tips infalibles para optimizar el presupuesto de tus eventos corporativos, asegurando que cada peso invertido rinda al máximo.` },

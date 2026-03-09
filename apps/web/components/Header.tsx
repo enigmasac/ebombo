@@ -26,7 +26,7 @@ export default function Header({ lang = "es" as Lang }: { lang?: Lang }) {
         <div className="shrink-0 md:w-[17%]">
           <Link href={localePath(lang, "/")}>
             <Image
-              src="https://ebombo.com/wp-content/uploads/2025/11/logoEbomboAColor.webp"
+              src="/uploads/2025/11/logoEbomboAColor.webp"
               alt="eBombo logo"
               width={150}
               height={40}

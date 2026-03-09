@@ -40,7 +40,7 @@ export default function HowItWorks({ lang = "es" }: { lang?: Lang }) {
       <div className="mx-auto flex max-w-container flex-col items-center justify-center gap-[30px] md:flex-row md:gap-[60px]">
         <div className="order-last hidden md:order-first md:block md:flex-1">
           <Image
-            src="https://ebombo.com/wp-content/uploads/2025/12/events-awards-and-Recognition.jpg.webp"
+            src="/uploads/2025/12/events-awards-and-Recognition.jpg.webp"
             alt="Eventos corporativos"
             width={1700}
             height={1001}

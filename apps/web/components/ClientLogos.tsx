@@ -2,7 +2,7 @@ import Image from "next/image";
 import type { Lang } from "@/lib/i18n";
 import { getDictionary } from "@/lib/i18n";
 
-const IMG = "https://ebombo.com/wp-content/uploads/2025/12";
+const IMG = "/uploads/2025/12";
 
 const logos = [
   { src: `${IMG}/accenture.png`, alt: "Accenture" },

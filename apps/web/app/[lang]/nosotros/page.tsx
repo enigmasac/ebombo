@@ -22,7 +22,7 @@ export async function generateMetadata({
   };
 }
 
-const IMG = "https://ebombo.com/wp-content/uploads";
+const IMG = "/uploads";
 
 const foundersData = [
   {
