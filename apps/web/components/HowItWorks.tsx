@@ -62,7 +62,7 @@ export default function HowItWorks({ lang = "es" }: { lang?: Lang }) {
             {steps.map((step) => (
               <div
                 key={step.title}
-                className="flex items-start gap-[15px] text-center md:text-left"
+                className="flex items-start gap-[15px] text-left"
               >
                 <div className="mt-1 shrink-0 text-ebombo-primary">
                   {step.icon}

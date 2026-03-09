@@ -72,14 +72,14 @@ export default function Hero({ lang = "es" }: { lang?: Lang }) {
 
         <div className="mt-[30px] flex flex-1 items-center justify-center md:mt-0">
           <div className="w-full rounded-[88px] bg-gradient-to-b from-white to-ebombo-bg p-[12px]">
-            <div className="relative aspect-[5/4] w-full overflow-hidden rounded-[76px]">
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[76px] md:aspect-[5/4]">
               {heroImages.map((src, index) => (
                 <Image
                   key={src}
                   src={src}
                   alt={`Evento corporativo eBombo ${index + 1}`}
                   fill
-                  className={`object-cover transition-opacity duration-[1200ms] ${
+                  className={`object-cover object-top transition-opacity duration-[1200ms] ${
                     index === currentSlide ? "opacity-100" : "opacity-0"
                   }`}
                   sizes="(max-width: 768px) 90vw, 522px"
