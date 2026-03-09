@@ -85,6 +85,7 @@ export default function Hero({ lang = "es" }: { lang?: Lang }) {
                   }`}
                   sizes="(max-width: 768px) 90vw, 522px"
                   priority={index === 0}
+                  loading={index === 0 ? "eager" : "lazy"}
                 />
               ))}
             </div>

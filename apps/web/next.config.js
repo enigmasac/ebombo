@@ -5,6 +5,7 @@ const nextConfig = {
     formats: ["image/avif", "image/webp"],
     deviceSizes: [640, 750, 828, 1080, 1200],
     imageSizes: [16, 32, 48, 64, 96, 128, 256],
+    minimumCacheTTL: 2592000,
     remotePatterns: [
       {
         protocol: "http",
@@ -14,6 +15,20 @@ const nextConfig = {
       },
     ],
   },
+  headers: async () => [
+    {
+      source: "/:path*",
+      headers: [
+        { key: "X-DNS-Prefetch-Control", value: "on" },
+      ],
+    },
+    {
+      source: "/uploads/:path*",
+      headers: [
+        { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+      ],
+    },
+  ],
 };
 
 module.exports = nextConfig;
