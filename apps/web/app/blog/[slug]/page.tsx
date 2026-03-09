@@ -59,13 +59,30 @@ function TableOfContents({
   );
   if (headings.length < 3) return null;
 
+  let h2Counter = 0;
+  let h3Counter = 0;
+
+  const numbered = headings.map((h) => {
+    if (h.type === "h2") {
+      h2Counter++;
+      h3Counter = 0;
+      return { ...h, number: `${h2Counter}` };
+    }
+    if (h.type === "h3") {
+      if (h2Counter === 0) h2Counter = 1;
+      h3Counter++;
+      return { ...h, number: `${h2Counter}.${h3Counter}` };
+    }
+    return { ...h, number: "" };
+  });
+
   return (
     <nav className="mb-8 rounded-[16px] border border-[#E0E0E0] bg-[#FAFAFA] p-5">
       <h4 className="mb-3 font-poppins text-base font-semibold text-ebombo-secondary">
         {lang === "es" ? "Tabla de contenidos" : "Table of contents"}
       </h4>
       <ol className="list-none space-y-1.5">
-        {headings.map((h, i) => (
+        {numbered.map((h, i) => (
           <li
             key={i}
             className={
@@ -76,9 +93,11 @@ function TableOfContents({
               href={`#${slugify(h.text)}`}
               className="font-roboto text-sm leading-[1.6] text-ebombo-text transition-colors hover:text-ebombo-primary"
             >
-              <span className="mr-1.5 font-semibold text-[#7A33FF]">
-                {i + 1}.
-              </span>
+              {h.number && (
+                <span className="mr-1.5 font-semibold text-[#7A33FF]">
+                  {h.number}.
+                </span>
+              )}
               {h.text}
             </a>
           </li>
