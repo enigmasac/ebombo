@@ -114,9 +114,6 @@ export default async function BlogPost({ params }: Props) {
   const post = getPostBySlug(slug);
   if (!post) notFound();
 
-  const inputStyles =
-    "w-full rounded-[12px] border border-[#E0E0E0] bg-white px-4 py-3 font-roboto text-base text-[#1E1E1E] outline-none placeholder:text-ebombo-text/60 focus:border-ebombo-primary";
-
   return (
     <>
       <Header />
@@ -168,8 +165,21 @@ export default async function BlogPost({ params }: Props) {
 
         <section className="bg-white px-[5%] py-[40px]">
           <div className="mx-auto flex max-w-container flex-col gap-10 md:flex-row md:items-start">
-            <div className="md:w-[55%]">
-              <TableOfContents blocks={post.bodyContent} lang={post.lang} />
+            <aside className="hidden md:block md:w-[280px] md:shrink-0">
+              <div className="md:sticky md:top-[100px]">
+                <TableOfContents
+                  blocks={post.bodyContent}
+                  lang={post.lang}
+                />
+              </div>
+            </aside>
+            <div className="min-w-0 flex-1">
+              <div className="md:hidden">
+                <TableOfContents
+                  blocks={post.bodyContent}
+                  lang={post.lang}
+                />
+              </div>
               {post.bodyContent.length > 0 ? (
                 <RenderContent blocks={post.bodyContent} />
               ) : (
@@ -177,77 +187,6 @@ export default async function BlogPost({ params }: Props) {
                   {post.description}
                 </p>
               )}
-            </div>
-            <div className="rounded-[33px] bg-ebombo-bg p-[3%] md:sticky md:top-[130px] md:w-[45%]">
-              <h3 className="mb-4 text-center font-roboto text-[20px] font-semibold leading-[25px] text-ebombo-primary">
-                {post.lang === "es"
-                  ? "Hagamos realidad tu proyecto"
-                  : "Let's make your project happen"}
-              </h3>
-              <form className="flex flex-col gap-4">
-                <div>
-                  <label className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
-                    {post.lang === "es" ? "Nombre completo" : "Full name"}{" "}
-                    <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    placeholder={
-                      post.lang === "es"
-                        ? "Tu nombre completo"
-                        : "Your full name"
-                    }
-                    required
-                    className={inputStyles}
-                  />
-                </div>
-                <div className="flex flex-col gap-4 md:flex-row">
-                  <div className="md:w-1/2">
-                    <label className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
-                      {post.lang === "es" ? "Teléfono" : "Phone"}{" "}
-                      <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="tel"
-                      placeholder={
-                        post.lang === "es"
-                          ? "Teléfono o WhatsApp"
-                          : "Phone or WhatsApp"
-                      }
-                      required
-                      className={inputStyles}
-                    />
-                  </div>
-                  <div className="md:w-1/2">
-                    <label className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      placeholder={
-                        post.lang === "es"
-                          ? "Correo electrónico (opcional)"
-                          : "Email (optional)"
-                      }
-                      className={inputStyles}
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
-                    {post.lang === "es"
-                      ? "Cuéntanos más! (opcional)"
-                      : "Tell us more! (optional)"}
-                  </label>
-                  <textarea rows={4} className={`${inputStyles} resize-none`} />
-                </div>
-                <button
-                  type="submit"
-                  className="w-full rounded-[50px] bg-ebombo-orange px-8 py-3 font-poppins text-base font-semibold text-white transition-all duration-[600ms] hover:bg-[#e07a00]"
-                >
-                  {post.lang === "es" ? "Enviar" : "Submit"}
-                </button>
-              </form>
             </div>
           </div>
         </section>
