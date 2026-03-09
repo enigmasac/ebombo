@@ -116,7 +116,7 @@ export default function SidebarForm({ lang }: { lang: Lang }) {
             <select
               value={formData.prefix}
               onChange={(e) => setFormData({ ...formData, prefix: e.target.value })}
-              className={`${inputStyles} w-[90px] shrink-0 appearance-none !px-2 bg-[url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M6%208L1%203h10z%22%2F%3E%3C%2Fsvg%3E')] bg-[length:12px] bg-[right_6px_center] bg-no-repeat pr-5`}
+              className="w-[80px] shrink-0 appearance-none rounded-[12px] border border-[#E0E0E0] bg-white px-1.5 py-3 font-roboto text-sm text-[#1E1E1E] outline-none focus:border-ebombo-primary bg-[url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2012%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M6%208L1%203h10z%22%2F%3E%3C%2Fsvg%3E')] bg-[length:10px] bg-[right_4px_center] bg-no-repeat pr-4"
             >
               {countries.map((c) => (
                 <option key={c.code} value={c.dial}>{c.flag} {c.dial}</option>
