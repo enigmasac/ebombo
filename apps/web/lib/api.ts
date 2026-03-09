@@ -49,6 +49,25 @@ export async function fetchExperience(slug: string, lang?: string): Promise<Expe
   }
 }
 
+export interface ActiveSnippets {
+  head_start: string[];
+  head_end: string[];
+  body_start: string[];
+  body_end: string[];
+}
+
+export async function fetchActiveSnippets(): Promise<ActiveSnippets> {
+  try {
+    const res = await fetch(`${API_URL}/api/snippets/active`, {
+      next: { revalidate: 60 },
+    });
+    if (!res.ok) return { head_start: [], head_end: [], body_start: [], body_end: [] };
+    return res.json();
+  } catch {
+    return { head_start: [], head_end: [], body_start: [], body_end: [] };
+  }
+}
+
 export async function fetchBadges(lang: string): Promise<string[]> {
   try {
     const res = await fetch(`${API_URL}/api/experiences/badges?lang=${lang}`, {

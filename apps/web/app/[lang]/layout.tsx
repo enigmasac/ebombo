@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins, Roboto } from "next/font/google";
 import { getDictionary, isValidLang } from "@/lib/i18n";
 import type { Lang } from "@/lib/i18n";
+import { fetchActiveSnippets } from "@/lib/api";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://ebombo.com";
 
@@ -79,6 +80,7 @@ export default async function LangLayout({
 }) {
   const { lang: rawLang } = await params;
   const lang = isValidLang(rawLang) ? rawLang : "es";
+  const snippets = await fetchActiveSnippets();
 
   return (
     <html
@@ -86,6 +88,9 @@ export default async function LangLayout({
       className={`${poppins.variable} ${roboto.variable}`}
     >
       <head>
+        {snippets.head_start.length > 0 && (
+          <SnippetBlock html={snippets.head_start.join("\n")} />
+        )}
         <link rel="alternate" hrefLang="es" href={SITE_URL} />
         <link rel="alternate" hrefLang="en" href={`${SITE_URL}/en`} />
         <link
@@ -93,8 +98,23 @@ export default async function LangLayout({
           hrefLang="x-default"
           href={SITE_URL}
         />
+        {snippets.head_end.length > 0 && (
+          <SnippetBlock html={snippets.head_end.join("\n")} />
+        )}
       </head>
-      <body className="font-roboto text-ebombo-text">{children}</body>
+      <body className="font-roboto text-ebombo-text">
+        {snippets.body_start.length > 0 && (
+          <SnippetBlock html={snippets.body_start.join("\n")} />
+        )}
+        {children}
+        {snippets.body_end.length > 0 && (
+          <SnippetBlock html={snippets.body_end.join("\n")} />
+        )}
+      </body>
     </html>
   );
+}
+
+function SnippetBlock({ html }: { html: string }) {
+  return <div dangerouslySetInnerHTML={{ __html: html }} />;
 }

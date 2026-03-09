@@ -354,3 +354,50 @@ export function getAuditLog(params: { page?: number; limit?: number; entity_type
   if (params.user_id) qs.set("user_id", params.user_id);
   return request<AuditListResponse>("/api/audit", `?${qs}`);
 }
+
+export interface Snippet {
+  id: number;
+  title: string;
+  code: string;
+  position: "head_start" | "head_end" | "body_start" | "body_end";
+  active: boolean;
+  sort_order: number;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface SnippetListResponse {
+  snippets: Snippet[];
+  total: number;
+  page: number;
+  limit: number;
+}
+
+const SNIPPETS_BASE = "/api/snippets";
+
+export function getSnippets(params?: { page?: number; limit?: number }) {
+  const qs = new URLSearchParams();
+  if (params?.page) qs.set("page", String(params.page));
+  if (params?.limit) qs.set("limit", String(params.limit));
+  return request<SnippetListResponse>(SNIPPETS_BASE, `?${qs}`);
+}
+
+export function createSnippet(data: Partial<Snippet>) {
+  return request<{ id: number }>(SNIPPETS_BASE, "", {
+    method: "POST",
+    body: JSON.stringify(data),
+  });
+}
+
+export function updateSnippet(id: number, data: Partial<Snippet>) {
+  return request<{ ok: boolean }>(SNIPPETS_BASE, `/${id}`, {
+    method: "PUT",
+    body: JSON.stringify(data),
+  });
+}
+
+export function deleteSnippet(id: number) {
+  return request<{ ok: boolean }>(SNIPPETS_BASE, `/${id}`, {
+    method: "DELETE",
+  });
+}

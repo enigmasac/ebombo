@@ -9,6 +9,7 @@ import UsersList from "./pages/UsersList";
 import LeadsList from "./pages/LeadsList";
 import Settings from "./pages/Settings";
 import AuditLog from "./pages/AuditLog";
+import Snippets from "./pages/Snippets";
 
 function AdminLayout({ children }: { children: React.ReactNode }) {
   const navigate = useNavigate();
@@ -67,6 +68,12 @@ function AdminLayout({ children }: { children: React.ReactNode }) {
                 Usuarios
               </button>
               <button
+                className={`admin-sidebar-link ${location.pathname === "/snippets" ? "active" : ""}`}
+                onClick={() => navigate("/snippets")}
+              >
+                Codigo
+              </button>
+              <button
                 className={`admin-sidebar-link ${location.pathname === "/settings" ? "active" : ""}`}
                 onClick={() => navigate("/settings")}
               >
@@ -114,6 +121,7 @@ export default function App() {
       <Route path="/leads" element={<ProtectedRoute><LeadsList /></ProtectedRoute>} />
       <Route path="/audit" element={<ProtectedRoute><AuditLog /></ProtectedRoute>} />
       <Route path="/users" element={<SuperAdminRoute><UsersList /></SuperAdminRoute>} />
+      <Route path="/snippets" element={<SuperAdminRoute><Snippets /></SuperAdminRoute>} />
       <Route path="/settings" element={<SuperAdminRoute><Settings /></SuperAdminRoute>} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

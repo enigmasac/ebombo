@@ -574,3 +574,98 @@ tbody tr:hover {
 .pill-remove:hover {
   opacity: 1;
 }
+
+.snippet-code {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  background: #1e1e2e;
+  color: #cdd6f4;
+  border-color: #313244;
+  min-height: 200px;
+  padding: 16px;
+  tab-size: 2;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+.snippet-code:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.snippet-code::placeholder {
+  color: #585b70;
+}
+
+.badge-head {
+  background: #e8eaf6;
+  color: #3949ab;
+}
+
+.badge-body {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.badge-active {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.snippet-status-btn {
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.15s;
+}
+
+.snippet-status-btn:hover {
+  opacity: 0.8;
+}
+
+.snippet-toggle-label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: var(--font);
+  font-weight: 500;
+  gap: 0;
+}
+
+.snippet-toggle-label input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.snippet-toggle-slider {
+  position: relative;
+  width: 40px;
+  height: 22px;
+  background: var(--border);
+  border-radius: 11px;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+
+.snippet-toggle-slider::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+.snippet-toggle-label input:checked + .snippet-toggle-slider {
+  background: var(--success);
+}
+
+.snippet-toggle-label input:checked + .snippet-toggle-slider::after {
+  transform: translateX(18px);
+}
