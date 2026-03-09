@@ -59,51 +59,30 @@ function TableOfContents({
   );
   if (headings.length < 3) return null;
 
-  let h2Counter = 0;
-  let h3Counter = 0;
-
   return (
     <nav className="mb-8 rounded-[16px] border border-[#E0E0E0] bg-[#FAFAFA] p-5">
       <h4 className="mb-3 font-poppins text-base font-semibold text-ebombo-secondary">
         {lang === "es" ? "Tabla de contenidos" : "Table of contents"}
       </h4>
       <ol className="list-none space-y-1.5">
-        {headings.map((h, i) => {
-          if (h.type === "h2") {
-            h2Counter++;
-            h3Counter = 0;
-          } else if (h.type === "h3") {
-            h3Counter++;
-          }
-
-          const number =
-            h.type === "h2"
-              ? `${h2Counter}.`
-              : h.type === "h3"
-                ? `${h2Counter}.${h3Counter}.`
-                : "";
-
-          return (
-            <li
-              key={i}
-              className={
-                h.type === "h3" ? "pl-4" : h.type === "h4" ? "pl-8" : ""
-              }
+        {headings.map((h, i) => (
+          <li
+            key={i}
+            className={
+              h.type === "h3" ? "pl-4" : h.type === "h4" ? "pl-8" : ""
+            }
+          >
+            <a
+              href={`#${slugify(h.text)}`}
+              className="font-roboto text-sm leading-[1.6] text-ebombo-text transition-colors hover:text-ebombo-primary"
             >
-              <a
-                href={`#${slugify(h.text)}`}
-                className="font-roboto text-sm leading-[1.6] text-ebombo-text transition-colors hover:text-ebombo-primary"
-              >
-                {number && (
-                  <span className="mr-1.5 font-semibold text-[#7A33FF]">
-                    {number}
-                  </span>
-                )}
-                {h.text}
-              </a>
-            </li>
-          );
-        })}
+              <span className="mr-1.5 font-semibold text-[#7A33FF]">
+                {i + 1}.
+              </span>
+              {h.text}
+            </a>
+          </li>
+        ))}
       </ol>
     </nav>
   );
