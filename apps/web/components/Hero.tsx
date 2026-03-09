@@ -71,7 +71,7 @@ export default function Hero({ lang = "es" }: { lang?: Lang }) {
           </div>
         </div>
 
-        <div className="mt-[30px] flex flex-1 items-center justify-center md:mt-0">
+        <div className="mt-[30px] flex w-full flex-1 items-center justify-center md:mt-0">
           <div className="w-full rounded-[88px] bg-gradient-to-b from-white to-ebombo-bg p-[12px]">
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[76px] md:aspect-[5/4]">
               {heroImages.map((src, index) => (
