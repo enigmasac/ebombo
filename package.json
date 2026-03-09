@@ -17,7 +17,6 @@
     "build:admin": "turbo build --filter=@ebombo/admin"
   },
   "devDependencies": {
-    "critters": "^0.0.23",
     "turbo": "^2.3.0",
     "typescript": "^5.7.0"
   },
