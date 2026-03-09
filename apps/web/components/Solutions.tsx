@@ -49,6 +49,7 @@ export default function Solutions({ lang = "es" as Lang }: { lang?: Lang }) {
                 alt={card.title}
                 width={340}
                 height={188}
+                quality={60}
                 sizes="(max-width: 768px) 90vw, 340px"
                 className="w-full rounded-[18px]"
               />

@@ -30,6 +30,7 @@ export default function Header({ lang = "es" as Lang }: { lang?: Lang }) {
               alt="eBombo logo"
               width={150}
               height={40}
+              quality={60}
               sizes="(max-width: 768px) 100px, 150px"
               priority
               className="w-[100px] md:w-[150px]"

@@ -6,10 +6,10 @@ import Link from "next/link";
 import { Lang, getDictionary, localePath } from "@/lib/i18n";
 
 const heroImages = [
-  "/uploads/2025/12/589815987_18094649159498979_6288247503322878337_n.jpg",
-  "/uploads/2025/12/588720329_18094649147498979_1544328596509381935_n.jpg",
-  "/uploads/2025/12/589152199_18094649138498979_5046094930520157946_n.jpg",
-  "/uploads/2025/12/588293929_18094649129498979_3666561184829064941_n.jpg",
+  "/uploads/2025/12/589815987_18094649159498979_6288247503322878337_n.webp",
+  "/uploads/2025/12/588720329_18094649147498979_1544328596509381935_n.webp",
+  "/uploads/2025/12/589152199_18094649138498979_5046094930520157946_n.webp",
+  "/uploads/2025/12/588293929_18094649129498979_3666561184829064941_n.webp",
 ];
 
 export default function Hero({ lang = "es" }: { lang?: Lang }) {
@@ -80,6 +80,7 @@ export default function Hero({ lang = "es" }: { lang?: Lang }) {
                   src={src}
                   alt={`Evento corporativo eBombo ${index + 1}`}
                   fill
+                  quality={60}
                   className={`object-cover object-top transition-opacity duration-[1200ms] ${
                     index === currentSlide ? "opacity-100" : "opacity-0"
                   }`}
