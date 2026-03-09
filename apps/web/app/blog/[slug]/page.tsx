@@ -59,21 +59,27 @@ function TableOfContents({
   );
   if (headings.length < 3) return null;
 
+  const hasH2 = headings.some((h) => h.type === "h2");
+
+  let counter = 0;
   let h2Counter = 0;
   let h3Counter = 0;
 
   const numbered = headings.map((h) => {
+    if (!hasH2) {
+      counter++;
+      return { ...h, number: `${counter}`, indent: false };
+    }
     if (h.type === "h2") {
       h2Counter++;
       h3Counter = 0;
-      return { ...h, number: `${h2Counter}` };
+      return { ...h, number: `${h2Counter}`, indent: false };
     }
     if (h.type === "h3") {
-      if (h2Counter === 0) h2Counter = 1;
       h3Counter++;
-      return { ...h, number: `${h2Counter}.${h3Counter}` };
+      return { ...h, number: `${h2Counter}.${h3Counter}`, indent: true };
     }
-    return { ...h, number: "" };
+    return { ...h, number: "", indent: true };
   });
 
   return (
@@ -83,12 +89,7 @@ function TableOfContents({
       </h4>
       <ol className="list-none space-y-1.5">
         {numbered.map((h, i) => (
-          <li
-            key={i}
-            className={
-              h.type === "h3" ? "pl-4" : h.type === "h4" ? "pl-8" : ""
-            }
-          >
+          <li key={i} className={h.indent ? "pl-4" : ""}>
             <a
               href={`#${slugify(h.text)}`}
               className="font-roboto text-sm leading-[1.6] text-ebombo-text transition-colors hover:text-ebombo-primary"
