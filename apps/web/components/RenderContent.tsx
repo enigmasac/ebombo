@@ -6,6 +6,15 @@ type ContentBlock =
   | { type: "ul"; items: string[] }
   | { type: "ol"; items: string[] };
 
+export function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
 export default function RenderContent({ blocks }: { blocks: ContentBlock[] }) {
   return (
     <>
@@ -15,7 +24,8 @@ export default function RenderContent({ blocks }: { blocks: ContentBlock[] }) {
             return (
               <h2
                 key={i}
-                className="mb-4 mt-8 font-poppins text-[22px] font-bold text-ebombo-secondary md:text-[28px]"
+                id={slugify(block.text)}
+                className="mb-4 mt-8 scroll-mt-[100px] font-poppins text-[22px] font-bold text-ebombo-secondary md:text-[28px]"
               >
                 {block.text}
               </h2>
@@ -24,7 +34,8 @@ export default function RenderContent({ blocks }: { blocks: ContentBlock[] }) {
             return (
               <h3
                 key={i}
-                className="mb-3 mt-6 font-poppins text-[18px] font-semibold text-ebombo-secondary md:text-[22px]"
+                id={slugify(block.text)}
+                className="mb-3 mt-6 scroll-mt-[100px] font-poppins text-[18px] font-semibold text-ebombo-secondary md:text-[22px]"
               >
                 {block.text}
               </h3>
@@ -33,7 +44,8 @@ export default function RenderContent({ blocks }: { blocks: ContentBlock[] }) {
             return (
               <h4
                 key={i}
-                className="mb-2 mt-4 font-poppins text-[16px] font-semibold text-ebombo-secondary md:text-[18px]"
+                id={slugify(block.text)}
+                className="mb-2 mt-4 scroll-mt-[100px] font-poppins text-[16px] font-semibold text-ebombo-secondary md:text-[18px]"
               >
                 {block.text}
               </h4>

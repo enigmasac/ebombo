@@ -7,7 +7,9 @@ import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import RenderContent from "@/components/RenderContent";
+import { slugify } from "@/components/RenderContent";
 import { getAllPosts, getPostBySlug } from "@/data/blog";
+import type { BlogContentBlock } from "@/data/blog";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -42,6 +44,69 @@ function formatDate(isoDate: string, lang: "es" | "en") {
     month: "long",
     day: "numeric",
   });
+}
+
+function TableOfContents({
+  blocks,
+  lang,
+}: {
+  blocks: BlogContentBlock[];
+  lang: "es" | "en";
+}) {
+  const headings = blocks.filter(
+    (b): b is { type: "h2" | "h3" | "h4"; text: string } =>
+      b.type === "h2" || b.type === "h3" || b.type === "h4"
+  );
+  if (headings.length < 3) return null;
+
+  let h2Counter = 0;
+  let h3Counter = 0;
+
+  return (
+    <nav className="mb-8 rounded-[16px] border border-[#E0E0E0] bg-[#FAFAFA] p-5">
+      <h4 className="mb-3 font-poppins text-base font-semibold text-ebombo-secondary">
+        {lang === "es" ? "Tabla de contenidos" : "Table of contents"}
+      </h4>
+      <ol className="list-none space-y-1.5">
+        {headings.map((h, i) => {
+          if (h.type === "h2") {
+            h2Counter++;
+            h3Counter = 0;
+          } else if (h.type === "h3") {
+            h3Counter++;
+          }
+
+          const number =
+            h.type === "h2"
+              ? `${h2Counter}.`
+              : h.type === "h3"
+                ? `${h2Counter}.${h3Counter}.`
+                : "";
+
+          return (
+            <li
+              key={i}
+              className={
+                h.type === "h3" ? "pl-4" : h.type === "h4" ? "pl-8" : ""
+              }
+            >
+              <a
+                href={`#${slugify(h.text)}`}
+                className="font-roboto text-sm leading-[1.6] text-ebombo-text transition-colors hover:text-ebombo-primary"
+              >
+                {number && (
+                  <span className="mr-1.5 font-semibold text-[#7A33FF]">
+                    {number}
+                  </span>
+                )}
+                {h.text}
+              </a>
+            </li>
+          );
+        })}
+      </ol>
+    </nav>
+  );
 }
 
 export default async function BlogPost({ params }: Props) {
@@ -104,6 +169,7 @@ export default async function BlogPost({ params }: Props) {
         <section className="bg-white px-[5%] py-[40px]">
           <div className="mx-auto flex max-w-container flex-col gap-10 md:flex-row md:items-start">
             <div className="md:w-[55%]">
+              <TableOfContents blocks={post.bodyContent} lang={post.lang} />
               {post.bodyContent.length > 0 ? (
                 <RenderContent blocks={post.bodyContent} />
               ) : (
