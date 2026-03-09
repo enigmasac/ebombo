@@ -1,0 +1,14 @@
+services:
+  web:
+    build: .
+    ports:
+      - "4321:3000"
+    volumes:
+      - ./apps/web:/app/apps/web
+      - ./packages/shared:/app/packages/shared
+      - /app/node_modules
+      - /app/apps/web/node_modules
+      - /app/apps/web/.next
+    environment:
+      - NODE_ENV=development
+      - WATCHPACK_POLLING=true

@@ -1,0 +1,19 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+COPY package.json package-lock.json turbo.json ./
+COPY apps/web/package.json apps/web/
+COPY apps/api/package.json apps/api/
+COPY apps/admin/package.json apps/admin/
+COPY packages/shared/package.json packages/shared/
+
+RUN npm ci
+
+COPY . .
+
+RUN npx turbo build --filter=@ebombo/web
+
+EXPOSE 3000
+
+CMD ["npm", "run", "dev:web"]
