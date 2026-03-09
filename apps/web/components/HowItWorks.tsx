@@ -68,9 +68,9 @@ export default function HowItWorks({ lang = "es" }: { lang?: Lang }) {
                   {step.icon}
                 </div>
                 <div>
-                  <h5 className="mb-2 font-roboto text-[16px] font-semibold leading-none text-ebombo-primary">
+                  <h3 className="mb-2 font-roboto text-[16px] font-semibold leading-none text-ebombo-primary">
                     {step.title}
-                  </h5>
+                  </h3>
                   <p className="font-roboto text-[15px] font-normal leading-[1.5] text-ebombo-secondary">
                     {step.description}
                   </p>

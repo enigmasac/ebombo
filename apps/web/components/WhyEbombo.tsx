@@ -43,9 +43,9 @@ export default function WhyEbombo({ lang = "es" as Lang }: { lang?: Lang }) {
                 key={feature.title}
                 className="rounded-[6px] border-l-4 border-ebombo-primary py-[15px] pl-[15px] shadow-[0_0_10px_rgba(0,0,0,0.05)] transition-transform duration-[600ms] hover:scale-105"
               >
-                <h5 className="mb-3 font-poppins font-semibold leading-none tracking-[-0.1px] text-ebombo-primary">
+                <h3 className="mb-3 font-poppins font-semibold leading-none tracking-[-0.1px] text-ebombo-primary">
                   {feature.title}
-                </h5>
+                </h3>
                 <p className="font-roboto text-sm font-normal text-ebombo-secondary">
                   {feature.description}
                 </p>

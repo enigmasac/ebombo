@@ -61,9 +61,9 @@ export default function Testimonials({ lang = "es" as Lang }: { lang?: Lang }) {
                 className="-mt-[60px] h-[100px] w-[100px] rounded-full object-cover"
               />
               <div className="flex flex-col items-center gap-[7px] p-[8%]">
-                <h4 className="font-poppins text-base font-semibold tracking-[-0.8px] text-ebombo-secondary">
+                <h3 className="font-poppins text-base font-semibold tracking-[-0.8px] text-ebombo-secondary">
                   {item.name}
-                </h4>
+                </h3>
                 <span className="font-roboto text-sm text-ebombo-secondary">
                   {item.company}
                 </span>
