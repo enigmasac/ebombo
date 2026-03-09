@@ -33,9 +33,15 @@ export async function generateMetadata({
   const lang: Lang = isValidLang(rawLang) ? rawLang : "es";
   const t = getDictionary(lang);
 
+  const canonicalUrl = lang === "en" ? `${SITE_URL}/en` : SITE_URL;
+
   return {
     title: t.metadata.siteTitle,
     description: t.metadata.siteDescription,
+    keywords: t.metadata.siteKeywords,
+    authors: [{ name: "eBombo Internacional", url: SITE_URL }],
+    publisher: "eBombo Internacional",
+    robots: { index: true, follow: true },
     icons: {
       icon: [
         { url: "/favicon.ico", sizes: "48x48" },
@@ -47,6 +53,7 @@ export async function generateMetadata({
       apple: "/apple-touch-icon.png",
     },
     alternates: {
+      canonical: canonicalUrl,
       languages: {
         es: SITE_URL,
         en: `${SITE_URL}/en`,
@@ -55,7 +62,7 @@ export async function generateMetadata({
     openGraph: {
       title: t.metadata.siteTitle,
       description: t.metadata.siteDescription,
-      url: lang === "en" ? `${SITE_URL}/en` : SITE_URL,
+      url: canonicalUrl,
       siteName: "eBombo Internacional",
       locale: lang === "en" ? "en_US" : "es_ES",
       type: "website",
@@ -91,13 +98,7 @@ export default async function LangLayout({
         {snippets.head_start.length > 0 && (
           <SnippetBlock html={snippets.head_start.join("\n")} />
         )}
-        <link rel="alternate" hrefLang="es" href={SITE_URL} />
-        <link rel="alternate" hrefLang="en" href={`${SITE_URL}/en`} />
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href={SITE_URL}
-        />
+        <link rel="alternate" hrefLang="x-default" href={SITE_URL} />
         {snippets.head_end.length > 0 && (
           <SnippetBlock html={snippets.head_end.join("\n")} />
         )}

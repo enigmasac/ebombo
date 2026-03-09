@@ -321,6 +321,7 @@ const es = {
   metadata: {
     siteTitle: "Empresa de Eventos Corporativos Productora y Organizadora | eBombo Internacional",
     siteDescription: "Desde eventos corporativos hasta retiros de team building, creamos celebraciones corporativas interactivas y de alto impacto disenadas para conectar e inspirar a tus equipos.",
+    siteKeywords: "eventos corporativos, team building, organizadora de eventos, productora de eventos, retiros corporativos, experiencias de equipo, actividades empresariales, eventos de empresa, eBombo",
   },
 };
 
@@ -638,6 +639,7 @@ const en: Dictionary = {
   metadata: {
     siteTitle: "Corporate Event Company Producer and Organizer | eBombo International",
     siteDescription: "From corporate events to team building retreats, we create interactive and high-impact corporate celebrations designed to connect and inspire your teams.",
+    siteKeywords: "corporate events, team building, event organizer, event producer, corporate retreats, team experiences, corporate activities, company events, eBombo",
   },
 };
 
