@@ -30,37 +30,35 @@ async function getNotificationEmails(): Promise<string[]> {
   return Array.isArray(val) ? val : [];
 }
 
-async function notifyLead(lead: { name: string; phone: string; email: string; message: string; source: string; page_url: string }) {
+async function notifyLead(lead: { name: string; phone: string; email: string; message: string; source: string; page_url: string }): Promise<boolean> {
   const smtp = await getSmtpConfig();
-  if (!smtp) return;
+  if (!smtp) return false;
 
   const emails = await getNotificationEmails();
-  if (!emails.length) return;
+  if (!emails.length) return false;
 
-  try {
-    const transporter = nodemailer.createTransport({
-      host: smtp.host,
-      port: parseInt(smtp.port),
-      secure: parseInt(smtp.port) === 465,
-      auth: smtp.user ? { user: smtp.user, pass: smtp.pass } : undefined,
-    });
+  const transporter = nodemailer.createTransport({
+    host: smtp.host,
+    port: parseInt(smtp.port),
+    secure: parseInt(smtp.port) === 465,
+    auth: smtp.user ? { user: smtp.user, pass: smtp.pass } : undefined,
+  });
 
-    await transporter.sendMail({
-      from: smtp.from || smtp.user,
-      to: emails.join(", "),
-      subject: `Nuevo lead: ${lead.name} (${lead.source})`,
-      html: `
-        <h2>Nuevo contacto desde ${lead.source}</h2>
-        <p><strong>Nombre:</strong> ${lead.name}</p>
-        <p><strong>Teléfono:</strong> ${lead.phone}</p>
-        <p><strong>Email:</strong> ${lead.email}</p>
-        <p><strong>Mensaje:</strong> ${lead.message || "(sin mensaje)"}</p>
-        <p><strong>Página:</strong> ${lead.page_url}</p>
-      `,
-    });
-  } catch (err) {
-    console.error("Failed to send lead notification:", err);
-  }
+  await transporter.sendMail({
+    from: smtp.from || smtp.user,
+    to: emails.join(", "),
+    subject: `Nuevo lead: ${lead.name} (${lead.source})`,
+    html: `
+      <h2>Nuevo contacto desde ${lead.source}</h2>
+      <p><strong>Nombre:</strong> ${lead.name}</p>
+      <p><strong>Teléfono:</strong> ${lead.phone}</p>
+      <p><strong>Email:</strong> ${lead.email}</p>
+      <p><strong>Mensaje:</strong> ${lead.message || "(sin mensaje)"}</p>
+      <p><strong>Página:</strong> ${lead.page_url}</p>
+    `,
+  });
+
+  return true;
 }
 
 router.post("/", async (req: Request, res: Response) => {
@@ -79,10 +77,12 @@ router.post("/", async (req: Request, res: Response) => {
   );
 
   notifyLead({ name, phone: phone || "", email: email || "", message: message || "", source: source || "", page_url: page_url || "" })
-    .then(async () => {
-      await pool.execute("UPDATE leads SET notified = 1 WHERE id = ?", [result.insertId]);
+    .then(async (sent) => {
+      if (sent) await pool.execute("UPDATE leads SET notified = 1 WHERE id = ?", [result.insertId]);
     })
-    .catch(() => {});
+    .catch((err) => {
+      console.error("Failed to send lead notification:", err);
+    });
 
   res.status(201).json({ id: result.insertId });
 });
