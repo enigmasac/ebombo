@@ -1,39 +1,39 @@
 import Image from "next/image";
+import type { Lang } from "@/lib/i18n";
+import { getDictionary } from "@/lib/i18n";
 
-const features = [
-  {
-    title: "Planificación Integral",
-    description:
-      "Nos encargamos de cada detalle para que disfrutes de un evento impecable de principio a fin",
-  },
-  {
-    title: "Diseño Personalizado",
-    description:
-      "Creamos experiencias únicas adaptadas a tus gustos y necesidades",
-  },
-  {
-    title: "Gestión en Tiempo Real",
-    description:
-      "Monitoreo constante para garantizar que cada momento fluya sin problemas",
-  },
-  {
-    title: "Equipo de Expertos en Planificación",
-    description:
-      "Profesionales apasionados con experiencia y dedicación en cada proyecto",
-  },
-];
+export default function WhyEbombo({ lang = "es" as Lang }: { lang?: Lang }) {
+  const t = getDictionary(lang);
 
-export default function WhyEbombo() {
+  const features = [
+    {
+      title: t.whyEbombo.feature1Title,
+      description: t.whyEbombo.feature1Desc,
+    },
+    {
+      title: t.whyEbombo.feature2Title,
+      description: t.whyEbombo.feature2Desc,
+    },
+    {
+      title: t.whyEbombo.feature3Title,
+      description: t.whyEbombo.feature3Desc,
+    },
+    {
+      title: t.whyEbombo.feature4Title,
+      description: t.whyEbombo.feature4Desc,
+    },
+  ];
+
   return (
     <section className="bg-white px-[5%] py-[40px] md:py-[60px]">
       <div className="mx-auto flex max-w-container flex-col items-center justify-center gap-[30px] md:flex-row md:gap-[42px]">
         <div className="flex flex-col gap-3 md:flex-1 md:gap-[17px]">
           <div className="flex flex-col gap-[10px] text-center md:gap-[15px] md:text-left">
             <h2 className="font-poppins text-[27px] font-bold leading-[1.2] tracking-[-1px] text-ebombo-secondary md:text-[46px] md:leading-tight">
-              Por qué Elegir eBombo
+              {t.whyEbombo.title}
             </h2>
             <p className="font-roboto text-[15px] font-semibold leading-[22px] text-ebombo-primary md:text-base">
-              Planificación de eventos integral, diseño personalizado de eventos
+              {t.whyEbombo.subtitle}
             </p>
           </div>
 
@@ -57,7 +57,7 @@ export default function WhyEbombo() {
         <div className="order-last hidden md:block md:flex-1">
           <Image
             src="https://ebombo.com/wp-content/uploads/2025/12/events-home4.jpg.webp"
-            alt="Por qué elegir eBombo"
+            alt={t.whyEbombo.title}
             width={1651}
             height={1101}
             className="h-[600px] w-full rounded-[28px] object-cover"

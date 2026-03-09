@@ -3,24 +3,28 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import type { Lang } from "@/lib/i18n";
+import { getDictionary, localePath } from "@/lib/i18n";
+import LanguageSwitcher from "./LanguageSwitcher";
 
-const navLinks = [
-  { label: "Tipos de Evento", href: "/tipos-de-evento" },
-  { label: "Experiencias", href: "/experiencias" },
-  { label: "Merchandising", href: "/merchandising" },
-  { label: "Stands y Ferias", href: "/stand-ferias" },
-  { label: "Nosotros", href: "/nosotros" },
-  { label: "Copa del Mundo 2026", href: "/copa-del-mundo" },
-];
-
-export default function Header() {
+export default function Header({ lang = "es" as Lang }: { lang?: Lang }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const t = getDictionary(lang);
+
+  const navLinks = [
+    { label: t.nav.tiposDeEvento, href: localePath(lang, "/tipos-de-evento") },
+    { label: t.nav.experiencias, href: localePath(lang, "/experiencias") },
+    { label: t.nav.merchandising, href: localePath(lang, "/merchandising") },
+    { label: t.nav.standsYFerias, href: localePath(lang, "/stand-ferias") },
+    { label: t.nav.nosotros, href: localePath(lang, "/nosotros") },
+    { label: t.nav.copaDelMundo, href: localePath(lang, "/copa-del-mundo") },
+  ];
 
   return (
     <header className="sticky top-0 z-50 bg-ebombo-bg shadow-[0_2px_10px_rgba(0,0,0,0.04)]">
       <div className="mx-auto flex min-h-[100px] items-center px-[5%]">
         <div className="shrink-0 md:w-[17%]">
-          <Link href="/">
+          <Link href={localePath(lang, "/")}>
             <Image
               src="https://ebombo.com/wp-content/uploads/2025/11/logoEbomboAColor.webp"
               alt="eBombo logo"
@@ -48,11 +52,12 @@ export default function Header() {
         </nav>
 
         <div className="ml-auto flex items-center gap-3">
+          <LanguageSwitcher lang={lang} />
           <Link
             href="#contacto"
             className="inline-flex items-center gap-2 rounded-[64px] bg-ebombo-primary px-4 py-2.5 font-poppins text-xs font-semibold tracking-[-0.4px] text-white transition-colors duration-[600ms] hover:bg-ebombo-accent md:px-5 md:py-3 md:text-base"
           >
-            <span>Solicitar reunión</span>
+            <span>{t.nav.solicitarReunion}</span>
             <svg
               className="h-3 w-3 md:h-3.5 md:w-3.5"
               viewBox="0 0 256 512"

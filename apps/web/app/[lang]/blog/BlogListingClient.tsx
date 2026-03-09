@@ -8,29 +8,35 @@ import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { getAllPosts } from "@/data/blog";
+import { getDictionary, localePath } from "@/lib/i18n";
+import type { Lang } from "@/lib/i18n";
 
 const POSTS_PER_PAGE = 12;
 
-const langFilters = [
-  { key: "all", label: "Todos" },
-  { key: "es", label: "Español" },
-  { key: "en", label: "English" },
-] as const;
-
-function formatDate(isoDate: string, lang: "es" | "en") {
+function formatDate(isoDate: string, postLang: "es" | "en") {
   const date = new Date(isoDate);
-  return date.toLocaleDateString(lang === "es" ? "es-ES" : "en-US", {
+  return date.toLocaleDateString(postLang === "es" ? "es-ES" : "en-US", {
     year: "numeric",
     month: "short",
     day: "numeric",
   });
 }
 
-export default function BlogListing() {
-  const [activeLang, setActiveLang] = useState<"all" | "es" | "en">("all");
+export default function BlogListingClient({ lang }: { lang: Lang }) {
+  const t = getDictionary(lang);
+
+  const [activeLang, setActiveLang] = useState<"all" | "es" | "en">(
+    lang === "en" ? "en" : "all"
+  );
   const [page, setPage] = useState(1);
 
   const allPosts = useMemo(() => getAllPosts(), []);
+
+  const langFilters = [
+    { key: "all" as const, label: t.blog.filterAll },
+    { key: "es" as const, label: t.blog.filterEs },
+    { key: "en" as const, label: t.blog.filterEn },
+  ];
 
   const filtered = useMemo(
     () =>
@@ -46,26 +52,25 @@ export default function BlogListing() {
     page * POSTS_PER_PAGE
   );
 
-  function handleLangChange(lang: "all" | "es" | "en") {
-    setActiveLang(lang);
+  function handleLangChange(filterLang: "all" | "es" | "en") {
+    setActiveLang(filterLang);
     setPage(1);
   }
 
   return (
     <>
-      <Header />
+      <Header lang={lang} />
       <main>
         <section className="bg-ebombo-primary px-[5%] py-[40px] md:py-[60px]">
           <div className="mx-auto flex min-h-[350px] max-w-container flex-col items-center justify-center text-center">
             <h5 className="mb-3 font-poppins text-base font-semibold text-ebombo-orange">
-              Blog
+              {t.blog.heroSubtitle}
             </h5>
             <h1 className="font-poppins text-[28px] font-bold leading-[1.2] tracking-[-1px] text-white md:text-[42px]">
-              Artículos sobre Eventos Corporativos y Team Building
+              {t.blog.heroTitle}
             </h1>
             <p className="mt-4 max-w-[700px] font-roboto text-sm leading-[1.6] text-white md:text-base">
-              Descubre consejos, tendencias e ideas para fortalecer equipos y
-              organizar eventos corporativos memorables.
+              {t.blog.heroDesc}
             </p>
           </div>
         </section>
@@ -94,21 +99,23 @@ export default function BlogListing() {
           <div className="mx-auto max-w-container">
             <h2 className="mb-2 font-poppins text-[24px] font-bold text-[#1E1E1E] md:text-[28px]">
               {activeLang === "all"
-                ? "Todos los Artículos"
+                ? t.blog.allArticles
                 : activeLang === "es"
-                  ? "Artículos en Español"
-                  : "Articles in English"}
+                  ? t.blog.articlesEs
+                  : t.blog.articlesEn}
             </h2>
             <p className="mb-8 font-roboto text-sm text-ebombo-text">
               {filtered.length}{" "}
-              {filtered.length === 1 ? "artículo" : "artículos"}
+              {filtered.length === 1
+                ? t.blog.articleCountSingle
+                : t.blog.articleCount}
             </p>
 
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
               {paginated.map((post) => (
                 <Link
                   key={post.slug}
-                  href={`/blog/${post.slug}`}
+                  href={localePath(lang, `/blog/${post.slug}`)}
                   className="group overflow-hidden rounded-[24px] bg-white shadow-[0_4px_15px_rgba(0,0,0,0.08)] transition-transform duration-300 hover:scale-[1.02]"
                 >
                   {post.thumbnailUrl ? (
@@ -157,7 +164,7 @@ export default function BlogListing() {
                   disabled={page === 1}
                   className="rounded-[50px] px-4 py-2 font-poppins text-sm font-semibold text-ebombo-primary transition-colors hover:bg-ebombo-light-purple disabled:opacity-40 disabled:hover:bg-transparent"
                 >
-                  Anterior
+                  {t.blog.previous}
                 </button>
                 {Array.from({ length: totalPages }, (_, i) => i + 1)
                   .filter(
@@ -200,16 +207,16 @@ export default function BlogListing() {
                   disabled={page === totalPages}
                   className="rounded-[50px] px-4 py-2 font-poppins text-sm font-semibold text-ebombo-primary transition-colors hover:bg-ebombo-light-purple disabled:opacity-40 disabled:hover:bg-transparent"
                 >
-                  Siguiente
+                  {t.blog.next}
                 </button>
               </div>
             )}
           </div>
         </section>
 
-        <ContactForm />
+        <ContactForm lang={lang} />
       </main>
-      <Footer />
+      <Footer lang={lang} />
       <WhatsAppButton />
     </>
   );

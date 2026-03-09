@@ -7,32 +7,41 @@ import Header from "@/components/Header";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import { experiences, filterCategories } from "@/data/experiences";
+import { getDictionary, localePath } from "@/lib/i18n";
+import type { Lang } from "@/lib/i18n";
+import type { Experience } from "@/lib/api";
 
-export default function Experiencias() {
-  const [activeFilter, setActiveFilter] = useState("Todas");
+interface Props {
+  lang: Lang;
+  experiences: Experience[];
+  badges: string[];
+}
+
+export default function ExperienciasClient({ lang, experiences, badges }: Props) {
+  const t = getDictionary(lang);
+  const allLabel = lang === "en" ? "All" : "Todas";
+  const filterCategories = [allLabel, ...badges];
+  const [activeFilter, setActiveFilter] = useState(allLabel);
 
   const filtered =
-    activeFilter === "Todas"
+    activeFilter === allLabel
       ? experiences
       : experiences.filter((e) => e.badge === activeFilter);
 
   return (
     <>
-      <Header />
+      <Header lang={lang} />
       <main>
         <section className="bg-ebombo-primary px-[5%] py-[40px] md:py-[60px]">
           <div className="mx-auto flex min-h-[350px] max-w-container flex-col items-center justify-center text-center">
             <h5 className="mb-3 font-poppins text-base font-semibold text-ebombo-orange">
-              Casos de éxito
+              {t.experiencias.heroSubtitle}
             </h5>
             <h1 className="font-poppins text-[28px] font-bold leading-[1.2] tracking-[-1px] text-white md:text-[42px]">
-              Actividades y Eventos Corporativos para el Trabajo en Equipo
+              {t.experiencias.heroTitle}
             </h1>
             <p className="mt-4 max-w-[700px] font-roboto text-sm leading-[1.6] text-white md:text-base">
-              Descubre más de 25 actividades de team building disponibles en
-              cualquier lugar. Mejora el compromiso, eleva la moral y fortalece
-              la camaradería de tu equipo.
+              {t.experiencias.heroDesc}
             </p>
           </div>
         </section>
@@ -60,15 +69,15 @@ export default function Experiencias() {
         <section className="bg-white px-[5%] py-[40px] md:py-[50px]">
           <div className="mx-auto max-w-container">
             <h2 className="mb-8 font-poppins text-[24px] font-bold text-[#1E1E1E] md:text-[28px]">
-              {activeFilter === "Todas"
-                ? "Todas las Experiencias"
+              {activeFilter === allLabel
+                ? t.experiencias.allExperiences
                 : activeFilter}
             </h2>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
               {filtered.map((exp) => (
                 <Link
                   key={exp.slug}
-                  href={`/experiencias/${exp.slug}`}
+                  href={localePath(lang, `/experiencias/${exp.slug}`)}
                   className="group overflow-hidden rounded-[24px] bg-white shadow-[0_4px_15px_rgba(0,0,0,0.08)] transition-transform duration-300 hover:scale-[1.02]"
                 >
                   <div className="relative aspect-video w-full overflow-hidden">
@@ -102,27 +111,24 @@ export default function Experiencias() {
         <section className="bg-[#F7F7F7] px-[5%] py-[40px] md:py-[50px]">
           <div className="mx-auto max-w-container">
             <h2 className="mb-8 font-poppins text-[20px] font-bold text-[#1E1E1E] md:text-[24px]">
-              Otras Colecciones Que Te Pueden Gustar:
+              {t.experiencias.otherCollections}
             </h2>
             <div className="flex flex-wrap gap-5">
               {[
                 {
-                  title: "Favoritos",
+                  title: t.experiencias.favoritos,
                   color: "#F78A0A",
-                  description:
-                    "Nuestras experiencias más reservadas y queridas por miles de clientes. A ti también te encantarán!",
+                  description: t.experiencias.favoritosDesc,
                 },
                 {
-                  title: "Experiencias en tendencia",
+                  title: t.experiencias.trending,
                   color: "#7A33FF",
-                  description:
-                    "Descubre lo que más les gusta a nuestros clientes! Nuestras experiencias más nuevas y de moda.",
+                  description: t.experiencias.trendingDesc,
                 },
                 {
-                  title: "Nuevas experiencias",
+                  title: t.experiencias.nuevas,
                   color: "#27AE60",
-                  description:
-                    "Siempre estamos añadiendo experiencias nuevas a nuestro creciente catálogo de eventos.",
+                  description: t.experiencias.nuevasDesc,
                 },
               ].map((collection) => (
                 <div
@@ -144,9 +150,9 @@ export default function Experiencias() {
           </div>
         </section>
 
-        <ContactForm />
+        <ContactForm lang={lang} />
       </main>
-      <Footer />
+      <Footer lang={lang} />
       <WhatsAppButton />
     </>
   );

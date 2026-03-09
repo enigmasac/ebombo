@@ -5,143 +5,88 @@ import Header from "@/components/Header";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { isValidLang, getDictionary, localePath } from "@/lib/i18n";
+import type { Lang } from "@/lib/i18n";
 
-export const metadata: Metadata = {
-  title: "Tipos de Evento | eBombo Internacional",
-  description:
-    "Descubre los diferentes tipos de eventos corporativos que ofrecemos: eventos corporativos, marketing, team building, retiros y virtuales.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang: rawLang } = await params;
+  const lang: Lang = isValidLang(rawLang) ? rawLang : "es";
+  const t = getDictionary(lang);
+
+  return {
+    title: `${t.tiposDeEvento.heroSubtitle} | eBombo Internacional`,
+    description: t.tiposDeEvento.exploreDesc,
+  };
+}
 
 const IMG = "https://ebombo.com/wp-content/uploads/2025/12";
 
-const showcaseCards = [
+const showcaseCardsData = [
   {
-    badge: "Team Building",
     badgeColor: "#7A33FF",
-    title: "Cooking",
     image: `${IMG}/events-cooking.jpg`,
   },
   {
-    badge: "Corporativo",
     badgeColor: "#F78A0A",
-    title: "Días Familiares",
     image: `${IMG}/events-family-days.jpg`,
   },
   {
-    badge: "Retiros",
     badgeColor: "#27AE60",
-    title: "Wellness",
     image: `${IMG}/events-wellness-corporate.jpg`,
   },
   {
-    badge: "Team Building",
     badgeColor: "#7A33FF",
-    title: "Liderazgo",
     image: `${IMG}/events-leadership-building.jpg`,
   },
   {
-    badge: "Festividades",
     badgeColor: "#E74C3C",
-    title: "Navidad",
     image: `${IMG}/events-navidad-evento.jpg`,
   },
   {
-    badge: "Corporativo",
     badgeColor: "#3498DB",
-    title: "Voluntariado",
     image: `${IMG}/events-charity-events.jpg`,
   },
 ];
 
-const categoryPills = [
-  "Eventos Corporativos",
-  "Eventos de Marketing",
-  "Eventos de Trabajo en Equipo",
-  "Eventos de Retiro",
-  "Eventos Virtuales",
-];
-
-const categorySections = [
+const categorySectionsData = [
   {
-    label: "EVENTOS CORPORATIVOS",
     labelColor: "#7A33FF",
-    title: "Nos Encargamos De Todos Los Detalles",
-    description:
-      "Ubicaciones de clase mundial, producción, catering y soporte dedicado para el éxito del cliente.",
     iconColor: "#7A33FF",
     bgSection: "bg-white",
     bgCard: "bg-[#F7F7F7]",
-    items: [
-      { icon: "birthday-cake", label: "Festividades" },
-      { icon: "trophy", label: "Reconocimientos" },
-      { icon: "users", label: "Días Familiares" },
-      { icon: "heart", label: "Bienestar" },
-      { icon: "chalkboard", label: "Seminarios" },
-    ],
+    icons: ["birthday-cake", "trophy", "users", "heart", "chalkboard"],
   },
   {
-    label: "EVENTOS DE MARKETING",
     labelColor: "#F78A0A",
-    title: "Haz La Diferencia Con Tu Marca",
-    description:
-      "Transformamos tu visión en experiencias de marketing inolvidables.",
     iconColor: "#F78A0A",
     bgSection: "bg-[#F7F7F7]",
     bgCard: "bg-white",
-    items: [
-      { icon: "hand-heart", label: "Eventos Benéficos" },
-      { icon: "store", label: "Pop-Up & Lanzamientos" },
-      { icon: "calendar", label: "Activaciones Estacionales" },
-      { icon: "bullhorn", label: "Ferias & Exposiciones" },
-    ],
+    icons: ["hand-heart", "store", "calendar", "bullhorn"],
   },
   {
-    label: "TEAM BUILDING",
     labelColor: "#7A33FF",
-    title: "Eventos De Construcción De Equipos",
-    description:
-      "Impulsa tu marca y cautiva a tu audiencia con nuestros eventos especializados.",
     iconColor: "#7A33FF",
     bgSection: "bg-white",
     bgCard: "bg-[#F7F7F7]",
-    items: [
-      { icon: "utensils", label: "Cocina Saludable" },
-      { icon: "dumbbell", label: "Desafíos de Fitness" },
-      { icon: "chess", label: "Liderazgo" },
-      { icon: "brain", label: "Salud Mental" },
-    ],
+    icons: ["utensils", "dumbbell", "chess", "brain"],
   },
   {
-    label: "RETIROS CORPORATIVOS",
     labelColor: "#F78A0A",
-    title: "Retiros Que Hacen La Diferencia",
-    description:
-      "Impulsa tu marca y cautiva a tu audiencia con nuestros eventos especializados.",
     iconColor: "#F78A0A",
     bgSection: "bg-[#F7F7F7]",
     bgCard: "bg-white",
-    items: [
-      { icon: "chart-line", label: "Retiros de Ventas" },
-      { icon: "spa", label: "Retiros de Bienestar" },
-      { icon: "om", label: "Yoga y Meditación" },
-      { icon: "mountain", label: "Aventura al Aire Libre" },
-    ],
+    icons: ["chart-line", "spa", "om", "mountain"],
   },
   {
-    label: "EVENTOS VIRTUALES",
     labelColor: "#7A33FF",
-    title: "Experiencias Sin Interrupciones",
-    description:
-      "Para que puedas conectar con tu audiencia y alcanzar tus objetivos sin esfuerzo.",
     iconColor: "#7A33FF",
     bgSection: "bg-white",
     bgCard: "bg-[#F7F7F7]",
-    items: [
-      { icon: "gamepad", label: "Eventos Interactivos" },
-      { icon: "microphone", label: "Animadores Profesionales" },
-      { icon: "cube", label: "Escenarios 3D" },
-      { icon: "video", label: "Producción y Sonido" },
-    ],
+    icons: ["gamepad", "microphone", "cube", "video"],
   },
 ];
 
@@ -207,10 +152,18 @@ function CategoryIcon({
   );
 }
 
-export default function TiposDeEvento() {
+export default async function TiposDeEvento({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang: rawLang } = await params;
+  const lang: Lang = isValidLang(rawLang) ? rawLang : "es";
+  const t = getDictionary(lang);
+
   return (
     <>
-      <Header />
+      <Header lang={lang} />
       <main>
         <section className="bg-ebombo-light-purple px-[5%] pt-[40px] md:pt-[60px]">
           <div className="mx-auto max-w-container">
@@ -218,17 +171,17 @@ export default function TiposDeEvento() {
               <div className="flex flex-col gap-[25px] bg-ebombo-light-purple p-[5%]">
                 <div className="flex flex-col gap-[6px]">
                   <span className="font-roboto text-base font-semibold text-ebombo-primary">
-                    Tipos de eventos
+                    {t.tiposDeEvento.heroSubtitle}
                   </span>
                   <h1 className="font-poppins text-[32px] font-bold leading-[1.13] tracking-[-1px] text-ebombo-secondary md:text-[46px]">
-                    Impulsa la conexión con tu equipo y clientes
+                    {t.tiposDeEvento.heroTitle}
                   </h1>
                 </div>
                 <Link
-                  href="#contacto"
+                  href={localePath(lang, "#contacto")}
                   className="self-start rounded-[64px] bg-ebombo-orange px-6 py-3 font-poppins text-base font-semibold tracking-[-0.4px] text-white transition-all duration-[600ms] hover:bg-ebombo-orange-dark md:text-lg"
                 >
-                  Comienza a planificar
+                  {t.tiposDeEvento.comienzaPlanificar}
                 </Link>
               </div>
               <div className="hidden md:block md:min-w-[40%]">
@@ -247,7 +200,7 @@ export default function TiposDeEvento() {
         <section className="bg-ebombo-light-purple px-[5%] py-[30px]">
           <div className="mx-auto max-w-container">
             <div className="flex flex-wrap justify-center gap-3 rounded-[28px] shadow-[0_0_10px_rgba(0,0,0,0.05)] md:gap-4">
-              {categoryPills.map((pill, i) => (
+              {t.tiposDeEvento.pills.map((pill, i) => (
                 <div
                   key={pill}
                   className={`rounded-[18px] px-[4%] py-[2%] font-poppins text-sm font-semibold leading-[20px] tracking-[-0.5px] text-white shadow-[0_0_10px_rgba(0,0,0,0.05)] transition-all duration-[600ms] hover:scale-105 hover:bg-ebombo-accent md:px-5 md:py-2.5 md:text-lg ${
@@ -265,22 +218,21 @@ export default function TiposDeEvento() {
           <div className="mx-auto max-w-container">
             <div className="mb-8 text-center">
               <h2 className="font-poppins text-[27px] font-bold text-[#1E1E1E] md:text-[32px]">
-                Explora nuestros eventos
+                {t.tiposDeEvento.exploreTitle}
               </h2>
               <p className="mt-2 font-roboto text-base leading-[1.6] text-[#666666]">
-                Descubre las diferentes experiencias que podemos crear para tu
-                equipo
+                {t.tiposDeEvento.exploreDesc}
               </p>
             </div>
             <div className="flex flex-wrap justify-center gap-4">
-              {showcaseCards.map((card) => (
+              {showcaseCardsData.map((card, i) => (
                 <div
-                  key={card.title}
+                  key={t.tiposDeEvento.showcaseCards[i].title}
                   className="relative flex min-h-[200px] w-full flex-col justify-end overflow-hidden rounded-[20px] p-5 shadow-[0_6px_20px_rgba(0,0,0,0.1)] sm:w-[47%] md:w-[280px]"
                 >
                   <Image
                     src={card.image}
-                    alt={card.title}
+                    alt={t.tiposDeEvento.showcaseCards[i].title}
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 47vw, 280px"
@@ -291,10 +243,10 @@ export default function TiposDeEvento() {
                       className="mb-2 inline-block rounded-[20px] px-3 py-[5px] font-poppins text-[11px] font-semibold text-white"
                       style={{ backgroundColor: card.badgeColor }}
                     >
-                      {card.badge}
+                      {t.tiposDeEvento.showcaseCards[i].badge}
                     </span>
                     <h4 className="font-poppins text-[20px] font-semibold text-white [text-shadow:0_2px_4px_rgba(0,0,0,0.3)]">
-                      {card.title}
+                      {t.tiposDeEvento.showcaseCards[i].title}
                     </h4>
                   </div>
                 </div>
@@ -303,9 +255,9 @@ export default function TiposDeEvento() {
           </div>
         </section>
 
-        {categorySections.map((section) => (
+        {categorySectionsData.map((section, sectionIdx) => (
           <section
-            key={section.label}
+            key={t.tiposDeEvento.sections[sectionIdx].label}
             className={`${section.bgSection} px-[5%] py-[40px] md:py-[80px]`}
           >
             <div className="mx-auto max-w-container">
@@ -314,27 +266,27 @@ export default function TiposDeEvento() {
                   className="font-poppins text-sm font-semibold uppercase tracking-[2px]"
                   style={{ color: section.labelColor }}
                 >
-                  {section.label}
+                  {t.tiposDeEvento.sections[sectionIdx].label}
                 </span>
                 <h2 className="mt-2 font-poppins text-[27px] font-bold text-[#1E1E1E] md:text-[42px]">
-                  {section.title}
+                  {t.tiposDeEvento.sections[sectionIdx].title}
                 </h2>
                 <p className="mt-2 font-roboto text-base text-[#666666] md:text-lg">
-                  {section.description}
+                  {t.tiposDeEvento.sections[sectionIdx].description}
                 </p>
               </div>
               <div className="flex flex-wrap justify-center gap-5">
-                {section.items.map((item) => (
+                {section.icons.map((icon, itemIdx) => (
                   <div
-                    key={item.label}
+                    key={t.tiposDeEvento.sections[sectionIdx].items[itemIdx]}
                     className={`flex flex-col items-center gap-3 rounded-[16px] ${section.bgCard} px-4 py-6 sm:w-[45%] md:w-auto md:min-w-[150px] md:px-6`}
                   >
                     <CategoryIcon
-                      icon={item.icon}
+                      icon={icon}
                       color={section.iconColor}
                     />
                     <span className="font-poppins text-sm font-semibold text-[#1E1E1E]">
-                      {item.label}
+                      {t.tiposDeEvento.sections[sectionIdx].items[itemIdx]}
                     </span>
                   </div>
                 ))}
@@ -344,11 +296,12 @@ export default function TiposDeEvento() {
         ))}
 
         <ContactForm
-          title="¿Qué formato tienes en mente?"
-          subtitle="Ya sea virtual, presencial o híbrido, tenemos la solución. Dinos qué tipo de evento imaginas y nosotros nos encargamos de la producción técnica."
+          lang={lang}
+          title={t.tiposDeEvento.contactTitle}
+          subtitle={t.tiposDeEvento.contactSubtitle}
         />
       </main>
-      <Footer />
+      <Footer lang={lang} />
       <WhatsAppButton />
     </>
   );

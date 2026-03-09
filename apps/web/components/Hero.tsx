@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Lang, getDictionary, localePath } from "@/lib/i18n";
 
 const heroImages = [
   "https://ebombo.com/wp-content/uploads/2025/12/589815987_18094649159498979_6288247503322878337_n.jpg",
@@ -11,7 +12,8 @@ const heroImages = [
   "https://ebombo.com/wp-content/uploads/2025/12/588293929_18094649129498979_3666561184829064941_n.jpg",
 ];
 
-export default function Hero() {
+export default function Hero({ lang = "es" }: { lang?: Lang }) {
+  const t = getDictionary(lang);
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const nextSlide = useCallback(() => {
@@ -29,13 +31,13 @@ export default function Hero() {
         <div className="flex flex-col justify-center gap-[13px] text-center md:w-[45%] md:shrink-0 md:gap-[6px] md:text-left">
           <div className="flex flex-col gap-[13px] md:gap-[6px]">
             <span className="font-roboto text-base font-semibold text-white">
-              Revoluciona tus
+              {t.hero.revoluciona}
             </span>
             <h1 className="font-poppins text-[46px] font-bold leading-[0.95] tracking-[-2px] text-white md:text-[80px]">
-              Eventos Corporativos
+              {t.hero.eventosCorporativos}
             </h1>
             <div className="flex items-center justify-center gap-[5px] md:justify-end">
-              <span className="font-roboto text-base text-white">con</span>
+              <span className="font-roboto text-base text-white">{t.hero.con}</span>
               <Image
                 src="https://ebombo.com/wp-content/uploads/2025/11/ebombo-white.png"
                 alt="eBombo"
@@ -48,8 +50,7 @@ export default function Hero() {
 
           <div className="mt-3 flex flex-col gap-[13px] md:gap-[6px]">
             <p className="font-roboto text-[15px] font-semibold leading-[22px] tracking-[-0.2px] text-white md:text-[20px]">
-              Planifica y ejecuta sin esfuerzo eventos corporativos inolvidables
-              con nuestras herramientas y soporte experto.
+              {t.hero.descripcion}
             </p>
           </div>
 
@@ -58,13 +59,13 @@ export default function Hero() {
               href="#contacto"
               className="rounded-[64px] bg-ebombo-orange px-[15px] py-[10px] font-poppins text-xs font-semibold tracking-[-0.4px] text-white transition-all duration-[600ms] hover:bg-ebombo-orange-dark md:px-6 md:py-3 md:text-[18px]"
             >
-              Comienza a planificar
+              {t.hero.comienzaPlanificar}
             </Link>
             <Link
-              href="/tipos-de-evento"
+              href={localePath(lang, "/tipos-de-evento")}
               className="rounded-[64px] bg-ebombo-accent px-[15px] py-[10px] font-poppins text-xs font-semibold tracking-[-0.4px] text-white transition-all duration-[600ms] hover:bg-ebombo-accent md:px-6 md:py-3 md:text-[18px]"
             >
-              Tipos de evento
+              {t.hero.tiposDeEvento}
             </Link>
           </div>
         </div>

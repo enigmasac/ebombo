@@ -10,17 +10,23 @@ import RenderContent from "@/components/RenderContent";
 import { slugify } from "@/components/RenderContent";
 import { getAllPosts, getPostBySlug } from "@/data/blog";
 import type { BlogContentBlock } from "@/data/blog";
+import { isValidLang, getDictionary } from "@/lib/i18n";
+import type { Lang } from "@/lib/i18n";
 
 interface Props {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ lang: string; slug: string }>;
 }
 
 export async function generateStaticParams() {
-  return getAllPosts().map((post) => ({ slug: post.slug }));
+  return getAllPosts().flatMap((post) => [
+    { lang: "es", slug: post.slug },
+    { lang: "en", slug: post.slug },
+  ]);
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
+  const { lang: rawLang, slug } = await params;
+  const lang: Lang = isValidLang(rawLang) ? rawLang : "es";
   const post = getPostBySlug(slug);
   if (!post) return { title: "Post no encontrado" };
   return {
@@ -32,14 +38,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: post.thumbnailUrl ? [{ url: post.thumbnailUrl }] : [],
       type: "article",
       publishedTime: post.datePublished,
-      locale: post.lang === "es" ? "es_ES" : "en_US",
+      locale: lang === "es" ? "es_ES" : "en_US",
     },
   };
 }
 
-function formatDate(isoDate: string, lang: "es" | "en") {
+function formatDate(isoDate: string, postLang: "es" | "en") {
   const date = new Date(isoDate);
-  return date.toLocaleDateString(lang === "es" ? "es-ES" : "en-US", {
+  return date.toLocaleDateString(postLang === "es" ? "es-ES" : "en-US", {
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -107,13 +113,15 @@ function TableOfContents({
 }
 
 export default async function BlogPost({ params }: Props) {
-  const { slug } = await params;
+  const { lang: rawLang, slug } = await params;
+  const lang: Lang = isValidLang(rawLang) ? rawLang : "es";
+  const t = getDictionary(lang);
   const post = getPostBySlug(slug);
   if (!post) notFound();
 
   return (
     <>
-      <Header />
+      <Header lang={lang} />
       <main>
         <section className="bg-white px-[5%] pt-[20px] md:pt-[30px]">
           <div className="mx-auto max-w-container">
@@ -121,7 +129,7 @@ export default async function BlogPost({ params }: Props) {
               <div className="flex flex-col gap-5 p-[5%] md:w-[60%]">
                 <div className="flex items-center gap-3">
                   <span className="inline-block rounded-[50px] bg-white px-3 py-1.5 font-poppins text-xs font-medium text-[#7A33FF]">
-                    {post.lang === "es" ? "Español" : "English"}
+                    {post.lang === "es" ? "Espanol" : "English"}
                   </span>
                   <span className="font-roboto text-sm text-ebombo-text">
                     {formatDate(post.datePublished, post.lang)}
@@ -188,9 +196,9 @@ export default async function BlogPost({ params }: Props) {
           </div>
         </section>
 
-        <ContactForm />
+        <ContactForm lang={lang} />
       </main>
-      <Footer />
+      <Footer lang={lang} />
       <WhatsAppButton />
     </>
   );

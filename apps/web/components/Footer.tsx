@@ -1,19 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-
-const navLinks = [
-  { label: "Tipos de Evento", href: "/tipos-de-evento" },
-  { label: "Experiencias", href: "/experiencias" },
-  { label: "Merchandising", href: "/merchandising" },
-  { label: "Stands y Ferias", href: "/stands-y-ferias" },
-  { label: "Nosotros", href: "/nosotros" },
-  { label: "Copa del Mundo 2026", href: "/copa-del-mundo" },
-];
-
-const extraLinks = [
-  { label: "Blog", href: "/blog" },
-  { label: "Photobooth", href: "/photobooth" },
-];
+import type { Lang } from "@/lib/i18n";
+import { getDictionary, localePath } from "@/lib/i18n";
 
 const partnerLinks = [
   { label: "Enigma Developers", href: "https://enigmasac.com" },
@@ -23,38 +11,54 @@ const partnerLinks = [
 
 const offices = [
   {
-    title: "Oficinas Perú",
-    address: "Av. General Córdova 1145, 15074 Miraflores, Lima",
+    titleKey: "oficinaPeru" as const,
+    address: "Av. General Cordova 1145, 15074 Miraflores, Lima",
     mapUrl: "https://maps.app.goo.gl/cKYynetLNCShENjA6",
   },
   {
-    title: "Oficinas España",
+    titleKey: "oficinaEspana" as const,
     address: "CL Manuel Caldeiro 18, Madrid ZIP. 28046",
     mapUrl: "https://maps.app.goo.gl/6MhuGrfCfdjeeAMi8",
   },
   {
-    title: "Oficinas México",
-    address: "Córdoba 95 Roma Norte. Cuauhtémoc, 06700 CDMX, México",
+    titleKey: "oficinaMexico" as const,
+    address: "Cordoba 95 Roma Norte. Cuauhtemoc, 06700 CDMX, Mexico",
     mapUrl: "https://maps.app.goo.gl/HAGZ15pmRJ5SAtqW7",
   },
 ];
 
 const phones = [
-  { country: "Perú", number: "+51 948 879 888", tel: "+51948879888" },
-  { country: "España", number: "+34 629 484 598", tel: "+34629484598" },
-  { country: "México", number: "+52 55 6444 9591", tel: "+525564449591" },
+  { country: "Peru", number: "+51 948 879 888", tel: "+51948879888" },
+  { country: "Spain", number: "+34 629 484 598", tel: "+34629484598" },
+  { country: "Mexico", number: "+52 55 6444 9591", tel: "+525564449591" },
 ];
 
 const cardStyles =
   "rounded-[18px] bg-white p-[6%] shadow-[0_0_10px_rgba(0,0,0,0.05)] md:p-[2%]";
 
-export default function Footer() {
+export default function Footer({ lang = "es" as Lang }: { lang?: Lang }) {
+  const t = getDictionary(lang);
+
+  const navLinks = [
+    { label: t.nav.tiposDeEvento, href: localePath(lang, "/tipos-de-evento") },
+    { label: t.nav.experiencias, href: localePath(lang, "/experiencias") },
+    { label: t.nav.merchandising, href: localePath(lang, "/merchandising") },
+    { label: t.nav.standsYFerias, href: localePath(lang, "/stand-ferias") },
+    { label: t.nav.nosotros, href: localePath(lang, "/nosotros") },
+    { label: t.nav.copaDelMundo, href: localePath(lang, "/copa-del-mundo") },
+  ];
+
+  const extraLinks = [
+    { label: t.nav.blog, href: localePath(lang, "/blog") },
+    { label: t.nav.photobooth, href: localePath(lang, "/photobooth") },
+  ];
+
   return (
     <footer className="bg-ebombo-bg px-[5%] py-[40px] md:py-[60px]">
       <div className="mx-auto flex max-w-container flex-col flex-wrap gap-5 md:flex-row md:gap-[2%]">
         <div className={`flex flex-col gap-4 md:w-[32%] ${cardStyles}`}>
           <h5 className="font-poppins font-semibold tracking-[-1px] text-ebombo-dark md:text-base">
-            Secciones
+            {t.footer.secciones}
           </h5>
           <nav className="flex flex-col gap-1">
             {navLinks.map((link) => (
@@ -95,12 +99,12 @@ export default function Footer() {
 
         <div className={`flex flex-col gap-4 md:w-[32%] ${cardStyles}`}>
           <h5 className="font-poppins font-semibold tracking-[-1px] text-ebombo-dark md:text-base">
-            Contacto
+            {t.footer.contacto}
           </h5>
           <div className="flex flex-col gap-3 pl-[5%]">
             {offices.map((office) => (
               <a
-                key={office.title}
+                key={office.titleKey}
                 href={office.mapUrl}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -115,7 +119,7 @@ export default function Footer() {
                 </svg>
                 <div>
                   <h6 className="font-poppins text-base font-semibold tracking-[-0.2px] text-ebombo-dark transition-colors duration-[600ms] group-hover:text-ebombo-primary">
-                    {office.title}
+                    {t.footer[office.titleKey]}
                   </h6>
                   <p className="font-roboto text-sm text-ebombo-dark">
                     {office.address}
@@ -137,7 +141,7 @@ export default function Footer() {
                 </svg>
                 <div>
                   <h6 className="font-poppins text-base font-semibold tracking-[-0.2px] text-ebombo-dark">
-                    Teléfonos / WhatsApp {phone.country}
+                    {t.footer.telefonosWhatsApp} {phone.country}
                   </h6>
                   <a
                     href={`tel:${phone.tel}`}
@@ -160,7 +164,7 @@ export default function Footer() {
             </svg>
             <div>
               <h6 className="font-poppins text-base font-semibold tracking-[-0.2px] text-ebombo-dark">
-                Correo
+                {t.footer.correo}
               </h6>
               <a
                 href="mailto:mateo@ebombo.com"
@@ -177,16 +181,16 @@ export default function Footer() {
         >
           <div className="flex flex-col gap-3">
             <h5 className="font-poppins font-semibold tracking-[-1px] text-ebombo-dark md:text-base">
-              Boletín
+              {t.footer.boletin}
             </h5>
             <span className="font-roboto text-sm text-ebombo-text">
-              Mantente informado de todos nuestros productos antes que nadie.
+              {t.footer.boletinDesc}
             </span>
           </div>
           <form className="flex flex-col gap-2">
             <input
               type="email"
-              placeholder="Correo electrónico"
+              placeholder={t.footer.correoPlaceholder}
               required
               className="w-full border-b-2 border-ebombo-primary bg-transparent px-1 py-2 font-roboto text-base text-ebombo-secondary outline-none placeholder:text-ebombo-text/60 focus:border-ebombo-accent"
             />
@@ -194,7 +198,7 @@ export default function Footer() {
               type="submit"
               className="self-start rounded-[25px] bg-ebombo-primary px-5 py-2 font-poppins text-sm font-semibold tracking-[-0.2px] text-white transition-all duration-[600ms] hover:bg-ebombo-accent"
             >
-              Suscribirse
+              {t.footer.suscribirse}
             </button>
           </form>
         </div>
@@ -209,7 +213,7 @@ export default function Footer() {
           className="w-[200px] transition-transform duration-[600ms]"
         />
         <span className="text-center font-poppins text-xs font-light tracking-[-0.2px] text-ebombo-dark">
-          &copy; 2026 Todos los derechos reservados{" "}
+          &copy; 2026 {t.footer.copyright}{" "}
           <strong>eBombo</strong>
         </span>
       </div>

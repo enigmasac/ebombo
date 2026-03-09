@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Lang } from "@/lib/i18n";
+import { getDictionary, localePath } from "@/lib/i18n";
 
 const stories = [
   {
@@ -52,16 +54,18 @@ const stories = [
   },
 ];
 
-export default function SuccessStories() {
+export default function SuccessStories({ lang = "es" as Lang }: { lang?: Lang }) {
+  const t = getDictionary(lang);
+
   return (
     <section className="bg-white px-[5%] py-[40px] md:py-[60px]">
       <div className="mx-auto max-w-container">
         <div className="flex flex-col items-center gap-4">
           <h2 className="text-center font-poppins text-[27px] font-bold leading-[1.2] tracking-[-0.2px] text-ebombo-secondary md:text-[38px] md:leading-tight">
-            Descubre Nuestras Historias De Éxito
+            {t.successStories.title}
           </h2>
           <p className="text-center font-roboto text-[15px] font-semibold leading-[22px] text-ebombo-primary md:text-base">
-            Explora cómo hemos hecho eventos extraordinarios
+            {t.successStories.subtitle}
           </p>
         </div>
 
@@ -69,7 +73,7 @@ export default function SuccessStories() {
           {stories.map((story) => (
             <Link
               key={story.title}
-              href={story.href}
+              href={localePath(lang, story.href)}
               className="group w-full overflow-hidden rounded-[24px] bg-white shadow-[0_4px_15px_rgba(0,0,0,0.08)] transition-transform duration-[600ms] hover:scale-[1.02] md:w-[30%]"
             >
               <div className="relative aspect-video overflow-hidden">

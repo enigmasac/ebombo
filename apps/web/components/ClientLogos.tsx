@@ -1,4 +1,6 @@
 import Image from "next/image";
+import type { Lang } from "@/lib/i18n";
+import { getDictionary } from "@/lib/i18n";
 
 const IMG = "https://ebombo.com/wp-content/uploads/2025/12";
 
@@ -23,16 +25,18 @@ const logos = [
   { src: `${IMG}/sap.png`, alt: "SAP" },
 ];
 
-export default function ClientLogos() {
+export default function ClientLogos({ lang = "es" as Lang }: { lang?: Lang }) {
+  const t = getDictionary(lang);
+
   return (
     <section className="bg-ebombo-light-purple px-[5%] py-[40px] md:py-[60px]">
       <div className="mx-auto max-w-container">
         <div className="flex flex-col items-center gap-4">
           <span className="text-center font-roboto text-base font-semibold text-ebombo-primary">
-            Trabajamos constantemente con
+            {t.clientLogos.subtitle}
           </span>
           <h2 className="text-center font-poppins text-[27px] font-bold leading-[1.2] tracking-[-1px] text-ebombo-secondary md:text-[46px] md:leading-tight">
-            Las Empresas Más Conocidas del Mundo
+            {t.clientLogos.title}
           </h2>
         </div>
         <div className="mt-4 flex flex-wrap items-center justify-center gap-[13px]">

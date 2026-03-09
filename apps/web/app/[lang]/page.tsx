@@ -9,22 +9,31 @@ import SuccessStories from "@/components/SuccessStories";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { isValidLang } from "@/lib/i18n";
+import type { Lang } from "@/lib/i18n";
 
-export default function Home() {
+export default async function Home({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang: rawLang } = await params;
+  const lang: Lang = isValidLang(rawLang) ? rawLang : "es";
+
   return (
     <>
-      <Header />
+      <Header lang={lang} />
       <main>
-        <Hero />
-        <ClientLogos />
-        <HowItWorks />
-        <Solutions />
-        <WhyEbombo />
-        <Testimonials />
-        <SuccessStories />
-        <ContactForm />
+        <Hero lang={lang} />
+        <ClientLogos lang={lang} />
+        <HowItWorks lang={lang} />
+        <Solutions lang={lang} />
+        <WhyEbombo lang={lang} />
+        <Testimonials lang={lang} />
+        <SuccessStories lang={lang} />
+        <ContactForm lang={lang} />
       </main>
-      <Footer />
+      <Footer lang={lang} />
       <WhatsAppButton />
     </>
   );

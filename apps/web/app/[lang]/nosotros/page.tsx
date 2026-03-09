@@ -4,53 +4,32 @@ import Header from "@/components/Header";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { isValidLang, getDictionary, localePath } from "@/lib/i18n";
+import type { Lang } from "@/lib/i18n";
 
-export const metadata: Metadata = {
-  title: "Sobre Nosotros | eBombo Internacional",
-  description:
-    "Conoce a eBombo: impulsados por un propósito, enfocados en las personas. Empoderando organizaciones con soluciones innovadoras para el engagement laboral.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang: rawLang } = await params;
+  const lang: Lang = isValidLang(rawLang) ? rawLang : "es";
+  const t = getDictionary(lang);
+
+  return {
+    title: `${t.nosotros.heroLabel} | eBombo Internacional`,
+    description: t.nosotros.heroDesc,
+  };
+}
 
 const IMG = "https://ebombo.com/wp-content/uploads";
 
-const stats = [
-  { number: "+10", label: "Años de experiencia" },
-  { number: "+500", label: "Eventos realizados" },
-  { number: "+50K", label: "Participantes" },
-  { number: "5", label: "Países" },
-];
-
-const values = [
-  {
-    icon: "lightbulb",
-    title: "Innovación",
-    description:
-      "Rompemos límites y abrazamos la creatividad para ofrecer soluciones visionarias.",
-    bg: "bg-[#7A33FF]",
-  },
-  {
-    icon: "bolt",
-    title: "Eficiencia",
-    description:
-      "Simplificamos procesos y optimizamos el tiempo para resultados más rápidos y efectivos.",
-    bg: "bg-ebombo-orange",
-  },
-  {
-    icon: "heart",
-    title: "Enfoque en el Cliente",
-    description:
-      "Nuestros clientes están en el centro de todo. Escuchamos, nos adaptamos y vamos más allá.",
-    bg: "bg-[#1E1E1E]",
-  },
-];
-
-const founders = [
+const foundersData = [
   {
     name: "Mateo Suarez Stewart",
     role: "Co-Founder & CEO",
     roleColor: "#7A33FF",
     shadowColor: "rgba(122,51,255,0.2)",
-    bio: "Apasionado por la innovación y el desarrollo de soluciones que transformen la experiencia laboral.",
     image: `${IMG}/2025/12/1681340380458.jpeg`,
   },
   {
@@ -58,7 +37,6 @@ const founders = [
     role: "Co-Founder & CTO",
     roleColor: "#F78A0A",
     shadowColor: "rgba(247,138,10,0.2)",
-    bio: "Experto en tecnología y desarrollo de plataformas que conectan equipos y potencian el engagement.",
     image: `${IMG}/2025/12/1666126684651.jpeg`,
   },
   {
@@ -66,21 +44,25 @@ const founders = [
     role: "Co-Founder & CCO",
     roleColor: "#7A33FF",
     shadowColor: "rgba(122,51,255,0.2)",
-    bio: "Líder en gestión comercial y marketing, dedicada a desarrollar oportunidades de alto valor que potencian el alcance de la empresa.",
     image: `${IMG}/2025/12/1666216414819.jpeg`,
   },
 ];
 
-const visionPoints = [
-  "Conexiones auténticas entre equipos",
-  "Experiencias memorables y transformadoras",
-  "Tecnología al servicio de las personas",
-];
+const valuesIcons = ["lightbulb", "bolt", "heart"] as const;
+const valuesBg = ["bg-[#7A33FF]", "bg-ebombo-orange", "bg-[#1E1E1E]"] as const;
 
-export default function Nosotros() {
+export default async function Nosotros({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang: rawLang } = await params;
+  const lang: Lang = isValidLang(rawLang) ? rawLang : "es";
+  const t = getDictionary(lang);
+
   return (
     <>
-      <Header />
+      <Header lang={lang} />
       <main>
         <section
           className="px-[5%] py-[60px] md:py-[100px]"
@@ -90,14 +72,13 @@ export default function Nosotros() {
         >
           <div className="mx-auto flex max-w-container flex-col items-center text-center">
             <span className="mb-4 font-poppins text-sm font-semibold uppercase tracking-[2px] text-ebombo-orange">
-              SOBRE NOSOTROS
+              {t.nosotros.heroLabel}
             </span>
             <h1 className="font-poppins text-[28px] font-bold leading-[1.2] text-white md:text-[48px]">
-              Impulsados por un Propósito, Enfocados en las Personas
+              {t.nosotros.heroTitle}
             </h1>
             <p className="mt-5 max-w-[700px] font-roboto text-base leading-[1.6] text-white/85 md:text-xl">
-              Empoderando a las organizaciones para que se centren en lo que más
-              importa: Su gente.
+              {t.nosotros.heroDesc}
             </p>
           </div>
         </section>
@@ -106,23 +87,19 @@ export default function Nosotros() {
           <div className="mx-auto flex max-w-container flex-col items-center gap-10 md:flex-row md:gap-[60px]">
             <div className="md:w-[49%]">
               <span className="mb-4 block font-poppins text-[13px] font-semibold uppercase tracking-[1.5px] text-[#7A33FF]">
-                NUESTRA MISIÓN
+                {t.nosotros.misionLabel}
               </span>
               <h2 className="mb-5 font-poppins text-[24px] font-bold leading-[1.3] text-[#1E1E1E] md:text-[32px]">
-                Redefiniendo la experiencia laboral moderna
+                {t.nosotros.misionTitle}
               </h2>
               <p className="font-roboto text-base leading-[1.7] text-[#666666]">
-                En eBombo, estamos comprometidos a empoderar a las
-                organizaciones con soluciones innovadoras diseñadas para el
-                dinámico entorno laboral actual. Nuestra misión es potenciar el
-                compromiso de los empleados y permitir que los equipos se
-                enfoquen en lo que realmente importa: su gente.
+                {t.nosotros.misionDesc}
               </p>
             </div>
             <div className="flex flex-wrap justify-center gap-5 md:w-[40%]">
-              {stats.map((stat) => (
+              {t.nosotros.stats.map((stat, i) => (
                 <div
-                  key={stat.label}
+                  key={i}
                   className="flex w-[47%] flex-col items-center rounded-[20px] bg-[#F3EEFF] px-4 py-6"
                 >
                   <span className="font-poppins text-[36px] font-bold text-[#7A33FF]">
@@ -150,19 +127,16 @@ export default function Nosotros() {
             </div>
             <div className="md:w-[50%]">
               <span className="mb-4 block font-poppins text-[13px] font-semibold uppercase tracking-[1.5px] text-ebombo-orange">
-                NUESTRA VISIÓN
+                {t.nosotros.visionLabel}
               </span>
               <h2 className="mb-5 font-poppins text-[24px] font-bold leading-[1.3] text-[#1E1E1E] md:text-[32px]">
-                Construyendo el futuro del trabajo colaborativo
+                {t.nosotros.visionTitle}
               </h2>
               <p className="mb-6 font-roboto text-base leading-[1.7] text-[#666666]">
-                Aspiramos a ser líderes globales en soluciones de engagement y
-                team building, creando experiencias que inspiren, conecten y
-                transformen la cultura organizacional de las empresas más
-                innovadoras del mundo.
+                {t.nosotros.visionDesc}
               </p>
               <div className="flex flex-col gap-3">
-                {visionPoints.map((point) => (
+                {t.nosotros.visionPoints.map((point) => (
                   <div key={point} className="flex items-center gap-3">
                     <svg
                       className="h-[18px] w-[18px] shrink-0 text-[#27AE60]"
@@ -184,19 +158,19 @@ export default function Nosotros() {
         <section className="bg-white px-[5%] py-[40px] md:py-[80px]">
           <div className="mx-auto max-w-container text-center">
             <span className="mb-3 block font-poppins text-[13px] font-semibold uppercase tracking-[1.5px] text-[#7A33FF]">
-              VALORES FUNDAMENTALES
+              {t.nosotros.valoresLabel}
             </span>
             <h2 className="mb-10 font-poppins text-[24px] font-bold text-[#1E1E1E] md:mb-[50px] md:text-[32px]">
-              La Base de Todo lo que Hacemos
+              {t.nosotros.valoresTitle}
             </h2>
             <div className="flex flex-col items-stretch gap-6 md:flex-row md:justify-center">
-              {values.map((value) => (
+              {t.nosotros.valores.map((value, i) => (
                 <div
                   key={value.title}
-                  className={`flex flex-1 flex-col items-center rounded-[24px] ${value.bg} px-8 py-10`}
+                  className={`flex flex-1 flex-col items-center rounded-[24px] ${valuesBg[i]} px-8 py-10`}
                 >
                   <div className="mb-5 flex h-[70px] w-[70px] items-center justify-center rounded-full border-2 border-white/60 bg-white/20">
-                    {value.icon === "lightbulb" && (
+                    {valuesIcons[i] === "lightbulb" && (
                       <svg
                         className="h-8 w-8"
                         fill="white"
@@ -205,7 +179,7 @@ export default function Nosotros() {
                         <path d="M96 454.5v25c0 18 14.3 32.5 32 32.5h96c17.7 0 32-14.5 32-32.5v-25H96zm128-310.5c0 33.3-12.9 63.6-34 86.2-17.6 18.8-30 42.5-34 69.3H148c-4-26.8-16.4-50.5-34-69.3C92.9 207.6 80 177.3 80 144 80 64.5 144.5 0 224 0s144 64.5 144 144z" />
                       </svg>
                     )}
-                    {value.icon === "bolt" && (
+                    {valuesIcons[i] === "bolt" && (
                       <svg
                         className="h-8 w-8"
                         fill="white"
@@ -214,7 +188,7 @@ export default function Nosotros() {
                         <path d="M296 160H180.6l42.6-129.8C227.2 15 215.7 0 200 0H56C44 0 33.8 8.9 32.2 20.8l-32 240C-1.7 275.2 9.5 288 24 288h118.7L96.6 482.5c-3.6 15.2 8 29.5 23.3 29.5 8.4 0 16.4-4.4 20.8-12l176-304c9.3-15.9-2.2-36-20.7-36z" />
                       </svg>
                     )}
-                    {value.icon === "heart" && (
+                    {valuesIcons[i] === "heart" && (
                       <svg
                         className="h-8 w-8"
                         fill="white"
@@ -239,13 +213,13 @@ export default function Nosotros() {
         <section className="bg-[#F7F7F7] px-[5%] py-[40px] md:py-[80px]">
           <div className="mx-auto max-w-container text-center">
             <span className="mb-4 block font-poppins text-[13px] font-semibold uppercase tracking-[1.5px] text-[#7A33FF]">
-              NUESTRO EQUIPO
+              {t.nosotros.equipoLabel}
             </span>
             <h2 className="mb-10 font-poppins text-[26px] font-bold text-[#1E1E1E] md:text-[36px]">
-              Los fundadores de eBombo
+              {t.nosotros.equipoTitle}
             </h2>
             <div className="flex flex-col items-stretch gap-6 md:flex-row md:justify-center">
-              {founders.map((founder) => (
+              {foundersData.map((founder, i) => (
                 <div
                   key={founder.name}
                   className="flex w-full flex-col items-center rounded-[24px] bg-white px-8 py-10 shadow-[0_8px_30px_rgba(0,0,0,0.08)] md:w-[350px]"
@@ -274,7 +248,7 @@ export default function Nosotros() {
                     {founder.role}
                   </span>
                   <p className="font-roboto text-[15px] leading-[1.6] text-[#666666]">
-                    {founder.bio}
+                    {t.nosotros.founders[i].bio}
                   </p>
                 </div>
               ))}
@@ -283,11 +257,12 @@ export default function Nosotros() {
         </section>
 
         <ContactForm
-          title="¿Quieres conectar con eBombo?"
-          subtitle="Si te inspira nuestra misión o quieres saber más sobre cómo trabajamos, escríbenos. Estamos listos para ser el aliado estratégico de tu empresa."
+          lang={lang}
+          title={t.nosotros.contactTitle}
+          subtitle={t.nosotros.contactSubtitle}
         />
       </main>
-      <Footer />
+      <Footer lang={lang} />
       <WhatsAppButton />
     </>
   );

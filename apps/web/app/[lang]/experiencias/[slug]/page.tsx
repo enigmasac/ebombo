@@ -5,43 +5,47 @@ import Header from "@/components/Header";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import {
-  experiences,
-  getExperienceBySlug,
-  getExperienceContent,
-} from "@/data/experiences";
+import { fetchExperience } from "@/lib/api";
 import RenderContent from "@/components/RenderContent";
+import { isValidLang, getDictionary } from "@/lib/i18n";
+import type { Lang } from "@/lib/i18n";
+import SidebarForm from "./SidebarForm";
 
 interface Props {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ lang: string; slug: string }>;
 }
 
+export const dynamicParams = true;
+
 export async function generateStaticParams() {
-  return experiences.map((exp) => ({ slug: exp.slug }));
+  return [];
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
-  const experience = getExperienceBySlug(slug);
+  const { lang, slug } = await params;
+  const experience = await fetchExperience(slug, lang);
   if (!experience) return { title: "Experiencia no encontrada" };
   return {
     title: `${experience.title} | eBombo Internacional`,
     description:
-      experience.heroDescription ||
+      experience.hero_description ||
       `Descubre la experiencia ${experience.title} de eBombo.`,
   };
 }
 
 export default async function ExperienciaDetalle({ params }: Props) {
-  const { slug } = await params;
-  const experience = getExperienceBySlug(slug);
+  const { lang: rawLang, slug } = await params;
+  const lang: Lang = isValidLang(rawLang) ? rawLang : "es";
+  const t = getDictionary(lang);
+  const experience = await fetchExperience(slug, lang);
   if (!experience) notFound();
 
-  const bodyContent = getExperienceContent(slug);
+  const bodyContent = experience.body_content || [];
+  const metaPills = experience.meta_pills || [];
 
   return (
     <>
-      <Header />
+      <Header lang={lang} />
       <main>
         <section className="bg-white px-[5%] pt-[20px] md:pt-[30px]">
           <div className="mx-auto max-w-container">
@@ -53,9 +57,9 @@ export default async function ExperienciaDetalle({ params }: Props) {
                 <h1 className="font-poppins text-[27px] font-bold leading-[1.13] tracking-[-1px] text-ebombo-secondary md:text-[46px]">
                   {experience.title}
                 </h1>
-                {experience.metaPills && (
+                {metaPills.length > 0 && (
                   <div className="flex flex-wrap gap-1">
-                    {experience.metaPills.map((pill) => (
+                    {metaPills.map((pill) => (
                       <span
                         key={pill}
                         className="rounded-[18px] bg-ebombo-accent px-4 py-1.5 font-poppins text-xs font-semibold tracking-[-0.5px] text-white"
@@ -65,16 +69,16 @@ export default async function ExperienciaDetalle({ params }: Props) {
                     ))}
                   </div>
                 )}
-                {experience.heroDescription && (
+                {experience.hero_description && (
                   <p className="font-roboto text-base leading-[1.6] text-ebombo-text">
-                    {experience.heroDescription}
+                    {experience.hero_description}
                   </p>
                 )}
                 <Link
                   href="#contacto"
                   className="self-start rounded-[64px] bg-ebombo-orange px-5 py-2.5 font-poppins text-xs font-semibold tracking-[-0.4px] text-white transition-all duration-[600ms] hover:bg-ebombo-orange-dark md:px-6 md:py-3 md:text-lg"
                 >
-                  Comienza a planificar
+                  {t.experiencias.comienzaPlanificar}
                 </Link>
               </div>
               <div
@@ -95,79 +99,24 @@ export default async function ExperienciaDetalle({ params }: Props) {
                 <RenderContent blocks={bodyContent} />
               ) : (
                 <p className="mb-5 font-roboto text-base leading-[1.7] text-ebombo-text">
-                  {experience.heroDescription}
+                  {experience.hero_description}
                 </p>
               )}
             </div>
             <div className="rounded-[33px] bg-ebombo-bg p-[3%] md:sticky md:top-[130px] md:w-[45%]">
               <h3 className="mb-4 text-center font-roboto text-[20px] font-semibold leading-[25px] text-ebombo-primary">
-                Hagamos realidad tu proyecto
+                {t.experiencias.hagamosRealidad}
               </h3>
-              <SidebarForm />
+              <SidebarForm lang={lang} />
             </div>
           </div>
         </section>
 
-        <ContactForm />
+        <ContactForm lang={lang} />
       </main>
-      <Footer />
+      <Footer lang={lang} />
       <WhatsAppButton />
     </>
   );
 }
 
-function SidebarForm() {
-  const inputStyles =
-    "w-full rounded-[12px] border border-[#E0E0E0] bg-white px-4 py-3 font-roboto text-base text-[#1E1E1E] outline-none placeholder:text-ebombo-text/60 focus:border-ebombo-primary";
-
-  return (
-    <form className="flex flex-col gap-4">
-      <div>
-        <label className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
-          Nombre completo <span className="text-red-500">*</span>
-        </label>
-        <input
-          type="text"
-          placeholder="Tu nombre completo"
-          required
-          className={inputStyles}
-        />
-      </div>
-      <div className="flex flex-col gap-4 md:flex-row">
-        <div className="md:w-1/2">
-          <label className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
-            Teléfono <span className="text-red-500">*</span>
-          </label>
-          <input
-            type="tel"
-            placeholder="Teléfono o WhatsApp"
-            required
-            className={inputStyles}
-          />
-        </div>
-        <div className="md:w-1/2">
-          <label className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
-            Email
-          </label>
-          <input
-            type="email"
-            placeholder="Correo electrónico (opcional)"
-            className={inputStyles}
-          />
-        </div>
-      </div>
-      <div>
-        <label className="mb-1 block font-roboto text-sm font-medium text-[#1E1E1E]">
-          Cuéntanos más! (opcional)
-        </label>
-        <textarea rows={4} className={`${inputStyles} resize-none`} />
-      </div>
-      <button
-        type="submit"
-        className="w-full rounded-[50px] bg-ebombo-orange px-8 py-3 font-poppins text-base font-semibold text-white transition-all duration-[600ms] hover:bg-[#e07a00]"
-      >
-        Enviar
-      </button>
-    </form>
-  );
-}

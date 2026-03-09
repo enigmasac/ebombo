@@ -5,21 +5,29 @@ import Header from "@/components/Header";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { isValidLang, getDictionary, localePath } from "@/lib/i18n";
+import type { Lang } from "@/lib/i18n";
 
-export const metadata: Metadata = {
-  title: "Stands y Ferias | eBombo Internacional",
-  description:
-    "Diseñamos y construimos stands personalizados que destacan tu marca en ferias y eventos comerciales.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang: rawLang } = await params;
+  const lang: Lang = isValidLang(rawLang) ? rawLang : "es";
+  const t = getDictionary(lang);
+
+  return {
+    title: `${t.standFerias.heroTitle} | eBombo Internacional`,
+    description: t.standFerias.heroDesc,
+  };
+}
 
 const IMG = "https://ebombo.com/wp-content/uploads/stand-ferias";
 
-const features = [
+const featuresData = [
   {
-    icon: "map-marker",
-    title: "Ubicación Estratégica",
-    description:
-      "Talleres a menos de 10 km de los principales recintos feriales en cada ciudad.",
+    icon: "map-marker" as const,
     bg: "bg-[#F7F7F7]",
     textColor: "text-[#1E1E1E]",
     descColor: "text-[#666666]",
@@ -27,10 +35,7 @@ const features = [
     hidden: false,
   },
   {
-    icon: "award",
-    title: "+10 Años de Experiencia",
-    description:
-      "Más de una década construyendo stands exitosos para marcas de todo el mundo.",
+    icon: "award" as const,
     bg: "bg-[#7A33FF]",
     textColor: "text-white",
     descColor: "text-white/90",
@@ -38,10 +43,7 @@ const features = [
     hidden: false,
   },
   {
-    icon: "expand",
-    title: "+5,000 m² de Talleres",
-    description:
-      "Capacidad para proyectos de cualquier escala, desde 12 m² hasta pabellones nacionales.",
+    icon: "expand" as const,
     bg: "bg-[#F7F7F7]",
     textColor: "text-[#1E1E1E]",
     descColor: "text-[#666666]",
@@ -50,48 +52,36 @@ const features = [
   },
 ];
 
+const featureTitleKeys = ["feature1Title", "feature2Title", "feature3Title"] as const;
+const featureDescKeys = ["feature1Desc", "feature2Desc", "feature3Desc"] as const;
+
 const galleryImages = Array.from({ length: 9 }, (_, i) => ({
   src: `${IMG}/stand-${i + 4}.png`,
   alt: [
     "Stand corporativo",
-    "Stand de exhibición",
+    "Stand de exhibicion",
     "Stand modular",
     "Stand con pantallas LED",
     "Stand personalizado",
     "Stand de marca",
     "Stand creativo",
-    "Stand tecnológico",
+    "Stand tecnologico",
     "Stand de experiencias",
   ][i],
 }));
 
-const services = [
-  {
-    title: "Diseño de Stands",
-    description:
-      "Creamos diseños únicos que reflejan la identidad de tu marca y maximizan el impacto visual en ferias y eventos.",
-  },
-  {
-    title: "Construcción y Montaje",
-    description:
-      "Fabricamos y montamos tu stand con materiales de primera calidad, garantizando acabados profesionales y tiempos de entrega.",
-  },
-  {
-    title: "Equipamiento y Mobiliario",
-    description:
-      "Proveemos todo el mobiliario y equipamiento necesario: pantallas, iluminación, mostradores y más.",
-  },
-  {
-    title: "Logística Integral",
-    description:
-      "Nos encargamos del transporte, almacenamiento y desmontaje. Tú solo preocúpate de tu negocio.",
-  },
-];
+export default async function StandFerias({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang: rawLang } = await params;
+  const lang: Lang = isValidLang(rawLang) ? rawLang : "es";
+  const t = getDictionary(lang);
 
-export default function StandFerias() {
   return (
     <>
-      <Header />
+      <Header lang={lang} />
       <main>
         <section
           className="flex min-h-[450px] items-center px-[5%] py-[60px] md:py-[100px]"
@@ -101,20 +91,19 @@ export default function StandFerias() {
         >
           <div className="mx-auto flex max-w-container flex-col items-center text-center">
             <span className="mb-4 font-poppins text-sm font-semibold uppercase tracking-[2px] text-ebombo-orange">
-              CONSTRUCCIÓN DE STANDS
+              {t.standFerias.heroLabel}
             </span>
             <h1 className="font-poppins text-[32px] font-bold leading-[1.2] text-white md:text-[52px]">
-              Stands y Ferias que Impactan
+              {t.standFerias.heroTitle}
             </h1>
             <p className="mt-5 max-w-[650px] font-roboto text-base leading-[1.6] text-white/85 md:text-lg">
-              Diseñamos y construimos stands personalizados que destacan tu marca
-              en ferias y eventos comerciales.
+              {t.standFerias.heroDesc}
             </p>
             <Link
-              href="#contacto"
+              href={localePath(lang, "#contacto")}
               className="mt-8 rounded-[50px] bg-ebombo-orange px-9 py-4 font-poppins text-base font-semibold text-white transition-all duration-[600ms] hover:bg-[#e07a00]"
             >
-              Solicitar Cotización
+              {t.standFerias.solicitarCotizacion}
             </Link>
           </div>
         </section>
@@ -122,12 +111,12 @@ export default function StandFerias() {
         <section className="bg-white px-[5%] py-[40px] md:py-[80px]">
           <div className="mx-auto max-w-container">
             <h2 className="mb-10 text-center font-poppins text-[27px] font-bold text-[#1E1E1E] md:mb-[50px] md:text-[36px]">
-              ¿Por qué elegirnos?
+              {t.standFerias.porQueElegirnos}
             </h2>
             <div className="flex flex-wrap justify-center gap-3 md:gap-[30px]">
-              {features.map((feature) => (
+              {featuresData.map((feature, i) => (
                 <div
-                  key={feature.title}
+                  key={t.standFerias[featureTitleKeys[i]]}
                   className={`flex w-[47%] flex-col items-center rounded-[24px] ${feature.bg} px-4 py-8 text-center md:w-[30%] md:px-8 md:py-10 ${feature.hidden ? "hidden md:flex" : "flex"}`}
                 >
                   <div className="mb-5">
@@ -186,12 +175,12 @@ export default function StandFerias() {
                   <h4
                     className={`mb-3 font-poppins text-[14px] font-semibold ${feature.textColor} md:text-[20px]`}
                   >
-                    {feature.title}
+                    {t.standFerias[featureTitleKeys[i]]}
                   </h4>
                   <p
                     className={`font-roboto text-[11px] ${feature.descColor} md:text-[15px]`}
                   >
-                    {feature.description}
+                    {t.standFerias[featureDescKeys[i]]}
                   </p>
                 </div>
               ))}
@@ -202,10 +191,10 @@ export default function StandFerias() {
         <section className="bg-[#F7F7F7] px-[5%] py-[40px] md:py-[80px]">
           <div className="mx-auto max-w-container">
             <h2 className="mb-4 text-center font-poppins text-[27px] font-bold text-[#1E1E1E] md:text-[36px]">
-              Nuestros Proyectos
+              {t.standFerias.proyectosTitle}
             </h2>
             <p className="mb-10 text-center font-roboto text-base leading-[1.6] text-[#666666]">
-              Descubre algunos de nuestros stands y ferias más destacados
+              {t.standFerias.proyectosDesc}
             </p>
             <div className="flex flex-wrap justify-center gap-3 md:gap-5">
               {galleryImages.map((img) => (
@@ -229,10 +218,10 @@ export default function StandFerias() {
         <section className="bg-[#F7F7F7] px-[5%] py-[40px] md:py-[80px]">
           <div className="mx-auto max-w-container">
             <h2 className="mb-10 text-center font-poppins text-[27px] font-bold text-[#1E1E1E] md:mb-[50px] md:text-[36px]">
-              Nuestros Servicios
+              {t.standFerias.serviciosTitle}
             </h2>
             <div className="flex flex-wrap justify-center gap-3 md:gap-6">
-              {services.map((service) => (
+              {t.standFerias.services.map((service) => (
                 <div
                   key={service.title}
                   className="w-[47%] rounded-[24px] bg-white p-5 shadow-[0_4px_20px_rgba(0,0,0,0.06)] md:w-[48%] md:p-8"
@@ -250,11 +239,12 @@ export default function StandFerias() {
         </section>
 
         <ContactForm
-          title="Haz que tu marca destaque en el evento"
-          subtitle="Diseñamos y producimos stands que capturan miradas. Cuéntanos sobre tu próxima feria y te ayudaremos a impactar a cada visitante."
+          lang={lang}
+          title={t.standFerias.contactTitle}
+          subtitle={t.standFerias.contactSubtitle}
         />
       </main>
-      <Footer />
+      <Footer lang={lang} />
       <WhatsAppButton />
     </>
   );
