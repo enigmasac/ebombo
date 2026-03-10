@@ -10,6 +10,7 @@ import LeadsList from "./pages/LeadsList";
 import Settings from "./pages/Settings";
 import AuditLog from "./pages/AuditLog";
 import Snippets from "./pages/Snippets";
+import ComplaintsList from "./pages/ComplaintsList";
 
 function AdminLayout({ children }: { children: React.ReactNode }) {
   const navigate = useNavigate();
@@ -51,6 +52,12 @@ function AdminLayout({ children }: { children: React.ReactNode }) {
             onClick={() => navigate("/leads")}
           >
             Leads
+          </button>
+          <button
+            className={`admin-sidebar-link ${location.pathname === "/complaints" ? "active" : ""}`}
+            onClick={() => navigate("/complaints")}
+          >
+            Reclamaciones
           </button>
           <button
             className={`admin-sidebar-link ${location.pathname === "/audit" ? "active" : ""}`}
@@ -119,6 +126,7 @@ export default function App() {
       <Route path="/experiences" element={<ProtectedRoute><ExperienceList /></ProtectedRoute>} />
       <Route path="/experiences/:slug" element={<ProtectedRoute><ExperienceEditor /></ProtectedRoute>} />
       <Route path="/leads" element={<ProtectedRoute><LeadsList /></ProtectedRoute>} />
+      <Route path="/complaints" element={<ProtectedRoute><ComplaintsList /></ProtectedRoute>} />
       <Route path="/audit" element={<ProtectedRoute><AuditLog /></ProtectedRoute>} />
       <Route path="/users" element={<SuperAdminRoute><UsersList /></SuperAdminRoute>} />
       <Route path="/snippets" element={<SuperAdminRoute><Snippets /></SuperAdminRoute>} />

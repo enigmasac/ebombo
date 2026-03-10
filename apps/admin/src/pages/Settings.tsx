@@ -101,7 +101,7 @@ export default function Settings() {
       <div className="card" style={{ marginBottom: 24 }}>
         <h3 style={{ marginBottom: 16 }}>Emails de notificación</h3>
         <p style={{ fontSize: 13, color: "#666", marginBottom: 16 }}>
-          Los leads del formulario de contacto se enviarán a estos correos.
+          Los leads del formulario de contacto y las reclamaciones del Libro de Reclamaciones se enviarán a estos correos.
         </p>
         <div className="pills-container">
           {emails.map((email) => (

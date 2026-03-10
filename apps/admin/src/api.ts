@@ -327,6 +327,65 @@ export function deleteAllLeads() {
   return request<{ ok: boolean }>("/api/leads", "", { method: "DELETE" });
 }
 
+export interface Complaint {
+  id: number;
+  name: string;
+  document_type: string;
+  document_number: string;
+  address: string;
+  phone: string;
+  email: string;
+  is_minor: boolean;
+  guardian_name: string;
+  type: "reclamo" | "queja";
+  service_description: string;
+  amount_claimed: string;
+  detail: string;
+  consumer_request: string;
+  status: "pending" | "in_progress" | "resolved";
+  notified: boolean;
+  created_at: string;
+}
+
+export interface ComplaintListResponse {
+  complaints: Complaint[];
+  total: number;
+  page: number;
+  limit: number;
+}
+
+const COMPLAINTS_BASE = "/api/complaints";
+
+export function getComplaints(params: { page?: number; limit?: number; status?: string; search?: string }) {
+  const qs = new URLSearchParams();
+  if (params.page) qs.set("page", String(params.page));
+  if (params.limit) qs.set("limit", String(params.limit));
+  if (params.status) qs.set("status", params.status);
+  if (params.search) qs.set("search", params.search);
+  return request<ComplaintListResponse>(COMPLAINTS_BASE, `?${qs}`);
+}
+
+export function deleteComplaint(id: number) {
+  return request<{ ok: boolean }>(COMPLAINTS_BASE, `/${id}`, { method: "DELETE" });
+}
+
+export function deleteAllComplaints() {
+  return request<{ ok: boolean }>(COMPLAINTS_BASE, "", { method: "DELETE" });
+}
+
+export async function exportComplaints(): Promise<Blob> {
+  const res = await fetch(`${COMPLAINTS_BASE}/export`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  if (res.status === 401) {
+    clearToken();
+    window.location.href = "/";
+    throw new Error("Unauthorized");
+  }
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return res.blob();
+}
+
 export function getSettings() {
   return request<Record<string, unknown>>("/api/settings", "");
 }
