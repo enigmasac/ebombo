@@ -8,6 +8,7 @@ import auditRouter from "./audit";
 import leadsRouter from "./leads";
 import settingsRouter from "./settings";
 import snippetsRouter from "./snippets";
+import complaintsRouter from "./complaints";
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -31,6 +32,8 @@ app.use("/api/experiences", experiencesRouter);
 app.use("/api/experiences/uploads", express.static(EXP_UPLOADS_DIR));
 
 app.use("/api/snippets", snippetsRouter);
+
+app.use("/api/complaints", complaintsRouter);
 
 const ADMIN_DIR = path.resolve(__dirname, "../../admin/dist");
 app.use("/admin", express.static(ADMIN_DIR));

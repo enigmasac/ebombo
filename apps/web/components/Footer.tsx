@@ -68,6 +68,7 @@ export default function Footer({ lang = "es" as Lang }: { lang?: Lang }) {
   const extraLinks = [
     { label: t.nav.blog, href: localePath(lang, "/blog") },
     { label: t.nav.photobooth, href: localePath(lang, "/photobooth") },
+    ...(lang === "es" ? [{ label: t.nav.libroReclamaciones, href: "/libro-de-reclamaciones" }] : []),
   ];
 
   return (

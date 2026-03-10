@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS complaints (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  document_type VARCHAR(50) NOT NULL DEFAULT 'DNI',
+  document_number VARCHAR(50) NOT NULL,
+  address VARCHAR(500) DEFAULT '',
+  phone VARCHAR(50) DEFAULT '',
+  email VARCHAR(255) DEFAULT '',
+  is_minor TINYINT(1) NOT NULL DEFAULT 0,
+  guardian_name VARCHAR(255) DEFAULT '',
+  type ENUM('reclamo', 'queja') NOT NULL DEFAULT 'reclamo',
+  service_description TEXT,
+  amount_claimed VARCHAR(100) DEFAULT '',
+  detail TEXT NOT NULL,
+  consumer_request TEXT,
+  status ENUM('pending', 'in_progress', 'resolved') NOT NULL DEFAULT 'pending',
+  notified TINYINT(1) NOT NULL DEFAULT 0,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  INDEX idx_status (status),
+  INDEX idx_created_at (created_at)
+);
