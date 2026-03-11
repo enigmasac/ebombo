@@ -85,6 +85,7 @@ export default function ExperienciasClient({ lang, experiences, badges }: Props)
                       src={exp.image}
                       alt={exp.title}
                       fill
+                      quality={90}
                       className="object-cover transition-transform duration-300 group-hover:scale-105"
                       sizes="(max-width: 768px) 100vw, 33vw"
                     />

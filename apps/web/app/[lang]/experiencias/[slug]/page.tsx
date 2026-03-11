@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 import ContactForm from "@/components/ContactForm";
@@ -81,13 +82,17 @@ export default async function ExperienciaDetalle({ params }: Props) {
                   {t.experiencias.comienzaPlanificar}
                 </Link>
               </div>
-              <div
-                className="hidden bg-cover bg-center md:block md:w-[40%]"
-                style={{
-                  backgroundImage: `url(${experience.image})`,
-                  borderRadius: "0 28px 28px 0",
-                }}
-              />
+              <div className="relative hidden md:block md:w-[40%]">
+                <Image
+                  src={experience.image}
+                  alt={experience.title}
+                  fill
+                  quality={90}
+                  className="object-cover"
+                  style={{ borderRadius: "0 28px 28px 0" }}
+                  sizes="40vw"
+                />
+              </div>
             </div>
           </div>
         </section>
