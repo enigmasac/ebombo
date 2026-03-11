@@ -48,10 +48,16 @@ interface ComplaintPayload {
 
 async function notifyComplaint(complaint: ComplaintPayload & { id: number }): Promise<boolean> {
   const smtp = await getSmtpConfig();
-  if (!smtp) return false;
+  if (!smtp) {
+    console.warn("[complaints] No SMTP config found in settings table — skipping email notification");
+    return false;
+  }
 
   const emails = await getNotificationEmails();
-  if (!emails.length) return false;
+  if (!emails.length) {
+    console.warn("[complaints] No notification emails configured — skipping email notification");
+    return false;
+  }
 
   const transporter = nodemailer.createTransport({
     host: smtp.host,
@@ -83,6 +89,7 @@ async function notifyComplaint(complaint: ComplaintPayload & { id: number }): Pr
     `,
   });
 
+  console.log(`[complaints] Notification sent to ${emails.join(", ")} for complaint #${complaint.id}`);
   return true;
 }
 

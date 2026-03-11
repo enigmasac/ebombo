@@ -32,10 +32,16 @@ async function getNotificationEmails(): Promise<string[]> {
 
 async function notifyLead(lead: { name: string; phone: string; email: string; message: string; interest: string; source: string; page_url: string }): Promise<boolean> {
   const smtp = await getSmtpConfig();
-  if (!smtp) return false;
+  if (!smtp) {
+    console.warn("[leads] No SMTP config found in settings table — skipping email notification");
+    return false;
+  }
 
   const emails = await getNotificationEmails();
-  if (!emails.length) return false;
+  if (!emails.length) {
+    console.warn("[leads] No notification emails configured — skipping email notification");
+    return false;
+  }
 
   const transporter = nodemailer.createTransport({
     host: smtp.host,
@@ -59,6 +65,7 @@ async function notifyLead(lead: { name: string; phone: string; email: string; me
     `,
   });
 
+  console.log(`[leads] Notification sent to ${emails.join(", ")} for lead: ${lead.name}`);
   return true;
 }
 
