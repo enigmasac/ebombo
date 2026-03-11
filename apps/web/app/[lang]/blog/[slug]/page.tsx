@@ -158,6 +158,7 @@ export default async function BlogPost({ params }: Props) {
                     src={post.thumbnailUrl}
                     alt={post.title}
                     fill
+                    quality={90}
                     className="object-cover"
                     style={{ borderRadius: "0 28px 28px 0" }}
                     sizes="40vw"

@@ -124,6 +124,7 @@ export default function BlogListingClient({ lang }: { lang: Lang }) {
                         src={post.thumbnailUrl}
                         alt={post.title}
                         fill
+                        quality={90}
                         className="object-cover transition-transform duration-300 group-hover:scale-105"
                         sizes="(max-width: 768px) 100vw, 33vw"
                       />

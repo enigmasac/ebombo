@@ -4,6 +4,7 @@ import multer from "multer";
 import path from "path";
 import { randomBytes } from "crypto";
 import { mkdirSync } from "fs";
+import sharp from "sharp";
 import pool from "./db";
 import { requireAuth } from "./auth";
 import { logAudit } from "./audit";
@@ -12,16 +13,8 @@ import type { RowDataPacket, ResultSetHeader } from "mysql2";
 const UPLOADS_DIR = path.resolve(__dirname, "../../uploads");
 mkdirSync(UPLOADS_DIR, { recursive: true });
 
-const storage = multer.diskStorage({
-  destination: (_req, _file, cb) => cb(null, UPLOADS_DIR),
-  filename: (_req, file, cb) => {
-    const ext = path.extname(file.originalname);
-    cb(null, `${Date.now()}-${randomBytes(6).toString("hex")}${ext}`);
-  },
-});
-
 const upload = multer({
-  storage,
+  storage: multer.memoryStorage(),
   limits: { fileSize: 5 * 1024 * 1024 },
   fileFilter: (_req, file, cb) => {
     const allowed = /\.(jpg|jpeg|png|gif|webp|svg)$/i;
@@ -141,12 +134,21 @@ router.delete("/posts/:id", requireAuth, async (req: Request, res: Response) => 
   res.json({ ok: true });
 });
 
-router.post("/upload", requireAuth, upload.single("file"), (req: Request, res: Response) => {
+router.post("/upload", requireAuth, upload.single("file"), async (req: Request, res: Response) => {
   if (!req.file) {
     res.status(400).json({ error: "No file uploaded" });
     return;
   }
-  res.json({ url: `/api/blog/uploads/${req.file.filename}` });
+
+  const filename = `${Date.now()}-${randomBytes(6).toString("hex")}.webp`;
+  const outputPath = path.join(UPLOADS_DIR, filename);
+
+  await sharp(req.file.buffer)
+    .resize(1920, 1080, { fit: "inside", withoutEnlargement: true })
+    .webp({ quality: 80 })
+    .toFile(outputPath);
+
+  res.json({ url: `/api/blog/uploads/${filename}` });
 });
 
 export { UPLOADS_DIR };
