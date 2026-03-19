@@ -16,6 +16,7 @@ export default function Header({ lang = "es" as Lang }: { lang?: Lang }) {
     { label: t.nav.experiencias, href: localePath(lang, "/experiencias") },
     { label: t.nav.merchandising, href: localePath(lang, "/merchandising") },
     { label: t.nav.standsYFerias, href: localePath(lang, "/stand-ferias") },
+    { label: t.nav.momentos, href: localePath(lang, "/momentos") },
     { label: t.nav.nosotros, href: localePath(lang, "/nosotros") },
     { label: t.nav.copaDelMundo, href: localePath(lang, "/copa-del-mundo") },
   ];
