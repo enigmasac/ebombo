@@ -7,7 +7,9 @@ import { postsEn2 } from "./posts-en-2";
 
 export type { BlogPost, BlogContentBlock };
 
-const allPosts: BlogPost[] = [
+const API_URL = process.env.API_URL || "http://localhost:4000";
+
+const staticPosts: BlogPost[] = [
   ...postsEs1,
   ...postsEs2,
   ...postsEs3,
@@ -15,18 +17,55 @@ const allPosts: BlogPost[] = [
   ...postsEn2,
 ];
 
-export function getAllPosts(): BlogPost[] {
-  return allPosts.sort(
-    (a, b) => b.datePublished.localeCompare(a.datePublished)
-  );
+function mapApiPost(raw: Record<string, unknown>): BlogPost {
+  return {
+    slug: raw.slug as string,
+    title: raw.title as string,
+    description: (raw.description as string) || "",
+    datePublished: raw.date_published as string,
+    lang: raw.lang as "es" | "en",
+    thumbnailUrl: (raw.thumbnail_url as string) || "",
+    wordCount: (raw.word_count as number) || 0,
+    bodyContent: (raw.body_content as BlogContentBlock[]) || [],
+  };
 }
 
-export function getPostBySlug(slug: string): BlogPost | undefined {
-  return allPosts.find((p) => p.slug === slug);
+export async function getAllPosts(): Promise<BlogPost[]> {
+  let apiPosts: BlogPost[] = [];
+  try {
+    const res = await fetch(`${API_URL}/api/blog/posts?limit=1000`, {
+      next: { revalidate: 60 },
+    });
+    if (res.ok) {
+      const data = await res.json();
+      apiPosts = data.posts.map(mapApiPost);
+    }
+  } catch {}
+
+  const slugSet = new Set(apiPosts.map((p) => p.slug));
+  const merged = [
+    ...apiPosts,
+    ...staticPosts.filter((p) => !slugSet.has(p.slug)),
+  ];
+  return merged.sort((a, b) => b.datePublished.localeCompare(a.datePublished));
 }
 
-export function getPostsByLang(lang: "es" | "en"): BlogPost[] {
-  return allPosts
-    .filter((p) => p.lang === lang)
-    .sort((a, b) => b.datePublished.localeCompare(a.datePublished));
+export async function getPostBySlug(
+  slug: string
+): Promise<BlogPost | undefined> {
+  try {
+    const res = await fetch(`${API_URL}/api/blog/posts/${slug}`, {
+      next: { revalidate: 60 },
+    });
+    if (res.ok) {
+      const data = await res.json();
+      return mapApiPost(data);
+    }
+  } catch {}
+  return staticPosts.find((p) => p.slug === slug);
+}
+
+export async function getPostsByLang(lang: "es" | "en"): Promise<BlogPost[]> {
+  const all = await getAllPosts();
+  return all.filter((p) => p.lang === lang);
 }

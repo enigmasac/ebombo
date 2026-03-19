@@ -7,7 +7,7 @@ import Header from "@/components/Header";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import { getAllPosts } from "@/data/blog";
+import type { BlogPost } from "@/data/blog";
 import { getDictionary, localePath } from "@/lib/i18n";
 import type { Lang } from "@/lib/i18n";
 
@@ -22,7 +22,13 @@ function formatDate(isoDate: string, postLang: "es" | "en") {
   });
 }
 
-export default function BlogListingClient({ lang }: { lang: Lang }) {
+export default function BlogListingClient({
+  lang,
+  posts,
+}: {
+  lang: Lang;
+  posts: BlogPost[];
+}) {
   const t = getDictionary(lang);
 
   const [activeLang, setActiveLang] = useState<"all" | "es" | "en">(
@@ -30,7 +36,7 @@ export default function BlogListingClient({ lang }: { lang: Lang }) {
   );
   const [page, setPage] = useState(1);
 
-  const allPosts = useMemo(() => getAllPosts(), []);
+  const allPosts = posts;
 
   const langFilters = [
     { key: "all" as const, label: t.blog.filterAll },

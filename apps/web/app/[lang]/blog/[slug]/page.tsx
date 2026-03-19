@@ -18,16 +18,19 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  return getAllPosts().flatMap((post) => [
+  const posts = await getAllPosts();
+  return posts.flatMap((post) => [
     { lang: "es", slug: post.slug },
     { lang: "en", slug: post.slug },
   ]);
 }
 
+export const dynamicParams = true;
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang: rawLang, slug } = await params;
   const lang: Lang = isValidLang(rawLang) ? rawLang : "es";
-  const post = getPostBySlug(slug);
+  const post = await getPostBySlug(slug);
   if (!post) return { title: "Post no encontrado" };
   return {
     title: `${post.title} | eBombo Blog`,
@@ -116,7 +119,7 @@ export default async function BlogPost({ params }: Props) {
   const { lang: rawLang, slug } = await params;
   const lang: Lang = isValidLang(rawLang) ? rawLang : "es";
   const t = getDictionary(lang);
-  const post = getPostBySlug(slug);
+  const post = await getPostBySlug(slug);
   if (!post) notFound();
 
   return (
