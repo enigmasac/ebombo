@@ -24,7 +24,11 @@ function mapApiPost(raw: Record<string, unknown>): BlogPost {
     description: (raw.description as string) || "",
     datePublished: (raw.date_published as string) || "",
     lang: raw.lang as "es" | "en",
-    thumbnailUrl: (raw.thumbnail_url as string) || "",
+    thumbnailUrl: raw.thumbnail_url
+      ? (raw.thumbnail_url as string).startsWith("/api/")
+        ? `${API_URL}${raw.thumbnail_url}`
+        : (raw.thumbnail_url as string)
+      : "",
     wordCount: (raw.word_count as number) || 0,
     bodyContent: (raw.body_content as BlogContentBlock[]) || [],
   };
