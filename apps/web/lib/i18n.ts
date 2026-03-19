@@ -22,6 +22,7 @@ const es = {
     momentos: "Momentos",
     libroReclamaciones: "Libro de Reclamaciones",
     solicitarReunion: "Solicitar reunion",
+    servicios: "Servicios",
   },
   langSwitcher: {
     label: "EN",
@@ -438,6 +439,7 @@ const en: Dictionary = {
     momentos: "Momentos",
     libroReclamaciones: "Complaints Book",
     solicitarReunion: "Book a meeting",
+    servicios: "Services",
   },
   langSwitcher: {
     label: "ES",
