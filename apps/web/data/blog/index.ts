@@ -22,7 +22,7 @@ function mapApiPost(raw: Record<string, unknown>): BlogPost {
     slug: raw.slug as string,
     title: raw.title as string,
     description: (raw.description as string) || "",
-    datePublished: raw.date_published as string,
+    datePublished: (raw.date_published as string) || "",
     lang: raw.lang as "es" | "en",
     thumbnailUrl: (raw.thumbnail_url as string) || "",
     wordCount: (raw.word_count as number) || 0,
@@ -47,7 +47,9 @@ export async function getAllPosts(): Promise<BlogPost[]> {
     ...apiPosts,
     ...staticPosts.filter((p) => !slugSet.has(p.slug)),
   ];
-  return merged.sort((a, b) => b.datePublished.localeCompare(a.datePublished));
+  return merged
+    .filter((p) => p.datePublished)
+    .sort((a, b) => b.datePublished.localeCompare(a.datePublished));
 }
 
 export async function getPostBySlug(
