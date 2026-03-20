@@ -13,6 +13,9 @@ RUN npm ci
 
 COPY . .
 
+ARG API_URL=http://localhost:4000
+ENV API_URL=$API_URL
+
 RUN npx turbo build --filter=@ebombo/web
 
 FROM base AS runner
