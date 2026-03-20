@@ -30,7 +30,7 @@ export const dynamicParams = true;
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang: rawLang, slug } = await params;
   const lang: Lang = isValidLang(rawLang) ? rawLang : "es";
-  const post = await getPostBySlug(slug);
+  const post = await getPostBySlug(slug, lang);
   if (!post) return { title: "Post no encontrado" };
   return {
     title: `${post.title} | eBombo Blog`,
@@ -122,7 +122,7 @@ export default async function BlogPost({ params }: Props) {
   const { lang: rawLang, slug } = await params;
   const lang: Lang = isValidLang(rawLang) ? rawLang : "es";
   const t = getDictionary(lang);
-  const post = await getPostBySlug(slug);
+  const post = await getPostBySlug(slug, lang);
   if (!post) notFound();
 
   return (

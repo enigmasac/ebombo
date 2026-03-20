@@ -68,10 +68,16 @@ router.get("/posts", async (req: Request, res: Response) => {
 });
 
 router.get("/posts/:slug", async (req: Request, res: Response) => {
-  const [rows] = await pool.query<RowDataPacket[]>(
-    "SELECT * FROM blog_posts WHERE slug = ?",
-    [req.params.slug]
-  );
+  const lang = req.query.lang as string | undefined;
+  let query = "SELECT * FROM blog_posts WHERE slug = ?";
+  const params: string[] = [req.params.slug as string];
+
+  if (lang && (lang === "es" || lang === "en")) {
+    query += " AND lang = ?";
+    params.push(lang);
+  }
+
+  const [rows] = await pool.query<RowDataPacket[]>(query, params);
   if (!rows.length) {
     res.status(404).json({ error: "Not found" });
     return;

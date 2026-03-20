@@ -18,6 +18,21 @@ const staticPosts: BlogPost[] = [
   ...postsEn2,
 ];
 
+const staticBySlug = new Map(staticPosts.map((p) => [p.slug, p]));
+
+function mergeWithStatic(apiPost: BlogPost): BlogPost {
+  const staticPost = staticBySlug.get(apiPost.slug);
+  if (!staticPost) return apiPost;
+  return {
+    ...apiPost,
+    bodyContent:
+      apiPost.bodyContent.length > 0
+        ? apiPost.bodyContent
+        : staticPost.bodyContent,
+    lang: staticPost.lang,
+  };
+}
+
 function mapApiPost(raw: Record<string, unknown>): BlogPost {
   return {
     slug: raw.slug as string,
@@ -43,7 +58,7 @@ export async function getAllPosts(): Promise<BlogPost[]> {
     });
     if (res.ok) {
       const data = await res.json();
-      apiPosts = data.posts.map(mapApiPost);
+      apiPosts = data.posts.map(mapApiPost).map(mergeWithStatic);
     }
   } catch {}
 
@@ -58,18 +73,22 @@ export async function getAllPosts(): Promise<BlogPost[]> {
 }
 
 export async function getPostBySlug(
-  slug: string
+  slug: string,
+  lang?: "es" | "en"
 ): Promise<BlogPost | undefined> {
+  const qs = lang ? `?lang=${lang}` : "";
   try {
-    const res = await fetch(`${API_URL}/api/blog/posts/${slug}`, {
+    const res = await fetch(`${API_URL}/api/blog/posts/${slug}${qs}`, {
       next: { revalidate: 60 },
     });
     if (res.ok) {
       const data = await res.json();
-      return mapApiPost(data);
+      return mergeWithStatic(mapApiPost(data));
     }
   } catch {}
-  return staticPosts.find((p) => p.slug === slug);
+  return staticPosts.find(
+    (p) => p.slug === slug && (!lang || p.lang === lang)
+  ) || staticPosts.find((p) => p.slug === slug);
 }
 
 export async function getPostsByLang(lang: "es" | "en"): Promise<BlogPost[]> {
