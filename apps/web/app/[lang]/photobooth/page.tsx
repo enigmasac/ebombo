@@ -21,6 +21,9 @@ export async function generateMetadata({
   return {
     title: `${t.photobooth.heroTitle} | eBombo Internacional`,
     description: t.photobooth.heroDesc,
+    alternates: {
+      canonical: lang === "en" ? "/en/photobooth" : "/photobooth",
+    },
   };
 }
 

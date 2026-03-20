@@ -18,6 +18,9 @@ export async function generateMetadata({
   return {
     title: `${t.libroReclamaciones.heroTitle} | eBombo Internacional`,
     description: t.libroReclamaciones.heroDesc,
+    alternates: {
+      canonical: lang === "en" ? "/en/libro-de-reclamaciones" : "/libro-de-reclamaciones",
+    },
   };
 }
 

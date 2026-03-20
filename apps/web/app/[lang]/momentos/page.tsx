@@ -24,6 +24,9 @@ export async function generateMetadata({
       lang === "en"
         ? "Automated delivery of artisan cakes for birthdays, work anniversaries, and corporate celebrations."
         : "Entrega automatizada de tartas, pasteles y tortas artesanales para cumpleaños, aniversarios y celebraciones corporativas.",
+    alternates: {
+      canonical: lang === "en" ? "/en/momentos" : "/momentos",
+    },
   };
 }
 

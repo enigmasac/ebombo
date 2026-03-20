@@ -20,6 +20,9 @@ export async function generateMetadata({
   return {
     title: `${t.tiposDeEvento.heroSubtitle} | eBombo Internacional`,
     description: t.tiposDeEvento.exploreDesc,
+    alternates: {
+      canonical: lang === "en" ? "/en/tipos-de-evento" : "/tipos-de-evento",
+    },
   };
 }
 

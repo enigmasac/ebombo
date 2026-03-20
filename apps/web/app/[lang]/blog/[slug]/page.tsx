@@ -35,6 +35,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${post.title} | eBombo Blog`,
     description: post.description,
+    alternates: {
+      canonical: lang === "en" ? `/en/blog/${slug}` : `/blog/${slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.description,

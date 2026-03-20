@@ -20,6 +20,9 @@ export async function generateMetadata({
   return {
     title: `${t.merchandising.heroTitle} | eBombo Internacional`,
     description: t.merchandising.heroDesc,
+    alternates: {
+      canonical: lang === "en" ? "/en/merchandising" : "/merchandising",
+    },
   };
 }
 

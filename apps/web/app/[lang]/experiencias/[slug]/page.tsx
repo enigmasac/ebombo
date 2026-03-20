@@ -31,6 +31,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       experience.hero_description ||
       `Descubre la experiencia ${experience.title} de eBombo.`,
+    alternates: {
+      canonical: lang === "en" ? `/en/experiencias/${slug}` : `/experiencias/${slug}`,
+    },
   };
 }
 

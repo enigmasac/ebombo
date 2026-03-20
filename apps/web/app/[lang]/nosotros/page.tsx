@@ -19,6 +19,9 @@ export async function generateMetadata({
   return {
     title: `${t.nosotros.heroLabel} | eBombo Internacional`,
     description: t.nosotros.heroDesc,
+    alternates: {
+      canonical: lang === "en" ? "/en/nosotros" : "/nosotros",
+    },
   };
 }
 

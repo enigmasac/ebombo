@@ -33,8 +33,6 @@ export async function generateMetadata({
   const lang: Lang = isValidLang(rawLang) ? rawLang : "es";
   const t = getDictionary(lang);
 
-  const canonicalUrl = lang === "en" ? `${SITE_URL}/en` : SITE_URL;
-
   return {
     title: t.metadata.siteTitle,
     description: t.metadata.siteDescription,
@@ -53,7 +51,7 @@ export async function generateMetadata({
       apple: "/apple-touch-icon.png",
     },
     alternates: {
-      canonical: canonicalUrl,
+      canonical: lang === "en" ? "/en" : "/",
       languages: {
         es: SITE_URL,
         en: `${SITE_URL}/en`,
@@ -62,7 +60,7 @@ export async function generateMetadata({
     openGraph: {
       title: t.metadata.siteTitle,
       description: t.metadata.siteDescription,
-      url: canonicalUrl,
+      url: lang === "en" ? `${SITE_URL}/en` : SITE_URL,
       siteName: "eBombo Internacional",
       locale: lang === "en" ? "en_US" : "es_ES",
       type: "website",

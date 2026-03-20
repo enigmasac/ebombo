@@ -20,6 +20,9 @@ export async function generateMetadata({
   return {
     title: `${t.standFerias.heroTitle} | eBombo Internacional`,
     description: t.standFerias.heroDesc,
+    alternates: {
+      canonical: lang === "en" ? "/en/stand-ferias" : "/stand-ferias",
+    },
   };
 }
 

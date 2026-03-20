@@ -20,6 +20,9 @@ export async function generateMetadata({
   return {
     title: `${t.copaDelMundo.heroTitle} | eBombo Internacional`,
     description: t.copaDelMundo.heroDesc,
+    alternates: {
+      canonical: lang === "en" ? "/en/copa-del-mundo" : "/copa-del-mundo",
+    },
   };
 }
 
