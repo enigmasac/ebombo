@@ -31,7 +31,7 @@ export default function Login() {
       <form className="login-card" onSubmit={handleSubmit}>
         <div className="login-logo">
           <img
-            src="https://ebombo.com/wp-content/uploads/2025/11/logoEbomboAColor.webp"
+            src="https://ebombo.com/uploads/2025/11/logoEbomboAColor.webp"
             alt="eBombo"
           />
         </div>

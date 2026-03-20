@@ -29,7 +29,7 @@ function AdminLayout({ children }: { children: React.ReactNode }) {
       <aside className="admin-sidebar">
         <div className="admin-sidebar-logo">
           <img
-            src="https://ebombo.com/wp-content/uploads/2025/11/logoEbomboAColor.webp"
+            src="https://ebombo.com/uploads/2025/11/logoEbomboAColor.webp"
             alt="eBombo"
           />
           <span>Admin</span>
