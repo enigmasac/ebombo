@@ -8,15 +8,8 @@ const nextConfig = {
     minimumCacheTTL: 2592000,
     remotePatterns: [
       {
-        protocol: "http",
-        hostname: "localhost",
-        port: "4000",
-        pathname: "/api/**/uploads/**",
-      },
-      {
-        protocol: "http",
-        hostname: "host.docker.internal",
-        port: "4000",
+        protocol: "https",
+        hostname: "ebombo.com",
         pathname: "/api/**/uploads/**",
       },
     ],

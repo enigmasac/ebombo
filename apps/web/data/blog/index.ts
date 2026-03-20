@@ -8,6 +8,7 @@ import { postsEn2 } from "./posts-en-2";
 export type { BlogPost, BlogContentBlock };
 
 const API_URL = process.env.API_URL || "http://localhost:4000";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://ebombo.com";
 
 const staticPosts: BlogPost[] = [
   ...postsEs1,
@@ -26,7 +27,7 @@ function mapApiPost(raw: Record<string, unknown>): BlogPost {
     lang: raw.lang as "es" | "en",
     thumbnailUrl: raw.thumbnail_url
       ? (raw.thumbnail_url as string).startsWith("/api/")
-        ? `${API_URL}${raw.thumbnail_url}`
+        ? `${SITE_URL}${raw.thumbnail_url}`
         : (raw.thumbnail_url as string)
       : "",
     wordCount: (raw.word_count as number) || 0,
