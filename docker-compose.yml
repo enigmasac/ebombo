@@ -1,10 +1,13 @@
+name: ebombo
+
 services:
   web:
-    build: .
+    image: ebombo-web
     ports:
-      - "4321:3000"
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
+      - "4100:3000"
     environment:
       - NODE_ENV=production
       - API_URL=http://host.docker.internal:4000
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
