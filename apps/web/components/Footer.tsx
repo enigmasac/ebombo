@@ -5,7 +5,6 @@ import { getDictionary, localePath } from "@/lib/i18n";
 import EmailLink from "./EmailLink";
 
 const partnerLinks = [
-  { label: "Enigma Developers", href: "https://enigmasac.com" },
   { label: "Golootza", href: "https://golootza.com/es/" },
   { label: "bilit", href: "https://bilitnow.com" },
 ];
@@ -234,6 +233,14 @@ export default function Footer({ lang = "es" as Lang }: { lang?: Lang }) {
           &copy; 2026 {t.footer.copyright}{" "}
           <strong>eBombo</strong>
         </span>
+        <a
+          href="https://enigmasac.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-poppins text-[10px] tracking-[-0.2px] text-ebombo-text/50 transition-colors hover:text-ebombo-primary"
+        >
+          Developed by Enigma
+        </a>
       </div>
     </footer>
   );
