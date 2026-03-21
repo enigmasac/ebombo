@@ -158,7 +158,7 @@ export default async function BlogPost({ params }: Props) {
                     : "Start planning"}
                 </Link>
               </div>
-              {post.thumbnailUrl && (
+              {post.thumbnailUrl && !post.thumbnailUrl.includes("logoEbombo") && (
                 <div className="relative hidden md:block md:w-[40%]">
                   <Image
                     src={post.thumbnailUrl}

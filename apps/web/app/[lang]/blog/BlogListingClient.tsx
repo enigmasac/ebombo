@@ -124,7 +124,7 @@ export default function BlogListingClient({
                   href={localePath(lang, `/blog/${post.slug}`)}
                   className="group overflow-hidden rounded-[24px] bg-white shadow-[0_4px_15px_rgba(0,0,0,0.08)] transition-transform duration-300 hover:scale-[1.02]"
                 >
-                  {post.thumbnailUrl ? (
+                  {post.thumbnailUrl && !post.thumbnailUrl.includes("logoEbombo") ? (
                     <div className="relative aspect-video w-full overflow-hidden">
                       <Image
                         src={post.thumbnailUrl}
@@ -136,10 +136,14 @@ export default function BlogListingClient({
                       />
                     </div>
                   ) : (
-                    <div className="flex aspect-video w-full items-center justify-center bg-ebombo-light-purple">
-                      <span className="font-poppins text-lg font-semibold text-[#7A33FF]">
-                        Blog
-                      </span>
+                    <div className="flex aspect-video w-full items-center justify-center bg-gradient-to-br from-[#8056EB] to-[#5B1FCC]">
+                      <Image
+                        src="/uploads/2025/11/logoEbomboAColor.webp"
+                        alt="eBombo"
+                        width={120}
+                        height={32}
+                        className="w-[120px] brightness-0 invert"
+                      />
                     </div>
                   )}
                   <div className="flex flex-col gap-2 p-4">
