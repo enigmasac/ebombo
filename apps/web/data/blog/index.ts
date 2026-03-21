@@ -29,6 +29,10 @@ function mergeWithStatic(apiPost: BlogPost): BlogPost {
       apiPost.bodyContent.length > 0
         ? apiPost.bodyContent
         : staticPost.bodyContent,
+    thumbnailUrl:
+      apiPost.thumbnailUrl && !apiPost.thumbnailUrl.includes("logoEbombo")
+        ? apiPost.thumbnailUrl
+        : staticPost.thumbnailUrl,
     lang: staticPost.lang,
   };
 }
