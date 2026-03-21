@@ -51,7 +51,9 @@ export default function Header({ lang = "es" as Lang }: { lang?: Lang }) {
     "block px-3 xl:px-5 font-poppins text-base font-normal tracking-[-0.2px] text-ebombo-dark transition-colors hover:text-ebombo-primary";
 
   return (
-    <header className="sticky top-0 z-50 bg-ebombo-bg shadow-[0_2px_10px_rgba(0,0,0,0.04)]">
+    <header className="sticky top-0 z-50 shadow-[0_2px_10px_rgba(0,0,0,0.04)]">
+      <div className="h-[6px] bg-ebombo-primary" />
+      <div className="bg-ebombo-bg">
       <div className="mx-auto flex min-h-[100px] items-center px-[5%]">
         <div className="shrink-0 lg:w-[17%]">
           <Link href={localePath(lang, "/")}>
@@ -169,6 +171,7 @@ export default function Header({ lang = "es" as Lang }: { lang?: Lang }) {
           </ul>
         </nav>
       )}
+      </div>
     </header>
   );
 }

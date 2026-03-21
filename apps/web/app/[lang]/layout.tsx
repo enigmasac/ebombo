@@ -40,6 +40,7 @@ export async function generateMetadata({
     authors: [{ name: "eBombo Internacional", url: SITE_URL }],
     publisher: "eBombo Internacional",
     robots: { index: true, follow: true },
+    other: { "theme-color": "#8056EB" },
     icons: {
       icon: [
         { url: "/favicon.ico", sizes: "48x48" },
