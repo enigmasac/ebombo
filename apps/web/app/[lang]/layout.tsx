@@ -8,14 +8,14 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://ebombo.com";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["600", "700"],
   variable: "--font-poppins",
   display: "swap",
 });
 
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["400"],
   variable: "--font-roboto",
   display: "swap",
 });
@@ -94,9 +94,6 @@ export default async function LangLayout({
       className={`${poppins.variable} ${roboto.variable}`}
     >
       <head>
-        {snippets.head_start.length > 0 && (
-          <SnippetBlock html={snippets.head_start.join("\n")} />
-        )}
         <link rel="alternate" hrefLang="x-default" href={SITE_URL} />
         {snippets.head_end.length > 0 && (
           <SnippetBlock html={snippets.head_end.join("\n")} />
@@ -107,6 +104,9 @@ export default async function LangLayout({
           <SnippetBlock html={snippets.body_start.join("\n")} />
         )}
         {children}
+        {snippets.head_start.length > 0 && (
+          <SnippetBlock html={snippets.head_start.join("\n")} />
+        )}
         {snippets.body_end.length > 0 && (
           <SnippetBlock html={snippets.body_end.join("\n")} />
         )}

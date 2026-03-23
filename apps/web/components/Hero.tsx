@@ -15,15 +15,21 @@ const heroImages = [
 export default function Hero({ lang = "es" }: { lang?: Lang }) {
   const t = getDictionary(lang);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const nextSlide = useCallback(() => {
     setCurrentSlide((prev) => (prev + 1) % heroImages.length);
   }, []);
 
   useEffect(() => {
+    if (!mounted) return;
     const timer = setInterval(nextSlide, 6000);
     return () => clearInterval(timer);
-  }, [nextSlide]);
+  }, [nextSlide, mounted]);
 
   return (
     <section className="bg-ebombo-primary">
@@ -74,21 +80,24 @@ export default function Hero({ lang = "es" }: { lang?: Lang }) {
         <div className="mt-[30px] flex w-full flex-1 items-center justify-center md:mt-0">
           <div className="w-full rounded-[88px] bg-gradient-to-b from-white to-ebombo-bg p-[12px]">
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[76px] md:aspect-[5/4]">
-              {heroImages.map((src, index) => (
-                <Image
-                  key={src}
-                  src={src}
-                  alt={`Evento corporativo eBombo ${index + 1}`}
-                  fill
-                  quality={60}
-                  className={`object-cover object-top transition-opacity duration-[1200ms] ${
-                    index === currentSlide ? "opacity-100" : "opacity-0"
-                  }`}
-                  sizes="(max-width: 768px) 90vw, 522px"
-                  priority={index === 0}
-                  loading={index === 0 ? "eager" : "lazy"}
-                />
-              ))}
+              {heroImages.map((src, index) => {
+                if (index > 0 && !mounted) return null;
+                return (
+                  <Image
+                    key={src}
+                    src={src}
+                    alt={`Evento corporativo eBombo ${index + 1}`}
+                    fill
+                    quality={60}
+                    className={`object-cover object-top transition-opacity duration-[1200ms] ${
+                      index === currentSlide ? "opacity-100" : "opacity-0"
+                    }`}
+                    sizes="(max-width: 768px) 90vw, 522px"
+                    priority={index === 0}
+                    loading={index === 0 ? "eager" : "lazy"}
+                  />
+                );
+              })}
             </div>
           </div>
         </div>
