@@ -6,6 +6,7 @@ import Solutions from "@/components/Solutions";
 import WhyEbombo from "@/components/WhyEbombo";
 import Testimonials from "@/components/Testimonials";
 import SuccessStories from "@/components/SuccessStories";
+import Locations from "@/components/Locations";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -31,6 +32,7 @@ export default async function Home({
         <WhyEbombo lang={lang} />
         <Testimonials lang={lang} />
         <SuccessStories lang={lang} />
+        <Locations lang={lang} />
         <ContactForm lang={lang} />
       </main>
       <Footer lang={lang} />

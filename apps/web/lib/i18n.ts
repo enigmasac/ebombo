@@ -120,6 +120,28 @@ const es = {
     title: "Algunos de Nuestros Eventos Corporativos",
     subtitle: "Conoce algunas de las experiencias y tipos de eventos que podemos crear para ti y tu empresa",
   },
+  locations: {
+    title: "Somos tu Productora de Eventos Corporativos en America Latina",
+    subtitle: "Organizamos eventos corporativos para empresas en Mexico, Peru y toda la region. Desde la primera reunion hasta el ultimo detalle del dia del evento, nuestro equipo se hace cargo de todo.",
+    contactCta: "Contacto",
+    countries: [
+      {
+        flag: "🇲🇽",
+        name: "Mexico",
+        description: "Producimos eventos corporativos para empresas en todo Mexico. Conferencias, convenciones, lanzamientos, team building y ferias con el profesionalismo y la creatividad que tu marca merece.",
+      },
+      {
+        flag: "🇵🇪",
+        name: "Peru",
+        description: "Organizamos eventos corporativos a medida para empresas de todos los sectores en todo el Peru: desde grandes convenciones hasta activaciones de marca y celebraciones corporativas.",
+      },
+      {
+        flag: "🇪🇸",
+        name: "Espana",
+        description: "Organizamos eventos corporativos para empresas en toda Espana. Conferencias, team building, lanzamientos y activaciones de marca con la calidad y atencion al detalle que tu empresa necesita.",
+      },
+    ],
+  },
   blog: {
     heroSubtitle: "Blog",
     heroTitle: "Articulos sobre Eventos Corporativos y Team Building",
@@ -574,6 +596,18 @@ const en: Dictionary = {
   successStories: {
     title: "Some of Our Corporate Events",
     subtitle: "Discover some of the experiences and event types we can create for you and your company",
+  },
+  locations: {
+    title: "Your Corporate Event Producer in the United States",
+    subtitle: "We produce corporate events for companies across the United States. From the first meeting to every last detail on event day, our team takes care of everything.",
+    contactCta: "Contact",
+    countries: [
+      {
+        flag: "🇺🇸",
+        name: "United States",
+        description: "We produce corporate events for companies across the United States. From conferences and conventions to team building and brand activations, we deliver memorable experiences for your team.",
+      },
+    ],
   },
   blog: {
     heroSubtitle: "Blog",
