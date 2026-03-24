@@ -39,7 +39,7 @@ export default function Hero({ lang = "es" }: { lang?: Lang }) {
             <h1 className="font-poppins text-white">
               <span className="block font-roboto text-base font-semibold">
                 {t.hero.revoluciona}
-              </span>
+              </span>{" "}
               <span className="block text-[46px] font-bold leading-[0.95] tracking-[-2px] md:text-[80px]">
                 {t.hero.eventosCorporativos}
               </span>

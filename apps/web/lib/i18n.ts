@@ -135,11 +135,6 @@ const es = {
         name: "Peru",
         description: "Organizamos eventos corporativos a medida para empresas de todos los sectores en todo el Peru: desde grandes convenciones hasta activaciones de marca y celebraciones corporativas.",
       },
-      {
-        flag: "🇪🇸",
-        name: "España",
-        description: "Organizamos eventos corporativos para empresas en toda España. Conferencias, team building, lanzamientos y activaciones de marca con la calidad y atencion al detalle que tu empresa necesita.",
-      },
     ],
   },
   blog: {

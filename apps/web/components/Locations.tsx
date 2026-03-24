@@ -17,7 +17,7 @@ export default function Locations({ lang = "es" as Lang }: { lang?: Lang }) {
           </p>
         </div>
 
-        <div className={`mt-8 grid gap-6 ${t.locations.countries.length === 1 ? "mx-auto max-w-[500px] grid-cols-1" : "grid-cols-1 md:grid-cols-3"}`}>
+        <div className={`mt-8 grid gap-6 ${t.locations.countries.length === 1 ? "mx-auto max-w-[500px] grid-cols-1" : `grid-cols-1 ${t.locations.countries.length === 2 ? "mx-auto max-w-[800px] md:grid-cols-2" : "md:grid-cols-3"}`}`}>
           {t.locations.countries.map((country) => (
             <div
               key={country.name}
