@@ -36,11 +36,13 @@ export default function Hero({ lang = "es" }: { lang?: Lang }) {
       <div className="mx-auto flex min-h-[620px] max-w-[1200px] flex-col items-center justify-center px-[5%] py-[40px] md:flex-row md:items-center md:gap-[60px] md:py-[80px]">
         <div className="flex flex-col justify-center gap-[13px] text-center md:w-[45%] md:shrink-0 md:gap-[6px] md:text-left">
           <div className="flex flex-col gap-[13px] md:gap-[6px]">
-            <span className="font-roboto text-base font-semibold text-white">
-              {t.hero.revoluciona}
-            </span>
-            <h1 className="font-poppins text-[46px] font-bold leading-[0.95] tracking-[-2px] text-white md:text-[80px]">
-              {t.hero.eventosCorporativos}
+            <h1 className="font-poppins text-white">
+              <span className="block font-roboto text-base font-semibold">
+                {t.hero.revoluciona}
+              </span>
+              <span className="block text-[46px] font-bold leading-[0.95] tracking-[-2px] md:text-[80px]">
+                {t.hero.eventosCorporativos}
+              </span>
             </h1>
             <div className="flex items-center justify-center gap-[5px] md:justify-end">
               <span className="font-roboto text-base text-white">{t.hero.con}</span>
