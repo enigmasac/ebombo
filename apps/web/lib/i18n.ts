@@ -137,8 +137,8 @@ const es = {
       },
       {
         flag: "🇪🇸",
-        name: "Espana",
-        description: "Organizamos eventos corporativos para empresas en toda Espana. Conferencias, team building, lanzamientos y activaciones de marca con la calidad y atencion al detalle que tu empresa necesita.",
+        name: "España",
+        description: "Organizamos eventos corporativos para empresas en toda España. Conferencias, team building, lanzamientos y activaciones de marca con la calidad y atencion al detalle que tu empresa necesita.",
       },
     ],
   },
