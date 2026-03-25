@@ -32,12 +32,12 @@ export default function ClientLogos({ lang = "es" as Lang }: { lang?: Lang }) {
     <section className="bg-ebombo-light-purple px-[5%] py-[40px] md:py-[60px]">
       <div className="mx-auto max-w-container">
         <div className="flex flex-col items-center gap-4">
-          <span className="text-center font-roboto text-base font-semibold text-ebombo-primary">
-            {t.clientLogos.subtitle}
-          </span>
           <h2 className="text-center font-poppins text-[27px] font-bold leading-[1.2] tracking-[-1px] text-ebombo-secondary md:text-[46px] md:leading-tight">
             {t.clientLogos.title}
           </h2>
+          <p className="text-center font-roboto text-[15px] leading-[22px] text-ebombo-secondary md:text-base">
+            {t.clientLogos.subtitle}
+          </p>
         </div>
         <div className="mt-4 flex flex-wrap items-center justify-center gap-[13px]">
           {logos.map((logo) => (

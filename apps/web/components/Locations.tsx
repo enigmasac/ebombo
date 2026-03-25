@@ -5,6 +5,8 @@ import { getDictionary } from "@/lib/i18n";
 export default function Locations({ lang = "es" as Lang }: { lang?: Lang }) {
   const t = getDictionary(lang);
 
+  if (t.locations.countries.length === 0) return null;
+
   return (
     <section className="bg-white px-[5%] py-[40px] md:py-[60px]">
       <div className="mx-auto max-w-container">
